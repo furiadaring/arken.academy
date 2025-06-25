@@ -25,11 +25,11 @@ export const Header = async () => {
         <Link href="/" className="cursor-pointer">
           <Image
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="h-10 w-20 object-contain lg:hidden"
+            className="object-contain lg:hidden"
             src="/logo.svg"
             alt="Logo"
-            width={130}
-            height={67}
+            width={145}
+            height={48}
           />
         </Link>
         <div className="container mx-auto hidden w-full max-w-[1240px] items-center justify-between space-x-2 font-light text-white lg:flex">

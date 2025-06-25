@@ -19,7 +19,7 @@ export const AdminHeader = ({ links, isLogged }: { links: TLinks[]; isLogged: bo
             <div className="hidden space-x-2 lg:block">
               {links.map((link) => (
                 <Link
-                  className={`rounded-2xl px-6 py-2 text-sm font-light ${pathname.includes(link.href) ? 'bg-[#A3E635] text-[#222222]' : 'bg-[#222222] text-white'}`}
+                  className={`rounded-2xl px-6 py-2 text-sm font-light ${pathname.includes(link.href) ? 'bg-[#E67935] text-[#222222]' : 'bg-[#222222] text-white'}`}
                   href={link.href}
                   key={link.href}
                 >

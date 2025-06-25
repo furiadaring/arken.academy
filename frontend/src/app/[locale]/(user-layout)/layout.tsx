@@ -6,7 +6,7 @@ export default function UserLayout({ children }: { children: React.ReactNode }) 
   return (
     <>
       <Header />
-      <main className="mt-[100px] lg:mt-0">{children}</main>
+      <main className="mt-[80px] lg:mt-0">{children}</main>
       <Footer />
       <GoUp />
     </>

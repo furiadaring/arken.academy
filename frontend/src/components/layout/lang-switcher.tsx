@@ -45,7 +45,7 @@ export default function LocaleSwitcher({ className = '' }: { className?: string 
         onClick={() => startTransition(() => setIsOpen(!isOpen))}
         disabled={isPending}
       >
-        <span className="capitalize">{locale}</span>
+        <span className="text-white capitalize">{locale}</span>
         <span>
           <svg
             className={`h-2 w-3 transition-transform duration-300 ease-in-out ${isOpen ? 'rotate-0' : 'rotate-180'}`}
@@ -62,7 +62,7 @@ export default function LocaleSwitcher({ className = '' }: { className?: string 
 
       {isOpen && (
         <div
-          className="bg-background fixed z-[999] mt-1 w-36 rounded-xl border border-white/10 p-3 shadow-md backdrop-blur-md transition-all delay-300 duration-300 ease-in-out lg:w-44"
+          className="fixed z-[999] mt-1 w-36 rounded-xl border border-white/10 bg-[#181A1B] p-3 text-white shadow-md backdrop-blur-md transition-all delay-300 duration-300 ease-in-out lg:w-44"
           style={{
             top: switcherRef.current ? switcherRef.current.getBoundingClientRect().bottom + 5 : 'auto',
             left: switcherRef.current ? switcherRef.current.getBoundingClientRect().left - 50 : 'auto',

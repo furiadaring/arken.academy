@@ -25,15 +25,15 @@ export const POST = async (req: NextRequest) => {
     })
     console.log({ updatedUser })
     const response = await resend.emails.send({
-      from: 'support@alphabit.academy',
+      from: 'support@arken.academy',
       to: body.email,
-      subject: 'arken Academy | Сброс пароля',
-      html: `<p>Здравствуйте!</p>
-      <p>Вы запросили сброс пароля на образовательной платформе Alphabit Academy.</p>
-      <p>Для сброса пароля перейдите по ссылке: ${process.env.AUTH_URL}/reset-password/${updatedUser.data.passwordResetToken}</p>
-      <p>Если вы не запрашивали сброс пароля, пожалуйста, проигнорируйте это сообщение.</p>
-      <p>С уважением,<br />
-      Команда Alphabit Academy</p>`,
+      subject: 'Arken Academy | Сброс пароля',
+      html: `<p>Hello!</p>
+      <p>You requested a password reset on the educational platform Arken Academy.</p>
+      <p>For password reset, click the link: ${process.env.AUTH_URL}/reset-password/${updatedUser.data.passwordResetToken}</p>
+      <p>If you did not request a password reset, please ignore this message.</p>
+      <p>With respect,<br />
+      Arken Academy Team</p>`,
     })
     console.log({ response })
     return new Response(JSON.stringify(response), { status: 200 })

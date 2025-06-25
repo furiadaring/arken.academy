@@ -33,7 +33,7 @@ export const accessTokenExpiresIn = 15 * 60 * 1000
 export const refreshTokenExpiresIn = 7 * 24 * 60 * 60 * 1000
 
 export const variablesStripe = {
-  colorPrimary: '#a3e635',
+  colorPrimary: '#E67935',
   colorBackground: '#000201',
   fontFamily: 'var(--font-primary)',
   borderRadius: '25px',
@@ -41,7 +41,7 @@ export const variablesStripe = {
   fontSizeMd: '16px',
   colorText: '#ffffffff',
   colorDanger: '#dc3545',
-  colorSuccess: '#a3e635',
+  colorSuccess: '#E67935',
   spacingUnit: '4px',
   spacingGridRow: '20px',
 }

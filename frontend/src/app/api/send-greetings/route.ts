@@ -17,18 +17,18 @@ export const POST = async (req: NextRequest) => {
       from: 'info@arken.academy',
       to: body.email,
       subject: 'Добро пожаловать в Arken Academy',
-      html: `<p>Здравствуйте ${body.name}!</p>
-    <p>Вы успешно зарегистрировались на образовательной платформе arken Academy.</p>
-    <p>Ваш аккаунт создан. Теперь вы можете:</p>
+      html: `<p>Hello ${body.name}!</p>
+    <p>You successfully registered on the educational platform arken Academy.</p>
+    <p>Your account has been created. Now you can:</p>
     <ul>
-      <li>Получить доступ к личному кабинету</li>
-      <li>Ознакомиться с программой обучения</li>
-      <li>Выбрать подходящий обучающий пакет</li>
+      <li>Get access to your personal cabinet</li>
+      <li>Learn about the training program</li>
+      <li>Choose the appropriate training package</li>
     </ul>
-    <p>👉 Перейти в личный кабинет: <a href="http://arken.academy/account/all-packages">Войти в академию</a></p>
-    <p>Обучающие материалы становятся доступны после активации одного из пакетов. Мы сознательно исключили бессмысленные «бесплатные вводные» — в курсе только то, что реально работает.</p>
-    <p>С уважением,<br />
-    Команда arken Academy</p>`,
+    <p>👉 Go to your personal account: <a href="http://arken.academy/account/all-packages">Login to the academy</a></p>
+    <p>Training materials become available after activating one of the packages. We consciously excluded meaningless «free introductions» — the course only includes what really works.</p>
+    <p>With respect,<br />
+    Arken Academy Team</p>`,
     })
     return new Response(JSON.stringify(response), { status: 200 })
   } catch (error) {

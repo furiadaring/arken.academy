@@ -2,13 +2,13 @@ import { routing } from '@/i18/routing'
 import type { Metadata } from 'next'
 import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
-import { Sofia_Sans_Extra_Condensed, Unbounded } from 'next/font/google'
+import { Noto_Sans, Sofia_Sans_Extra_Condensed } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import { Toaster } from 'sonner'
 import '../globals.css'
 
-const mainFont = Unbounded({
-  variable: '--font-unbounded',
+const mainFont = Noto_Sans({
+  variable: '--font-noto-sans',
   subsets: ['cyrillic', 'latin'],
 })
 

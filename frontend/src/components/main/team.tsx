@@ -5,7 +5,6 @@ import three from '@/assets/team/three.png'
 import two from '@/assets/team/two.png'
 import { useMessages, useTranslations } from 'next-intl'
 import { Carousel } from '../shared/carousel'
-import { SectionTitle } from '../shared/section-title'
 import { TeamCardMore } from '../shared/team.card.more'
 import { TeamCard } from './team.card'
 
@@ -26,11 +25,11 @@ export const Team = () => {
   const items = Object.keys(messages.team.items)
 
   return (
-    <section className="overflow-hidden bg-[#0D0D0D] lg:pt-12" id="about">
+    <section className="bg-[] overflow-hidden lg:pt-12" id="about">
       <div className="relative z-11 container mx-auto max-w-[1280px] py-3 pl-3 lg:mt-12 lg:px-0">
-        <SectionTitle className="text-center">
-          {t('title')} <br className="lg:hidden" /> Alphabit.Academy
-        </SectionTitle>
+        <h3 className="text-title">
+          {t('title')} <br className="lg:hidden" /> Arken.Academy
+        </h3>
         <Carousel className="mt-5 lg:hidden">
           {items.map((key, index) => (
             <TeamCard

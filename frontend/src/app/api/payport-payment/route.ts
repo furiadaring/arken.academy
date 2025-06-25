@@ -96,7 +96,7 @@ function generateFormHtml(url: string, data: Record<string, string | number>): s
         .loader {
           border: 4px solid rgba(255, 255, 255, 0.1);
           border-radius: 50%;
-          border-top: 4px solid #a3e635;
+          border-top: 4px solid #E67935;
           width: 40px;
           height: 40px;
           animation: spin 1s linear infinite;

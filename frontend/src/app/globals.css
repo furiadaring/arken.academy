@@ -1,10 +1,11 @@
 @import 'tailwindcss';
 
 :root {
-  --background: #000201;
-  --accent: #a3e635;
-  --text: #f7fee7;
-  --font-primary: var(--font-unbounded);
+  --background: #ffffff;
+  --accent: #e67935;
+  --text: #000000b2;
+  --card: #eef1f4;
+  --font-primary: var(--font-primary);
   --font-secondary: var(--font-secondary);
 
   --react-international-phone-height: 55px;
@@ -15,7 +16,7 @@
   --react-international-phone-country-selector-background-color: #ffffff1a;
   --react-international-phone-country-selector-background-color-hover: #ffffff1a;
   --react-international-phone-country-selector-border-color: #ffffff1a;
-  --react-international-phone-country-selector-arrow-color: #a3e635;
+  --react-international-phone-country-selector-arrow-color: #e67935;
   --react-international-phone-dropdown-item-text-color: #ffffff;
   --react-international-phone-dropdown-item-background-color: #000201;
   --react-international-phone-dropdown-item-dial-code-color: #ffffff;
@@ -35,6 +36,7 @@
   --color-accent: var(--accent);
   --font-primary: var(--font-primary);
   --font-secondary: var(--font-secondary);
+  --color-card: var(--card);
 }
 html,
 body {
@@ -44,7 +46,7 @@ body {
 body {
   background: var(--background);
   color: var(--text);
-  font-family: 'Unbounded', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   overflow-x: hidden;
   line-height: 100%;
 }
@@ -93,15 +95,71 @@ body {
   position: relative;
 }
 .text-gradient {
-  @apply bg-linear-[267.59deg,#f7ffee_0%,#a3e635_99.62%] bg-clip-text text-transparent;
+  @apply bg-gradient-to-l from-[#e67935] to-[#ffffff] bg-clip-text text-transparent;
+}
+.text-gradient-red {
+  @apply bg-gradient-to-l from-[#FF863B] to-[#FF2600] bg-clip-text text-transparent;
 }
 
 .text-gradient-packages-lg {
   @apply bg-[linear-gradient(360deg,#C2CFA6_10%,#F7FEE7_100%)] bg-clip-text text-transparent;
 }
 
+.gradient-border {
+  position: relative;
+  background-color: #1e260f;
+  z-index: 0;
+  background: #e67935;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  padding: 2px;
+  background: linear-gradient(108.75deg, #fa6d41 7.23%, #ffc4b8 91.17%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.badge-border {
+  position: relative;
+  z-index: 0;
+}
+
+.badge-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 64px;
+  padding: 2px;
+  background: linear-gradient(108.75deg, #fa8038 7.23%, #ae2003 91.17%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+
 .text-gradient-packages-sm {
   @apply bg-[linear-gradient(360deg,#929292_10%,#BCBCBC_100%)] bg-clip-text text-transparent;
+}
+
+.text-title {
+  @apply bg-[linear-gradient(180deg,#404B5B_20%,#303748_80%)] bg-clip-text text-center text-2xl font-bold text-transparent lg:text-5xl;
 }
 
 .burger-card {
@@ -149,8 +207,7 @@ body {
 }
 
 .card-shadow {
-  box-shadow: 0px 4px 34px 0px #ffffff26 inset;
-  backdrop-filter: blur(25px);
+  box-shadow: 0px 0px 34px 0px #ffffff26 inset;
 }
 
 .faq-gradient {
@@ -168,7 +225,7 @@ body {
 }
 
 .header-wrapper header {
-  background-color: transparent;
+  background-color: #181a1b;
   transition: background-color 0.3s ease;
 }
 

@@ -20,7 +20,7 @@ export const Footer = () => {
       <div className="px-4.5 lg:px-0">
         <div className="container mx-auto max-w-[1280px] lg:flex lg:gap-10 lg:pb-30">
           <div className="mb-6 lg:mb-0 lg:pr-12">
-            <Image src="/logo.svg" alt="Alphabit" width={190} height={93} className="mx-auto mb-9 h-auto lg:mx-0" />
+            <Image src="/logo.svg" alt="Arken" width={190} height={93} className="mx-auto mb-9 h-auto lg:mx-0" />
             <p className="mt-4 px-6 text-sm leading-normal font-light tracking-wider text-white lg:max-w-[313px] lg:p-0">
               {t('title')}
             </p>
@@ -78,7 +78,7 @@ export const Footer = () => {
             <h3 className="mb-4 text-base font-medium lg:text-[20px]">{t('contactTitle')}</h3>
             <div className="space-y-4 text-sm font-light lg:text-base">
               <p className="flex items-center">+61290537369</p>
-              <p className="flex items-center">info@alphabit.academy</p>
+              <p className="flex items-center">info@arken.academy</p>
               <p className="flex items-center">{t('contactAddres')}</p>
             </div>
           </div>
@@ -101,7 +101,7 @@ export const Footer = () => {
             {' '}
             © {currentYear}. {t('copyright')}{' '}
           </span>
-          Alphabit Academy
+          Arken Academy
         </div>
       </div>
     </footer>

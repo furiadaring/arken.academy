@@ -27,11 +27,11 @@ services:
       - 8000
     environment:
       - PORT=8000
-      - DATABASE_URL=postgresql://arken-user:d48fc25ce0c95db0387af2f647b156bf9d40805bd674fc248a3bf50b0beac@postgres:5432/arken?schema=public
-      - ENCRYPTION_KEY=706d48fc25ce0c95db0387af2f647b156bf9d40805bd674fc248a3bf50b0beac
-      - JWT_SECRET=706d48fc25ce0c95db0387af2f647b156bf9d40805bd674fc248a3bf50b0beac
-      - ACCESS_TOKEN_SECRET=706d48fc25ce0c95db0387af2f647b156bf9d40805bd674fc248a3bf50b0beac
-      - REFRESH_TOKEN_SECRET=706d48fc25ce0c95db0387af2f647b156bf9d40805bd674fc248a3bf50b0beac
+      - DATABASE_URL=postgresql://arken-user:75d3f54887a13ae06e61c13ae5aa943116da51e8bba94acdb581c46c1a764255@postgres:5432/arken?schema=public
+      - ENCRYPTION_KEY=75d3f54887a13ae06e61c13ae5aa943116da51e8bba94acdb581c46c1a
+      - JWT_SECRET=75d3f54887a13ae06e61c13ae5aa943116da51e8bba94acdb581c46c1a
+      - ACCESS_TOKEN_SECRET=75d3f54887a13ae06e61c13ae5aa943116da51e8bba94acdb581c46c1a
+      - REFRESH_TOKEN_SECRET=75d3f54887a13ae06e61c13ae5aa943116da51e8bba94acdb581c46c1a
       - COOKIE_PREFIX=arken-
     depends_on:
       postgres:
@@ -47,7 +47,7 @@ services:
       - '127.0.0.1:5432:5432'
     environment:
       POSTGRES_USER: arken-user
-      POSTGRES_PASSWORD: d48fc25ce0c95db0387af2f647b156bf9d40805bd674fc248a3bf50b0beac
+      POSTGRES_PASSWORD: 75d3f54887a13ae06e61c13ae5aa943116da51e8bba94acdb581c46c1a764255
       POSTGRES_DB: arken
     volumes:
       - pgdata:/var/lib/postgresql/data

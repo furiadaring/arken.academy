@@ -38,7 +38,7 @@ export const PayportPaymentForm = ({ amount, currency, locale }: TExternalPaymen
     // Create a hidden form and submit it
     const form = document.createElement('form')
     form.method = 'POST'
-    form.action = '/api/skyphoenix-payment'
+    form.action = '/api/payport-payment'
 
     // Add amount input
     const amountInput = document.createElement('input')

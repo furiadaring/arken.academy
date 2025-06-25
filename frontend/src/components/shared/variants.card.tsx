@@ -24,7 +24,7 @@ export const VariantsCard = ({ className, icon, title, subtitle, features, price
         <p className="mt-2 text-sm tracking-tight text-[#00000099] lg:mt-4">{t('hero.priceLabel')}</p>
 
         <p className="mt-2 w-min rounded-[40px] bg-[#0D0D0C] px-10 py-0.5 lg:mt-6">
-          <span className="text-[20px] leading-[38px] text-[#A3E635]">${price}</span>
+          <span className="text-[20px] leading-[38px] text-[#E67935]">${price}</span>
         </p>
       </div>
       <div className="flex flex-1 flex-grow flex-col">

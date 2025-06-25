@@ -16,9 +16,9 @@ export const POST = async (req: NextRequest) => {
     const response = await resend.emails.send({
       from: 'onboarding@resend.dev',
       to: 'furia.daring10@gmail.com',
-      subject: 'У Вас новый запрос на консультацию от AlphaBit Academy',
-      html: `<p>Имя: ${body.name}</p>
-    <p>Телефон: ${body.phone}</p>`,
+      subject: 'You have a new consultation request from arken Academy',
+      html: `<p>Name: ${body.name}</p>
+    <p>Phone: ${body.phone}</p>`,
     })
     return new Response(JSON.stringify(response), { status: 200 })
   } catch (error) {

@@ -1,5 +1,32 @@
+import { cn } from '@/lib/utils'
+import { cva } from 'class-variance-authority'
 import Link from 'next/link'
 import { ReactNode } from 'react'
+
+const buttonVariants = cva(
+  'inline-flex items-center justify-center rounded-[50px] text-xs font-medium transition-colors group relative mr-5 flex w-full items-center justify-center gap-2.5 px-6 py-3',
+  {
+    variants: {
+      variant: {
+        primary: 'gradient-border text-white ',
+        secondary: 'border-2 border-solid border-white/30 bg-transparent text-white',
+      },
+      size: {
+        sm: 'py-2 pr-3 pl-6 text-base',
+        lg: 'py-2 pr-3 pl-6 text-lg',
+      },
+      disabled: {
+        true: 'cursor-not-allowed opacity-50',
+        false: 'cursor-pointer',
+      },
+    },
+    defaultVariants: {
+      variant: 'primary',
+      size: 'sm',
+      disabled: false,
+    },
+  },
+)
 
 type TButtonProps = {
   children: ReactNode
@@ -10,6 +37,7 @@ type TButtonProps = {
   onClick?: () => void
   disabled?: boolean
 }
+
 type TLinkButtonProps = {
   children: ReactNode
   link: string
@@ -29,62 +57,70 @@ export const Button = ({
 }: TButtonProps) => {
   return (
     <button
-      className={`${disabled ? 'cursor-not-allowed opacity-50' : ''}group relative mr-5 flex cursor-pointer items-center justify-center gap-2.5 rounded-[50px] py-2 pr-3 pl-6 text-xs ${variant === 'secondary' ? 'border border-white/26 bg-transparent text-white' : 'bg-accent text-black'} w-full ${className} `}
+      className={cn(buttonVariants({ variant, size, disabled }), className)}
       onClick={onClick}
       type={type}
       disabled={disabled}
     >
-      <span className={`mb-0.5 -ml-5 truncate ${size === 'sm' ? 'text-base' : 'text-lg'}`}>{children}</span>
+      <span className="-ml-5 truncate">{children}</span>
       <span
-        className={`h-5 w-5 transition-all duration-300 ease-in-out group-hover:-rotate-12 lg:h-7 lg:w-7 ${size === 'sm' ? 'h-5 w-5' : 'h-7 w-7'}`}
+        className={`h-5 w-5 transition-all duration-300 ease-in-out group-hover:rotate-12 lg:h-7 lg:w-7 ${size === 'sm' ? 'h-5 w-5' : 'h-7 w-7'}`}
       >
-        <svg
-          width="22"
-          height="23"
-          viewBox="0 0 22 23"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-full w-full"
-        >
-          <rect
-            x="0.242188"
-            y="0.848022"
-            width="21.7665"
-            height="21.7665"
-            rx="10.8833"
-            fill={variant === 'primary' ? '#1E260F' : '#A3E635'}
-          />
-          <path
-            d="M16.3164 10.4435L16.3116 12.995L12.5765 12.9874L12.9087 16.2557L11.0049 18.1595L9.20118 16.3559L12.5696 12.9874L5.92874 12.9757L5.93288 10.4249L12.7029 10.4373L9.30131 7.03573L11.105 5.23206L16.3164 10.4435Z"
-            fill={variant === 'primary' ? '#A3E635' : '#1E260F'}
-          />
+        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clipPath="url(#clip0_2428_1470)">
+            <path
+              d="M1.62545 8.91357L17.7793 8.91357"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M9.70238 0.836879L17.7793 8.9138L9.70237 16.9907"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_2428_1470">
+              <rect width="18" height="18" fill="white" transform="translate(18.5 18) rotate(-180)" />
+            </clipPath>
+          </defs>
         </svg>
       </span>
     </button>
   )
 }
 
-export const LinkButton = ({ children, link, variant, className }: TLinkButtonProps) => {
+export const LinkButton = ({ children, link, variant = 'primary', className, size = 'sm' }: TLinkButtonProps) => {
   return (
-    <Link
-      href={link}
-      className={`group relative mr-5 flex items-center justify-center gap-2.5 rounded-[50px] px-6 py-3 text-xs ${variant === 'secondary' ? 'border border-white/26 bg-transparent text-white' : 'bg-accent text-black'} w-full ${className} `}
-    >
-      <span>{children}</span>
-      <span className="absolute top-0 right-2 h-5 w-5 translate-y-1/2 transition-all duration-300 ease-in-out group-hover:-rotate-12">
-        <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect
-            x="0.242188"
-            y="0.848022"
-            width="21.7665"
-            height="21.7665"
-            rx="10.8833"
-            fill={variant === 'primary' ? '#1E260F' : '#A3E635'}
-          />
-          <path
-            d="M16.3164 10.4435L16.3116 12.995L12.5765 12.9874L12.9087 16.2557L11.0049 18.1595L9.20118 16.3559L12.5696 12.9874L5.92874 12.9757L5.93288 10.4249L12.7029 10.4373L9.30131 7.03573L11.105 5.23206L16.3164 10.4435Z"
-            fill={variant === 'primary' ? '#A3E635' : '#1E260F'}
-          />
+    <Link href={link} className={cn(buttonVariants({ variant, size }), '', className)}>
+      <span className="-ml-5 truncate">{children}</span>
+      <span className="absolute top-1/2 right-2 h-5 w-5 -translate-y-1/2 transition-all duration-300 ease-in-out group-hover:rotate-12">
+        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clipPath="url(#clip0_2428_1470)">
+            <path
+              d="M1.62545 8.91357L17.7793 8.91357"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M9.70238 0.836879L17.7793 8.9138L9.70237 16.9907"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_2428_1470">
+              <rect width="18" height="18" fill="white" transform="translate(18.5 18) rotate(-180)" />
+            </clipPath>
+          </defs>
         </svg>
       </span>
     </Link>

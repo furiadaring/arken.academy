@@ -36,11 +36,9 @@ type TButtonProps = {
   size?: 'default' | 'sm' | 'lg' | 'icon'
 } & React.ButtonHTMLAttributes<HTMLButtonElement>
 
-const Button = React.forwardRef<HTMLButtonElement, TButtonProps>(
-  ({ className, variant, size, ...props }, ref) => {
-    return <button className={cn(buttonVariants({ variant, size, className }))} ref={ref} {...props} />
-  },
-)
+const Button = React.forwardRef<HTMLButtonElement, TButtonProps>(({ className, variant, size, ...props }, ref) => {
+  return <button className={cn(buttonVariants({ variant, size, className }))} ref={ref} {...props} />
+})
 Button.displayName = 'Button'
 
 export { Button, buttonVariants }

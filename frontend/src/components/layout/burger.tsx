@@ -87,7 +87,7 @@ export const Burger = ({ links }: TBurgerProps) => {
               ))}
             </div>
             <p className="text-center text-xs font-extralight text-white/70">
-              © {new Date().getFullYear()} {t('copyright')}. Alphabit Academy
+              © {new Date().getFullYear()} {t('copyright')}. Arken Academy
             </p>
           </div>
         </>

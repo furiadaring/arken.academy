@@ -11,7 +11,7 @@ export default async function ProtectedLayout({ children }: { children: React.Re
   return (
     <>
       <Header />
-      <main className="mt-[100px] lg:mt-0">{children}</main>
+      <main className="mt-[80px] lg:mt-0">{children}</main>
     </>
   )
 }
