@@ -1,0 +1,208 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #000201;
+  --accent: #a3e635;
+  --text: #f7fee7;
+  --font-primary: var(--font-unbounded);
+  --font-secondary: var(--font-secondary);
+
+  --react-international-phone-height: 55px;
+  --react-international-phone-background-color: #ffffff1a;
+  --react-international-phone-text-color: #ffffff;
+  --react-international-phone-border-radius: 64px;
+  --react-international-phone-border-color: #ffffff1a;
+  --react-international-phone-country-selector-background-color: #ffffff1a;
+  --react-international-phone-country-selector-background-color-hover: #ffffff1a;
+  --react-international-phone-country-selector-border-color: #ffffff1a;
+  --react-international-phone-country-selector-arrow-color: #a3e635;
+  --react-international-phone-dropdown-item-text-color: #ffffff;
+  --react-international-phone-dropdown-item-background-color: #000201;
+  --react-international-phone-dropdown-item-dial-code-color: #ffffff;
+  --react-international-phone-selected-dropdown-item-text-color: #ffffff;
+  --react-international-phone-selected-dropdown-item-background-color: #ffffff1a;
+  --react-international-phone-dropdown-top: 55;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-secondary: #78a72c;
+  --color-background-card: #3a3a3a33;
+  --color-background-team-card: #2d2d2d33;
+  --color-background-secondary: #0f172a;
+  --color-border: #ffffff1a;
+  --color-text: var(--text);
+  --color-accent: var(--accent);
+  --font-primary: var(--font-primary);
+  --font-secondary: var(--font-secondary);
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: 'Unbounded', sans-serif;
+  overflow-x: hidden;
+  line-height: 100%;
+}
+
+.bg-1 {
+  background-image: url('../assets/bg/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.bg-1::before,
+.bg-7::before {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4rem;
+  background-size: cover;
+  background-position: center;
+  background-color: #0d0d0d;
+  filter: blur(12px);
+}
+.bg-1::after {
+  content: '';
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4rem;
+  background-size: cover;
+  background-position: center;
+  background-color: #0d0d0d;
+  filter: blur(12px);
+}
+
+.bg-1 > * {
+  z-index: 11;
+  position: relative;
+}
+.bg-7 {
+  background-image: url('../assets/bg/Slice7.png');
+  background-size: cover;
+  position: relative;
+}
+.text-gradient {
+  @apply bg-linear-[267.59deg,#f7ffee_0%,#a3e635_99.62%] bg-clip-text text-transparent;
+}
+
+.text-gradient-packages-lg {
+  @apply bg-[linear-gradient(360deg,#C2CFA6_10%,#F7FEE7_100%)] bg-clip-text text-transparent;
+}
+
+.text-gradient-packages-sm {
+  @apply bg-[linear-gradient(360deg,#929292_10%,#BCBCBC_100%)] bg-clip-text text-transparent;
+}
+
+.burger-card {
+  @apply border-border mx-auto flex h-44 w-44 flex-col items-center justify-center space-y-4.5 rounded-4xl border p-2 shadow-[0px_3.5px_29.75px_0px_#FFFFFF0D_inset] backdrop-blur-[21.875px] transition-all duration-300 ease-in-out;
+}
+
+.burger-card > span {
+  @apply text-lg font-light;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-item-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+  opacity: 0;
+}
+
+.burger-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.burger-icon-open {
+  transform: rotate(180deg);
+}
+
+/* Flip card styles */
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.card-shadow {
+  box-shadow: 0px 4px 34px 0px #ffffff26 inset;
+  backdrop-filter: blur(25px);
+}
+
+.faq-gradient {
+  @apply bg-gradient-to-r from-[#1D1D1D] via-[#1D1D1D] via-[30%] to-[#434348];
+}
+
+/* Header scroll behavior */
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+.header-wrapper header {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.header-wrapper.scrolled header {
+  backdrop-filter: blur(12px);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.header-hide {
+  transform: translateY(-100%);
+}
+
+.header-menu {
+  top: 60px;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  background-color: #000201;
+  backdrop-filter: blur(12px);
+}
+
+.header-hide + .header-menu,
+.header-hide .header-menu {
+  transform: translateY(-100%);
+}
+
+@media (min-width: 1024px) {
+  .header-wrapper {
+    position: relative;
+  }
+
+  .header-wrapper.scrolled header {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}

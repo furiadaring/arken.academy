@@ -1,0 +1,507 @@
+{
+  "account": {
+    "bookTitle": "The Book of Bold Decisions",
+    "bookSubtitle": "\"The Book of Bold Decisions\" <span>— not a collection of tips or a finance textbook. It’s a roadmap for those building capital from scratch or scaling existing assets—through strategies, approaches, and a mindset that works in 2025. Inside—a step-by-step framework from initial trades to macro analysis, venture investing, tax optimization, and a personalized capital model. Not info-business. Not market legends. Only a systematic path to financial autonomy.</span>",
+    "downloadBtn": "Download",
+    "bookBtn": "View",
+    "allPackagesTitle": "Choose your format. We’ll take care of the rest",
+    "emptyTitle": "Your packages will appear here.",
+    "emptySubtitle": "Start with the first step — choose a suitable support format.",
+    "emptyBtn": "Choose a package",
+    "links": [
+      {
+        "label": "All Packages",
+        "href": "/account/all-packages"
+      },
+      {
+        "label": "My Packages",
+        "href": "/account/my-packages"
+      },
+      {
+        "label": "Help",
+        "href": "/account/faq"
+      }
+    ],
+    "errorTitle": "Error",
+    "errorSubtitle": "An error occurred while loading data. Please try again later.",
+    "retryBtn": "Try Again"
+  },
+  "advantages": {
+    "title": "Why Choose Us?",
+    "subtitle": "In the world of trading and investing, it’s crucial to trust professionals. <important> Arken</important> is not just an online academy, but a complete ecosystem for those aiming to earn consistently in the stock and cryptocurrency markets. We offer not only theoretical knowledge but also hands-on practice under expert guidance, so every student can confidently turn a profit.",
+    "advItemsTitle": "Our Key Advantages:",
+    "advItems": [
+      {
+        "title": "Proven Methodologies",
+        "subtitle": " — we teach effective strategies that have already helped thousands of our students."
+      },
+      {
+        "title": "Experienced Mentors",
+        "subtitle": " — you are taught by practicing experts with years of experience."
+      },
+      {
+        "title": "Immersive Experience",
+        "subtitle": " — courses are tailored for both beginners and seasoned investors."
+      },
+      {
+        "title": "Exclusive Community",
+        "subtitle": " — access to a professional traders' club, where you can always discuss trades and get support."
+      },
+      {
+        "title": "Practice and Support",
+        "subtitle": " — analysis of real trading scenarios with experts."
+      },
+      {
+        "title": "Lifetime Access",
+        "subtitle": " — all materials remain with you forever; you can revisit them anytime."
+      }
+    ]
+  },
+  "community": {
+    "title": "Join Our Community",
+    "badge": "investors' community",
+    "btnText": "Choose a Package"
+  },
+  "contact": {
+    "badge": "Contact Us",
+    "title": "Want to learn more? Leave a request",
+    "subtitle": "Leave your name and phone number — we will call you back, tell you more details, and select a suitable course.",
+    "formName": "Enter your name",
+    "formPhone": "+7 (_ _ _) _ _ _ - _ _ - _ _",
+    "formBtn": "Submit Request",
+    "success": "Message sent successfully",
+    "error": "Failed to send message",
+    "errorText": "Please fill in all fields",
+    "nameError": "Please enter your name",
+    "phoneError": "Please enter a valid phone number"
+  },
+  "education": {
+    "title": "How Training Works",
+    "subtitle": "Training takes place online through our proprietary platform using modern digital tools. Materials, case studies, assignments, and interactions are available 24/7 from anywhere in the world.",
+    "itemsTitle": "The online training program includes:",
+    "items": [
+      "Access to all courses and modules with no time limit",
+      "Hands-on practice based on real case studies",
+      "Interactive materials and helpful cheat sheets",
+      "Communication with participants in themed chats",
+      "Automatic correction and analysis of mistakes after each module",
+      "Support from a personal mentor for each direction",
+      "Video lessons and analyses from active investors and analysts",
+      "Opportunity to continue learning in the Arken.Academy investment club"
+    ],
+    "advantagesTitle": "Flexible Learning Schedule",
+    "advantagesSubTitle": "— the ability to learn at a comfortable pace, balancing studies with work or other tasks."
+  },
+  "feedbacks": {
+    "title": "Testimonials",
+    "subtitle": "We’re chosen for results, not flashy slogans",
+    "description": "Results of our platform graduates’ survey in 2024",
+    "items": [
+      {
+        "title": "91%",
+        "subtitle": "Reported an increase in trading income within the first 3 months after training"
+      },
+      {
+        "title": "78%",
+        "subtitle": "Moved to private trading or asset management level"
+      }
+    ],
+    "thirdItemTitle": "89%",
+    "thirdItemSubtitle": "Recommend the courses to friends and colleagues in the industry",
+    "btnText": "Choose a Package"
+  },
+  "footer": {
+    "title": "An online academy where knowledge drives results. We train both beginners and experienced investors in earning strategies for stock and cryptocurrency markets.",
+    "navTitle": "Navigation",
+    "navItems": ["Home", "Packages", "Reviews", "About Us", "Contacts"],
+    "docsTitle": "Documents",
+    "docsItems": ["Privacy Policy", "Refund Policy"],
+    "contactTitle": "Contacts",
+    "contactAddres": "25 Martin Place, Sydney, NSW 2000",
+    "rulesTitle": "Access Rules",
+    "rulesDesc": "Use of this website and provided services is restricted in certain jurisdictions. Access is prohibited for users from countries where financial activities of this platform are regulated, including the USA, North Korea, and Hong Kong, as well as for individuals under 18 years old.",
+    "riskTitle": "Important Risk Information",
+    "riskDesc": "Financial instruments featured on this platform may be complex and not suitable for all users. Leveraged products like CFDs (Contracts for Difference) carry a high risk, which can result in rapid capital loss. Before trading, ensure you fully understand these instruments and are prepared for potential financial losses.",
+    "copyright": "All rights reserved"
+  },
+  "hero": {
+    "badge": "100% Expertise",
+    "title": "Investing Begins with Understanding",
+    "subtitle": "We offer structured training programs designed by market experts, with access to analytics, practice, and support. Learn to manage capital—just like professionals.",
+    "button": {
+      "choose": "Choose a Package",
+      "enter": "Log In",
+      "account": "Dashboard"
+    }
+  },
+  "layout": {
+    "title": "Financial Clarity and Growth with a Personalized Approach",
+    "description": "Proven strategies, analyst support, and a transparent path to capital growth. No unnecessary noise—just the essentials.",
+    "keywords": "Arken Academy, Arken, Academy, education, training, finance"
+  },
+  "login": {
+    "title": "Log in to your personal account",
+    "subtitle": "You can log in through trusted platforms or register",
+    "btn": "Log in via",
+    "policy": "By logging in, you agree to the <policy> privacy policy </policy>",
+    "or": "or",
+    "register": "Register"
+  },
+  "register": {
+    "titleRegister": "Registration",
+    "subtitleRegister": "Fill out the registration form",
+    "titleLogin": "Log in to your personal account",
+    "subtitleLogin": "You can log in through trusted platforms or register",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "btn": "Register",
+    "or": "or",
+    "login": "Login",
+    "nameError": "Name is required",
+    "emailError": "Invalid email address",
+    "passwordError": "Password must be at least 6 characters",
+    "forgotPassword": "Forgot Password?",
+    "resetPassword": "Reset Password",
+    "emailSent": "Please follow the link in the email we sent to {email}. Check your spam folder if you don't see it."
+  },
+  "resetPassword": {
+    "title": "Reset Password",
+    "subtitle": "Enter your new password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "resetPassword": "Reset Password",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "invalidToken": "Invalid or expired password reset token",
+    "passwordResetSuccess": "Password reset successfully",
+    "passwordResetError": "Error resetting password",
+    "backToLogin": "Back to login",
+    "passwordError": "Password must be at least 6 characters"
+  },
+  "markets": {
+    "title": "Master the Most Promising Market Segments",
+    "items": [
+      {
+        "title": "Stock Market",
+        "subtitle": "Learn how to evaluate companies and build your own investment strategy."
+      },
+      {
+        "title": "Commodity Market",
+        "subtitle": "Analyze like a pro, understand price movements, and make decisions based on demand and data."
+      },
+      {
+        "title": "Futures",
+        "subtitle": "Get familiar with derivatives, manage risks, and build flexible strategies."
+      },
+      {
+        "title": "Cryptocurrencies",
+        "subtitle": "Understand the logic behind digital assets and operate within market cycles."
+      },
+      {
+        "title": "Venture / Private Equity",
+        "subtitle": "Learn how to identify promising startups before they go public."
+      }
+    ]
+  },
+  "menu": {
+    "home": "Home",
+    "packages": "Packages",
+    "feedbacks": "Reviews",
+    "about": "About Us",
+    "contacts": "Contacts",
+    "enter": "Log In",
+    "account": "Dashboard",
+    "copyright": "All rights reserved"
+  },
+  "packages": {
+    "hero": {
+      "badge": "100% Expertise",
+      "title": "Choose a Package and Start Your Journey",
+      "subtitle": "Our academy is not just an educational platform. It’s a system built on real investment world principles.",
+      "subtitle2": "Each course is a step from basic knowledge to strategic thinking, from beginner to confident market participant.",
+      "marketBtn": "Learn More About Capital Markets",
+      "chooseBtn": "Choose",
+      "priceLabel": "Package Price"
+    },
+    "more": {
+      "title": "Ready for More?",
+      "subtitle": "<b>Premium programs</b>—for those who want not just to study the market, but to manage capital at the level of a personal financial advisor."
+    },
+    "variants": [
+      {
+        "title": "Basic Plan",
+        "subtitle": "Master the basics of investing and confidently use a trading platform to avoid common beginner mistakes and lay the foundation for your financial strategy.",
+        "features": [
+          "<b>Duration:</b> 1 week",
+          "<b>Format:</b> Lessons + practical sessions",
+          "<b>Topics:</b> Basics of investing, trading platform overview, risk management principles",
+          "<b>Support:</b> Curator"
+        ],
+        "price": "250",
+        "name": "BASE"
+      },
+      {
+        "title": "Advanced Plan",
+        "subtitle": "Dive into the stock market, learn to analyze ETFs and bonds, and create your own investment portfolio for stable growth.",
+        "features": [
+          "<b>Duration:</b> 1 week",
+          "<b>Format:</b> Lessons + practical sessions",
+          "<b>Topics:</b> Stock market, bonds, ETFs, fundamental analysis",
+          "<b>Support:</b> Curator"
+        ],
+        "price": "1000",
+        "name": "PRO"
+      },
+      {
+        "title": "Pro Plan",
+        "subtitle": "Understand IPO intricacies, hedging, and trading psychology. Sharpen analytical skills and decision-making on volatile markets like professionals.",
+        "features": [
+          "<b>Duration:</b> 1 month",
+          "<b>Format:</b> Lessons, case studies, group Zoom sessions",
+          "<b>Topics:</b> IPO, hedging, technical analysis, trading psychology",
+          "<b>Support:</b> Personal mentor",
+          "<b>Access:</b> 6 months",
+          "<b>Bonus:</b> One-time portfolio audit"
+        ],
+        "price": "1500",
+        "name": "PROFI"
+      },
+      {
+        "title": "Master Plan",
+        "subtitle": "Learn crypto markets, agricultural assets, and offshore strategies to establish long-term capital growth and economic cycle resilience.",
+        "features": [
+          "<b>Duration:</b> 12 months",
+          "<b>Format:</b> Weekly reviews + access to calendar and analytics",
+          "<b>Topics:</b> Cryptocurrencies, agricultural assets, taxes and offshore strategies, long-term capital growth strategies",
+          "<b>Support:</b> Consultations with a personal mentor",
+          "<b>Access:</b> 12 months",
+          "<b>Bonus:</b> Individual financial plan"
+        ],
+        "price": "2500",
+        "name": "MASTER"
+      },
+      {
+        "title": "VIP Investor Package",
+        "subtitle": "Get an individual program with priority support, deep macro analysis, and access to exclusive analytics. For those building capital as a project — systematically and ambitiously.",
+        "features": [
+          "<b>Duration:</b> 12 months",
+          "<b>Format:</b> Full program, tailored to goals",
+          "<b>Topics:</b> Personalized approach, venture investments, macroeconomic analysis",
+          "<b>Support:</b> Priority consultations and personalized recommendations",
+          "<b>Access:</b> lifetime",
+          "<p>Bonus:</p>",
+          "Access to closed library of analytics",
+          "Portfolio strategy update once a month (based on your goals and plans)"
+        ],
+        "price": "5000",
+        "name": "VIP"
+      }
+    ],
+    "auth": {
+      "sectionTitle": "Invest wisely, not by chance",
+      "sectionSubtitle": "Learn to manage your capital",
+      "blockTitle": "Authorize and get access to all packages",
+      "blockSubtitle": "Choose the right program and start your investment journey today — with support, structure, and confidence.",
+      "btn": "Authorize",
+      "account": "Dashboard"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "Who are these programs for?",
+          "answer": "These programs are for everyone who wants to learn to invest and make money on the market."
+        },
+        {
+          "question": "What is included in the package price?",
+          "answer": "The package price includes access to materials, lessons, practical sessions, and personal consultations."
+        },
+        {
+          "question": "Can I study at my own pace?",
+          "answer": "Yes, you can study at your own pace."
+        },
+        {
+          "question": "How long will it take to study?",
+          "answer": "The duration of the study depends on the package you choose."
+        },
+        {
+          "question": "I am not familiar with cryptocurrencies. Can I manage to understand?",
+          "answer": "Yes, you can understand even if you have never heard of blockchain. We explain in simple language, step by step, for yourself."
+        },
+        {
+          "question": "What is the difference between your packages and free materials on the internet?",
+          "answer": "We do not give random advice. We give a system that leads to results — without water, extra, and support."
+        }
+      ]
+    }
+  },
+  "payment": {
+    "title": "Payment Details",
+    "form": {
+      "name": "Name*",
+      "placeholderName": "Enter your name",
+      "country": "Country/Region*",
+      "searchPlaceholder": "Search countries",
+      "phone": "Phone*",
+      "email": "Email*",
+      "placeholderEmail": "Enter your email"
+    },
+    "order": "Your Order",
+    "total": "Total",
+    "promoCode": "Promo Code:",
+    "promoQuestion": "Have a promo code?",
+    "promoCodeQuestion": "Do you have a promo code? <span> Click to enter the code</span>",
+    "promoCodePlaceholder": "Enter promo code",
+    "applyCouponCodeBtn": "Apply",
+    "paymentSystem": "Payme Payment System",
+    "personalData": "Your personal data will be used to process your orders, simplify your site interactions, and for other purposes described in the <Link>privacy policy.</Link>",
+    "btn": "Confirm Registration",
+    "promoCodeSuccess": "Promo code applied",
+    "promoCodeError": "Promo code not found",
+    "orderComplete": "Order Processing",
+    "orderNumber": "Order Number",
+    "date": "Date",
+    "paymentMethod": "Payment Method",
+    "thankYou": "Thank you for your purchase! Please click <span>Pay</span> to complete the order",
+    "goToDashboard": "Cancel payment and return to store",
+    "noData": "Order data not found",
+    "backToPackages": "Return to Packages",
+    "payBtn": "Pay",
+    "selectCurrency": "Select Currency",
+    "processing": "Processing...",
+    "loading": "Fetching exchange rate from PayPort",
+    "error": "Failed to load exchange rate",
+    "equivalent": "Equivalent"
+  },
+  "policy": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "subtitle": "This Privacy Policy describes how Arken Academy (hereinafter referred to as 'We', 'Our Platform', 'Company') collects, uses, stores, and protects users' personal data (hereinafter referred to as 'User', 'You') when using the website https://arken.academy and its related services.",
+      "items": [
+        {
+          "title": "1. Information Collection",
+          "subtitle": "We collect the following categories of data:",
+          "items": [
+            "Identification data: name, email address, phone number, country of residence, IP address.",
+            "Financial information: payment details used only for transaction verification purposes.",
+            "Technical data: device type, operating system, browser, cookies, site activity data.",
+            "Educational preferences: courses of interest, test responses, and learning progress."
+          ]
+        },
+        {
+          "title": "2. Purpose of Processing Personal Data",
+          "subtitle": "Collected data is used for the following purposes:",
+          "items": [
+            "Providing access to educational materials and platform services.",
+            "Enhancing user experience and content personalization.",
+            "Processing payments and technical support.",
+            "Fulfilling legal obligations.",
+            "Sending informational and marketing messages (with your consent).",
+            "Conducting user behavior analysis and improving platform quality."
+          ]
+        }
+      ]
+    },
+    "refund": {
+      "title": "Refund Policy",
+      "subtitle": "We strive to provide a high-quality educational experience. This refund policy governs the terms for reimbursement for access to training packages and materials purchased on the Arken Academy platform (hereinafter referred to as 'Platform', 'We', 'Company').",
+      "items": [
+        {
+          "title": "1. General Principle",
+          "subtitle": "A refund is only possible if the user has not gained access to paid materials and the refund request was made within 24 hours of payment."
+        },
+        {
+          "title": "2. Refund Conditions",
+          "subtitle": "Funds may be refunded if all the following conditions are met:",
+          "items": [
+            "The refund request was made within 24 hours of payment.",
+            "The user did not gain access to paid materials.",
+            "Payment was made directly via the official website https://arken.academy.",
+            "The user provides accurate information for transaction identification."
+          ]
+        }
+      ]
+    }
+  },
+  "stats": {
+    "title": "In Numbers",
+    "items": {
+      "item1": {
+        "title": "Over 40,000",
+        "subtitle": " people successfully earn after training"
+      },
+      "item2": {
+        "title": "More than 7,000",
+        "subtitle": " active traders in the private investment club"
+      },
+      "item3": {
+        "title": "$637+ million",
+        "subtitle": " volume of assets under management by academy graduates"
+      }
+    }
+  },
+  "team": {
+    "title": "Who is Behind",
+    "more": "Learn More",
+    "back": "Go Back",
+    "moreItem": {
+      "titleClr": "+75 mentors, 12 countries, 18 industries",
+      "title": "- a team where you’ll find your mentor",
+      "moreText": "And 70+ more experts",
+      "subtitle": "Practicing traders, analysts, hedge fund managers",
+      "items": ["Personal consultations", "24/7 support", "Daily analytics"]
+    },
+    "items": {
+      "item1": {
+        "name": "Amir Najafov",
+        "subtitle": "Professional trader with over 10 years of experience. Worked with analytical departments of major European brokers. Specializes in strategies for managing capital from $100,000.",
+        "description": [
+          "Collaborated with independent analytical groups in developing trading models for medium-term trends.",
+          "Helped traders build a systematic approach within mentorship programs—from entry setups to position control at volatility levels.",
+          "Acted as a consultant in creating checklists and templates for decision-making in high-responsibility trading.",
+          "Many of his students today manage professional portfolios or work with investor funds in prop teams."
+        ]
+      },
+      "item2": {
+        "name": "Rustam Aytbayev",
+        "subtitle": "Author of the decision-making system 'Pure Signal' and specialist in psychological resilience in trading. Participated in trader training projects for crypto fund teams in Singapore.",
+        "description": [
+          "Worked with mentorship programs within crypto funds, where a key criterion was trader stability at the moment of decision-making.",
+          "Conducted sessions with traders experiencing prolonged drawdowns—focusing on mental recovery and system restructuring.",
+          "Helped build adaptive trading journals and behavioral maps that reduced emotional decisions.",
+          "His approach combines soft coaching delivery with a strict structure for achieving results."
+        ]
+      },
+      "item3": {
+        "name": "Maxim Terekhin",
+        "subtitle": "Specialist in volume analysis and CME trading. Regularly consulted on entry strategies for members of closed trading communities.",
+        "description": [
+          "Advised internal prop teams on volume distribution, limit order entries, and reading liquidity order books.",
+          "Developed a unique method combining cluster analysis with level-based trading in daily and four-hour timeframes.",
+          "Provides mentees with a complete picture of how the market works 'from within': from large participants’ behavior to liquidity mechanics.",
+          "Constantly improves materials based on real market case studies."
+        ]
+      },
+      "item4": {
+        "name": "Irina Sokolova",
+        "subtitle": "Expert in risk management and short-term trading. Conducted internal training sessions for employees of several fintech companies in Eastern Europe.",
+        "description": [
+          "Led internal training sessions for employees of multiple fintech companies in Eastern Europe.",
+          "Participated in the development of adaptive risk control systems used daily by trainees at various skill levels.",
+          "Regularly leads groups focusing on capital preservation, drawdown management, and psychological resilience.",
+          "Her students report improved profitability and a new approach to trading after completing the program."
+        ]
+      },
+      "item5": {
+        "name": "Daniel Falkenstein",
+        "subtitle": "Professional mentor in capital management and medium-term strategies. Advised traders from private banking teams in the Emirates.",
+        "description": [
+          "Advised teams and individual traders working in the private wealth and trust management sector.",
+          "Helped design trading modules for capital allocation in unstable macroeconomic cycles.",
+          "Manages portfolios ranging from $50K to $500K, focusing on risk reduction and sustainable position growth.",
+          "Works with traders for whom trading is not a hobby but part of a long-term investment strategy."
+        ]
+      }
+    }
+  }
+}

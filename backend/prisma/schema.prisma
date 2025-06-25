@@ -1,0 +1,79 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Users {
+  id                     String      @id @default(cuid())
+  email                  String      @unique
+  name                   String
+  password               String?
+  packageType            Package?
+  promocode              Promocodes? @relation(fields: [promocodeName], references: [code], name: "UserPromocode")
+  promocodeName          String?
+  payedAmount            Float?
+  payedAt                DateTime?
+  officeName             String?
+  office                 Offices?    @relation(fields: [officeName], references: [name], name: "UserOffice")
+  phoneNumber            String?
+  passwordResetToken     String?
+  passwordResetExpiresAt DateTime?
+  lastLoginAt            DateTime?
+  createdAt              DateTime    @default(now())
+}
+
+model Admins {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  password     String
+  refreshToken String?  @unique
+  isSuperAdmin Boolean  @default(false)
+  officeName   String?
+  office       Offices? @relation(fields: [officeName], references: [name], name: "AdminOffice")
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+}
+
+model Promocodes {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  discount    Float
+  package     Packages @relation(fields: [packageName], references: [name], name: "PromocodePackage")
+  packageName Package
+  officeName  String
+  office      Offices  @relation(fields: [officeName], references: [name], name: "PromocodeOffice")
+  createdAt   DateTime @default(now())
+  users       Users[]  @relation("UserPromocode")
+}
+
+model Packages {
+  id         String       @id @default(cuid())
+  name       Package      @unique
+  price      Float
+  promocodes Promocodes[] @relation("PromocodePackage")
+  createdAt  DateTime     @default(now())
+}
+
+model Offices {
+  id         String       @id @default(cuid())
+  name       String       @unique
+  promocodes Promocodes[] @relation("PromocodeOffice")
+  users      Users[]      @relation("UserOffice")
+  admins     Admins[]     @relation("AdminOffice")
+  createdAt  DateTime     @default(now())
+}
+
+enum Package {
+  BASE
+  PRO
+  PROFI
+  MASTER
+  VIP
+}

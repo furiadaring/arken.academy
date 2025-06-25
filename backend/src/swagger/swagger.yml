@@ -1,0 +1,1036 @@
+openapi: 3.0.0
+info:
+  title: Academy API
+  description: API documentation for the Academy application
+  version: 1.0.0
+servers:
+  - url: https://arken.academy/backend-api/v1
+    description: Local development server
+tags:
+  - name: Auth
+    description: Authentication operations
+  - name: Users
+    description: User operations
+  - name: Admins
+    description: Admin operations
+  - name: Offices
+    description: Office operations
+  - name: Promocodes
+    description: Promocode operations
+  - name: Packages
+    description: Package operations
+  - name: Webhooks
+    description: Payment webhook operations
+components:
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: access-token
+      description: Authentication cookie for API access
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: JWT token for API access
+  schemas:
+    TUser:
+      type: object
+      required:
+        - email
+        - name
+      properties:
+        id:
+          type: string
+          description: Auto-generated ID
+        email:
+          type: string
+          format: email
+          description: User's email
+        name:
+          type: string
+          description: User's name
+        packageType:
+          type: string
+          enum: [BASE, PRO, PROFI, MASTER, VIP]
+          nullable: true
+          description: User's package type
+        promocodeId:
+          type: string
+          nullable: true
+          description: ID of the promocode used
+        payedAmount:
+          type: number
+          nullable: true
+          description: Amount paid
+        payedAt:
+          type: string
+          format: date-time
+          nullable: true
+          description: Payment date
+        officeName:
+          type: string
+          nullable: true
+          description: Name of the office the user belongs to
+        createdAt:
+          type: string
+          format: date-time
+          description: Creation date
+    TCreateUserInput:
+      type: object
+      required:
+        - email
+        - name
+      properties:
+        email:
+          type: string
+          format: email
+        name:
+          type: string
+        packageType:
+          type: string
+          enum: [BASE, PRO, PROFI, MASTER, VIP]
+        promocodeId:
+          type: string
+    TBindUserToOfficeInput:
+      type: object
+      required:
+        - userId
+        - officeName
+      properties:
+        userId:
+          type: string
+        officeName:
+          type: string
+    TAdmin:
+      type: object
+      required:
+        - username
+      properties:
+        id:
+          type: string
+          description: Auto-generated ID
+        username:
+          type: string
+          description: Admin's username
+        isSuperAdmin:
+          type: boolean
+          description: Whether the admin is a super admin
+        isActive:
+          type: boolean
+          description: Whether the admin is active
+        officeName:
+          type: string
+          nullable: true
+          description: Name of the office the admin belongs to
+        createdAt:
+          type: string
+          format: date-time
+          description: Creation date
+    TCreateAdminInput:
+      type: object
+      required:
+        - username
+        - password
+        - officeName
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+          format: password
+        officeName:
+          type: string
+    TLoginInput:
+      type: object
+      required:
+        - username
+        - password
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+          format: password
+    TLoginResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        username:
+          type: string
+        accessToken:
+          type: string
+        refreshToken:
+          type: string
+        accessTokenExpiresIn:
+          type: integer
+        refreshTokenExpiresIn:
+          type: integer
+    TRefreshTokenInput:
+      type: object
+      properties:
+        refreshToken:
+          type: string
+    TRefreshTokenResponse:
+      type: object
+      properties:
+        accessToken:
+          type: string
+        accessTokenExpiresIn:
+          type: integer
+    TResetPasswordInput:
+      type: object
+      required:
+        - token
+        - password
+      properties:
+        token:
+          type: string
+          description: Password reset token
+        password:
+          type: string
+          format: password
+          description: New password
+    TTokenCheckInput:
+      type: object
+      required:
+        - token
+      properties:
+        token:
+          type: string
+          description: Password reset token
+    TCheckFirstLoginInput:
+      type: object
+      required:
+        - email
+      properties:
+        email:
+          type: string
+          format: email
+          description: User's email
+    TSignInUserInput:
+      type: object
+      required:
+        - email
+        - password
+      properties:
+        email:
+          type: string
+          format: email
+          description: User's email
+        password:
+          type: string
+          format: password
+          description: User's password
+    TSignUpUserInput:
+      type: object
+      required:
+        - email
+        - password
+        - name
+      properties:
+        email:
+          type: string
+          format: email
+          description: User's email
+        password:
+          type: string
+          format: password
+          description: User's password
+        name:
+          type: string
+          description: User's name
+    TOffice:
+      type: object
+      required:
+        - name
+      properties:
+        id:
+          type: string
+          description: Auto-generated ID
+        name:
+          type: string
+          description: Office name
+        createdAt:
+          type: string
+          format: date-time
+          description: Creation date
+    TCreateOfficeInput:
+      type: object
+      required:
+        - name
+      properties:
+        name:
+          type: string
+    TPromocode:
+      type: object
+      required:
+        - code
+        - discount
+        - packageName
+        - officeName
+      properties:
+        id:
+          type: string
+          description: Auto-generated ID
+        code:
+          type: string
+          description: Promocode code
+        discount:
+          type: number
+          description: Discount amount
+        packageName:
+          type: string
+          enum: [BASE, PRO, PROFI, MASTER, VIP]
+          description: Name of the associated package
+        officeName:
+          type: string
+          description: Name of the associated office
+        createdAt:
+          type: string
+          format: date-time
+          description: Creation date
+    TCreatePromocodeInput:
+      type: object
+      required:
+        - code
+        - discount
+        - packageName
+        - officeName
+      properties:
+        code:
+          type: string
+        discount:
+          type: number
+        packageName:
+          type: string
+          enum: [BASE, PRO, PROFI, MASTER, VIP]
+        officeName:
+          type: string
+    TVerifyPromocodeInput:
+      type: object
+      required:
+        - code
+        - packageName
+      properties:
+        code:
+          type: string
+          description: Promocode to verify
+        packageName:
+          type: string
+          enum: [BASE, PRO, PROFI, MASTER, VIP]
+          description: Package name to verify promocode against
+    TVerifyPromocodeResponse:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Verified promocode
+        discount:
+          type: number
+          description: Discount amount
+    TPackage:
+      type: object
+      required:
+        - name
+        - price
+      properties:
+        id:
+          type: string
+          description: Auto-generated ID
+        name:
+          type: string
+          enum: [BASE, PRO, PROFI, MASTER, VIP]
+          description: Package name
+        price:
+          type: number
+          description: Package price
+        createdAt:
+          type: string
+          format: date-time
+          description: Creation date
+paths:
+  /auth/login:
+    post:
+      summary: Login as manager
+      tags: [Auth]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TLoginInput'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TLoginResponse'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+  /auth/logout:
+    post:
+      summary: Logout manager
+      tags: [Auth]
+      security:
+        - cookieAuth: ['']
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+  /auth/refresh:
+    post:
+      summary: Refresh access token
+      tags: [Auth]
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TRefreshTokenInput'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TRefreshTokenResponse'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+  /users/token:
+    post:
+      summary: Get user by password reset token
+      tags: [Users]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TTokenCheckInput'
+      responses:
+        200:
+          description: User found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TUser'
+        404:
+          description: User not found or token expired
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+
+  /users/reset-password:
+    post:
+      summary: Reset user password using token
+      tags: [Users]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TResetPasswordInput'
+      responses:
+        200:
+          description: Password reset successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        404:
+          description: Invalid or expired token
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+
+  /users/check-first-login:
+    post:
+      summary: Check if this is user's first login
+      tags: [Users]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TCheckFirstLoginInput'
+      responses:
+        200:
+          description: First login status
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  isFirstLogin:
+                    type: boolean
+        404:
+          description: User not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+
+  # Маршрут /users/signin определен ниже в файле
+
+  /users/signup:
+    post:
+      summary: Register a new user
+      tags: [Users]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TSignUpUserInput'
+      responses:
+        201:
+          description: User created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TUser'
+        409:
+          description: User already exists
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+
+  /users:
+    post:
+      summary: Create or update a user
+      tags: [Users]
+      security:
+        - cookieAuth: ['']
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TCreateUserInput'
+      responses:
+        201:
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TUser'
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+    get:
+      summary: Get all users
+      tags: [Users]
+      security:
+        - cookieAuth: ['']
+      parameters:
+        - in: query
+          name: withoutPromocode
+          schema:
+            type: boolean
+          description: Filter users without promocode
+        - in: query
+          name: office
+          schema:
+            type: string
+          description: Filter users by office name
+        - in: query
+          name: paid
+          schema:
+            type: boolean
+          description: Filter users who have paid
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TUser'
+        401:
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+
+  /users/signin:
+    post:
+      summary: Sign in user
+      tags: [Users]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TSignInUserInput'
+      responses:
+        200:
+          description: User signed in successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    $ref: '#/components/schemas/TUser'
+                  accessToken:
+                    type: string
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+  /users/bind-to-office:
+    post:
+      summary: Bind a user to an office
+      tags: [Users]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TBindUserToOfficeInput'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    $ref: '#/components/schemas/TUser'
+                  message:
+                    type: string
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+  /admins:
+    get:
+      summary: Get all admins
+      tags: [Admins]
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TAdmin'
+    post:
+      summary: Create or update an admin
+      tags: [Admins]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TCreateAdminInput'
+      responses:
+        201:
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TAdmin'
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+  /admins/{id}:
+    delete:
+      summary: Delete an admin
+      tags: [Admins]
+      parameters:
+        - name: id
+          in: path
+          description: Admin ID
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+  /offices:
+    get:
+      summary: Get all offices
+      tags: [Offices]
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TOffice'
+    post:
+      summary: Create a new office
+      tags: [Offices]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TCreateOfficeInput'
+      responses:
+        201:
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TOffice'
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+  /promocodes:
+    post:
+      summary: Create a new promocode
+      tags: [Promocodes]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TCreatePromocodeInput'
+      responses:
+        201:
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TPromocode'
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+    get:
+      summary: Get all promocodes
+      tags: [Promocodes]
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TPromocode'
+  /promocodes/verify:
+    post:
+      summary: Verify a promocode for a specific package
+      tags: [Promocodes]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TVerifyPromocodeInput'
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TVerifyPromocodeResponse'
+        404:
+          description: Promocode not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+  /packages:
+    get:
+      summary: Get all packages
+      tags: [Packages]
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TPackage'
+
+  /webhooks/payport:
+    post:
+      summary: Handle Payport payment webhook
+      tags: [Webhooks]
+      parameters:
+        - in: query
+          name: email
+          required: true
+          schema:
+            type: string
+            format: email
+          description: User email for the payment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - status
+                - amount
+              properties:
+                status:
+                  type: integer
+                  description: Payment status (1 for success)
+                amount:
+                  type: number
+                  description: Payment amount
+      responses:
+        200:
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+
+  /webhooks/stripe:
+    post:
+      summary: Handle Stripe payment webhook
+      tags: [Webhooks]
+      parameters:
+        - in: header
+          name: stripe-signature
+          required: true
+          schema:
+            type: string
+          description: Stripe webhook signature
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              description: Stripe event payload
+      responses:
+        200:
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+        400:
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+
+  /book:
+    get:
+      summary: Download the arken education book PDF
+      tags: [Static]
+      responses:
+        200:
+          description: PDF file
+          content:
+            application/pdf:
+              schema:
+                type: string
+                format: binary

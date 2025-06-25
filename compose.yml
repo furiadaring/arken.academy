@@ -1,0 +1,84 @@
+services:
+  # Frontend service
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: academy_frontend
+    restart: unless-stopped
+    expose:
+      - 3000
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=http://api:8000
+    depends_on:
+      - api
+    networks:
+      - app_network
+
+  # Existing API service
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: academy_api
+    restart: unless-stopped
+    expose:
+      - 8000
+    environment:
+      - PORT=8000
+      - DATABASE_URL=postgresql://arken-user:d48fc25ce0c95db0387af2f647b156bf9d40805bd674fc248a3bf50b0beac@postgres:5432/arken?schema=public
+      - ENCRYPTION_KEY=706d48fc25ce0c95db0387af2f647b156bf9d40805bd674fc248a3bf50b0beac
+      - JWT_SECRET=706d48fc25ce0c95db0387af2f647b156bf9d40805bd674fc248a3bf50b0beac
+      - ACCESS_TOKEN_SECRET=706d48fc25ce0c95db0387af2f647b156bf9d40805bd674fc248a3bf50b0beac
+      - REFRESH_TOKEN_SECRET=706d48fc25ce0c95db0387af2f647b156bf9d40805bd674fc248a3bf50b0beac
+      - COOKIE_PREFIX=arken-
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - app_network
+
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    restart: unless-stopped
+    ports:
+      - '127.0.0.1:5432:5432'
+    environment:
+      POSTGRES_USER: arken-user
+      POSTGRES_PASSWORD: d48fc25ce0c95db0387af2f647b156bf9d40805bd674fc248a3bf50b0beac
+      POSTGRES_DB: arken
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U arken-user -d arken']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - app_network
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./nginx/conf:/etc/nginx/conf.d
+      - /etc/letsencrypt:/etc/letsencrypt
+      - ./nginx/certbot/www:/var/www/certbot
+    depends_on:
+      - frontend
+      - api
+    networks:
+      - app_network
+
+volumes:
+  pgdata:
+
+networks:
+  app_network:
+    driver: bridge
