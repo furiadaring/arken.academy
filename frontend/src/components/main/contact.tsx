@@ -61,19 +61,33 @@ export const Contact = () => {
   }
 
   return (
-    <section className="bg-7" id="contacts">
+    <section id="contacts" className="relative">
       <div className="container mx-auto max-w-[1280px] py-3 lg:pt-16 lg:pb-9">
         <div className="lg:flex lg:gap-6 lg:[&>*]:flex-1">
           <div>
             <div className="mx-auto w-4/5 lg:mx-0 lg:w-1/2">
-              <Card withoutShadows className="border border-white/15 py-4">
+              <Card className="badge-border py-4">
                 <div className="mx-auto flex items-center gap-5">
-                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                      d="M9.5 12H7.5C7.5 7.03 11.53 3 16.5 3V5C12.63 5 9.5 8.13 9.5 12ZM16.5 9V7C13.74 7 11.5 9.24 11.5 12H13.5C13.5 10.34 14.84 9 16.5 9ZM5.5 2C5.5 0.89 4.61 0 3.5 0C2.39 0 1.5 0.89 1.5 2C1.5 3.11 2.39 4 3.5 4C4.61 4 5.5 3.11 5.5 2ZM9.95 2.5H7.95C7.71 3.92 6.49 5 5 5H2C1.17 5 0.5 5.67 0.5 6.5V9H6.5V6.74C8.36 6.15 9.75 4.51 9.95 2.5ZM17.5 15C18.61 15 19.5 14.11 19.5 13C19.5 11.89 18.61 11 17.5 11C16.39 11 15.5 11.89 15.5 13C15.5 14.11 16.39 15 17.5 15ZM19 16H16C14.51 16 13.29 14.92 13.05 13.5H11.05C11.25 15.51 12.64 17.15 14.5 17.74V20H20.5V17.5C20.5 16.67 19.83 16 19 16Z"
-                      fill="white"
+                      d="M9 12H7C7 7.03 11.03 3 16 3V5C12.13 5 9 8.13 9 12ZM16 9V7C13.24 7 11 9.24 11 12H13C13 10.34 14.34 9 16 9ZM5 2C5 0.89 4.11 0 3 0C1.89 0 1 0.89 1 2C1 3.11 1.89 4 3 4C4.11 4 5 3.11 5 2ZM9.45 2.5H7.45C7.21 3.92 5.99 5 4.5 5H1.5C0.67 5 0 5.67 0 6.5V9H6V6.74C7.86 6.15 9.25 4.51 9.45 2.5ZM17 15C18.11 15 19 14.11 19 13C19 11.89 18.11 11 17 11C15.89 11 15 11.89 15 13C15 14.11 15.89 15 17 15ZM18.5 16H15.5C14.01 16 12.79 14.92 12.55 13.5H10.55C10.75 15.51 12.14 17.15 14 17.74V20H20V17.5C20 16.67 19.33 16 18.5 16Z"
+                      fill="url(#paint0_linear_2698_383)"
                     />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_2698_383"
+                        x1="20"
+                        y1="0"
+                        x2="-0.72603"
+                        y2="0.87219"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#FF863B" />
+                        <stop offset="1" stopColor="#FF2600" />
+                      </linearGradient>
+                    </defs>
                   </svg>
+
                   <p className="text-sm font-light">{t('badge')}</p>
                 </div>
               </Card>
@@ -82,7 +96,7 @@ export const Contact = () => {
               <SectionTitle className="py-4 !text-lg text-balance lg:text-left lg:!text-[52px] lg:!leading-[115%]">
                 {t('title')}
               </SectionTitle>
-              <p className="text-center leading-[22px] tracking-tighter text-[#F7FEE7B2] lg:text-left lg:leading-normal lg:tracking-normal">
+              <p className="text-center leading-[22px] tracking-tighter lg:text-left lg:leading-normal lg:tracking-normal">
                 {t('subtitle')}
               </p>
             </div>
@@ -98,7 +112,7 @@ export const Contact = () => {
         </div>
 
         <div className="gap-6 lg:flex">
-          <Card withoutShadows className="mt-5 rounded-none px-8 py-5 text-center lg:w-[80%] lg:rounded-[40px] lg:py-8">
+          <Card className="mt-5 rounded-none px-8 py-5 text-center lg:w-[80%] lg:rounded-[40px] lg:py-8">
             <form onSubmit={handleFormSubmit}>
               <div className="space-y-4.5 lg:flex lg:space-y-0 lg:py-5">
                 <div className="lg:w-4/5">
@@ -120,7 +134,7 @@ export const Contact = () => {
                       type="text"
                       name="name"
                       placeholder={t('formName')}
-                      className="w-full rounded-[64px] border border-white/15 bg-white/10 px-3.5 py-3 pl-16 text-[#F7FEE799] lg:w-11/12 lg:pl-16"
+                      className="w-full rounded-[64px] border border-[#00000026] bg-white/10 px-3.5 py-3 pl-16 text-[#00000099] lg:w-11/12 lg:pl-16"
                     />
                   </div>
 
@@ -150,7 +164,7 @@ export const Contact = () => {
                       type="tel"
                       name="phone"
                       placeholder={t('formPhone')}
-                      className="w-full rounded-[64px] border border-white/15 bg-white/10 px-3.5 py-3 pl-16 text-[#F7FEE799] lg:w-11/12 lg:pl-16"
+                      className="w-full rounded-[64px] border border-[#00000026] bg-white/10 px-3.5 py-3 pl-16 text-[#00000099] lg:w-11/12 lg:pl-16"
                     />
                   </div>
                 </div>
@@ -161,21 +175,31 @@ export const Contact = () => {
                   type="submit"
                   className={`group bg-accent relative mr-5 hidden w-2/5 cursor-pointer items-center justify-center gap-2.5 overflow-hidden rounded-[24px] py-3 pr-3 pl-6 text-xs text-black lg:flex`}
                 >
-                  <span className="mt-0.5 -ml-5 lg:text-lg">{t('formBtn')}</span>
-                  <span className="h-5 w-5 transition-all duration-300 ease-in-out group-hover:-rotate-12 lg:h-7 lg:w-7">
-                    <svg
-                      width="22"
-                      height="23"
-                      viewBox="0 0 22 23"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-full w-full"
-                    >
-                      <rect x="0.242188" y="0.848022" width="21.7665" height="21.7665" rx="10.8833" fill={'#1E260F'} />
-                      <path
-                        d="M16.3164 10.4435L16.3116 12.995L12.5765 12.9874L12.9087 16.2557L11.0049 18.1595L9.20118 16.3559L12.5696 12.9874L5.92874 12.9757L5.93288 10.4249L12.7029 10.4373L9.30131 7.03573L11.105 5.23206L16.3164 10.4435Z"
-                        fill={'#E67935'}
-                      />
+                  <span className="mt-0.5 -ml-5 text-white lg:text-lg">{t('formBtn')}</span>
+                  <span className="mt-0.5 h-5 w-5 transition-all duration-300 ease-in-out group-hover:rotate-12 lg:h-7 lg:w-7">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.753906" width="24" height="24" rx="12" fill="white" />
+                      <g clipPath="url(#clip0_2569_783)">
+                        <path
+                          d="M7.2503 12.6963L18.0195 12.6963"
+                          stroke="#FB8138"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M12.6349 7.31183L18.0195 12.6964L12.6349 18.0811"
+                          stroke="#FB8138"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2569_783">
+                          <rect width="12" height="12" fill="white" transform="translate(18.5 18.7539) rotate(-180)" />
+                        </clipPath>
+                      </defs>
                     </svg>
                   </span>
                 </button>

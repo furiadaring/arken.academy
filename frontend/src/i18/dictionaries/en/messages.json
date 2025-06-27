@@ -60,14 +60,14 @@
   "community": {
     "title": "Join Our Community",
     "badge": "investors' community",
-    "btnText": "Choose a Package"
+    "btnText": "Log In"
   },
   "contact": {
     "badge": "Contact Us",
     "title": "Want to learn more? Leave a request",
     "subtitle": "Leave your name and phone number — we will call you back, tell you more details, and select a suitable course.",
     "formName": "Enter your name",
-    "formPhone": "+7 (_ _ _) _ _ _ - _ _ - _ _",
+    "formPhone": "+90(_ _ _) _ _ _ - _ _ - _ _",
     "formBtn": "Submit Request",
     "success": "Message sent successfully",
     "error": "Failed to send message",
@@ -145,7 +145,8 @@
     "btn": "Log in via",
     "policy": "By logging in, you agree to the <policy> privacy policy </policy>",
     "or": "or",
-    "register": "Register"
+    "register": "Register",
+    "login": "Login with login and password"
   },
   "register": {
     "titleRegister": "Registration",
@@ -182,6 +183,14 @@
     "title": "Master the Most Promising Market Segments",
     "items": [
       {
+        "title": "Cryptocurrencies",
+        "subtitle": "Understand the logic behind digital assets and operate within market cycles."
+      },
+      {
+        "title": "Venture / Private Equity",
+        "subtitle": "Learn how to identify promising startups before they go public."
+      },
+      {
         "title": "Stock Market",
         "subtitle": "Learn how to evaluate companies and build your own investment strategy."
       },
@@ -192,14 +201,6 @@
       {
         "title": "Futures",
         "subtitle": "Get familiar with derivatives, manage risks, and build flexible strategies."
-      },
-      {
-        "title": "Cryptocurrencies",
-        "subtitle": "Understand the logic behind digital assets and operate within market cycles."
-      },
-      {
-        "title": "Venture / Private Equity",
-        "subtitle": "Learn how to identify promising startups before they go public."
       }
     ]
   },
@@ -449,7 +450,9 @@
       "title": "- a team where you’ll find your mentor",
       "moreText": "And 70+ more experts",
       "subtitle": "Practicing traders, analysts, hedge fund managers",
-      "items": ["Personal consultations", "24/7 support", "Daily analytics"]
+      "items": ["Personal consultations", "24/7 support", "Daily analytics"],
+      "text": "+75 mentors, 12 countries, 18 industries - ",
+      "text2": "Team where you’ll find your mentor"
     },
     "items": {
       "item1": {

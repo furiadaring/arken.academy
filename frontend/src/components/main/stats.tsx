@@ -13,13 +13,10 @@ export const Stats = () => {
 
   const items = Object.keys(messages.stats.items)
   return (
-    <section className="relative w-full bg-white pb-5 lg:mt-10">
-      <div className="absolute -top-[15px] left-0 h-[15px] w-full rounded-t-[25px] border-t border-[#FFFFFF]/10 bg-white bg-blend-darken lg:-top-[50px] lg:h-[75px] lg:rounded-t-[75px]"></div>
-      <div className="relative container mx-auto max-w-[1280px] pl-3">
-        <div className="absolute -top-4 -right-36 z-0 hidden h-[155px] w-[155px] rounded-full bg-[#DFE6BE] opacity-30 blur-[100px] lg:block"></div>
-        <div className="absolute -top-4 -left-36 z-0 hidden h-[155px] w-[155px] rounded-full bg-[#BEE6D2] opacity-30 blur-[100px] lg:block"></div>
-
-        <h3 className="text-title pt-3.5 lg:pt-0">
+    <section className="relative z-12 w-full pb-5 lg:mt-10">
+      <div className="absolute -top-10 left-0 h-10 w-full rounded-t-[25px] border-t border-[#FFFFFF]/10 bg-white bg-blend-darken lg:-top-24 lg:h-20 lg:rounded-t-[60px]"></div>
+      <div className="relative container mx-auto max-w-[1280px] bg-white pl-3">
+        <h3 className="text-title">
           Arken.Academy <br className="lg:hidden" /> {t('title')}
         </h3>
         <Carousel className="mt-5 lg:mt-15">

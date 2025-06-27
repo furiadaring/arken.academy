@@ -13,8 +13,10 @@ export const Auth = async () => {
     <section className={`relative w-full overflow-hidden`}>
       <div className="relative mx-auto h-[430px] w-full max-w-[1200px] lg:ml-3 lg:h-[700px]">
         <div className="font-secondary absolute top-16 left-4 z-10 -translate-y-1/2 space-y-2 text-center sm:left-1/2 sm:-translate-x-1/2 lg:top-2/5 lg:left-3/5 lg:w-1/2 lg:space-y-6 lg:text-left">
-          <h2 className="text-gradient-packages-lg text-3xl font-bold lg:text-5xl 2xl:text-8xl">{t('sectionTitle')}</h2>
-          <p className="text text-gradient-packages-sm text-lg lg:text-2xl 2xl:text-5xl">{t('sectionSubtitle')}</p>
+          <h2 className="text-gradient-red -packages-lg text-3xl font-bold lg:text-5xl 2xl:text-8xl">
+            {t('sectionTitle')}
+          </h2>
+          <p className="text text-gradient-red -packages-sm text-lg lg:text-2xl 2xl:text-5xl">{t('sectionSubtitle')}</p>
         </div>
       </div>
       <div className="absolute top-0 left-0 min-h-[432px] w-full lg:aspect-auto lg:h-[770px]">

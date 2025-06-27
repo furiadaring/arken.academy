@@ -41,7 +41,7 @@ export default function LocaleSwitcher({ className = '' }: { className?: string 
     <div ref={switcherRef} className={`relative z-[100] ${className}`} style={{ position: 'relative' }}>
       <button
         type="button"
-        className="flex items-center space-x-2 rounded p-2 transition-opacity [&:disabled]:opacity-30"
+        className="flex items-center space-x-2 rounded p-2 mix-blend-difference transition-opacity [&:disabled]:opacity-30"
         onClick={() => startTransition(() => setIsOpen(!isOpen))}
         disabled={isPending}
       >

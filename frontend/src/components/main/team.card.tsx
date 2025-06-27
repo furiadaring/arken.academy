@@ -4,8 +4,6 @@ import { useMessages, useTranslations } from 'next-intl'
 import Image, { StaticImageData } from 'next/image'
 import { useState } from 'react'
 import { Button } from '../shared/btn'
-import { Facebook, Twitter } from '../shared/icons'
-import { SocialLink } from '../shared/social-link'
 
 type TTeamCardProps = {
   name: string
@@ -33,7 +31,7 @@ export const TeamCard = ({ name, subtitle, image, itemKey, links }: TTeamCardPro
       >
         {/* Front side */}
         <div className="bg-background-team-card border-b-border absolute flex h-full w-full flex-col justify-between rounded-4xl border-b p-5 shadow-[0px_4px_26.2px_0px_#FFFFFF26_inset] backdrop-blur-[25px] backface-hidden">
-          <div className="relative mx-auto mb-2 aspect-[342/345] w-full max-w-[290px] bg-transparent backdrop-blur-[25px] lg:max-w-[342px]">
+          <div className="relative mx-auto mb-2 aspect-[342/345] w-full max-w-[290px] lg:max-w-[342px]">
             <Image
               src={image}
               alt={`Team member ${name}`}
@@ -43,17 +41,17 @@ export const TeamCard = ({ name, subtitle, image, itemKey, links }: TTeamCardPro
             />
           </div>
           <div className="grow lg:px-4">
-            <h2 className="text-gradient font-medium lg:py-2 lg:text-[22px]">{name}</h2>
+            <h2 className="text-gradient-red font-medium lg:py-2 lg:text-[22px]">{name}</h2>
             <p className="text-text mb-4 text-[10px] font-light lg:text-base lg:leading-snug">{subtitle}</p>
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <SocialLink href={links.facebook}>
+              {/* <SocialLink href={links.facebook}>
                 <Facebook />
               </SocialLink>
               <SocialLink href={links.twitter}>
                 <Twitter />
-              </SocialLink>
+              </SocialLink> */}
 
               <Button onClick={handleFlip}>
                 <span className="lg:text-lg">{t('more')}</span>
@@ -65,7 +63,7 @@ export const TeamCard = ({ name, subtitle, image, itemKey, links }: TTeamCardPro
         {/* Back side */}
         <div className="bg-background-team-card border-b-border absolute flex h-full w-full rotate-y-180 flex-col justify-between overflow-hidden rounded-4xl border-b p-5 shadow-[0px_4px_26.2px_0px_#FFFFFF26_inset] backdrop-blur-[25px] backface-hidden">
           <div>
-            <h2 className="text-gradient mb-2 text-2xl font-medium">{name}</h2>
+            <h2 className="text-gradient-red mb-2 text-2xl font-medium">{name}</h2>
             <ul className="mb-2 space-y-1 lg:space-y-3">
               {descriptionArray.map((item, index) => (
                 <li key={index} className="flex items-start">
@@ -78,12 +76,12 @@ export const TeamCard = ({ name, subtitle, image, itemKey, links }: TTeamCardPro
             </ul>
           </div>
           <div className="flex items-center gap-2">
-            <SocialLink href={links.facebook}>
+            {/* <SocialLink href={links.facebook}>
               <Facebook />
             </SocialLink>
             <SocialLink href={links.twitter}>
               <Twitter />
-            </SocialLink>
+            </SocialLink> */}
             <Button onClick={handleFlip}>
               <span className="lg:text-lg">{t('back')}</span>
             </Button>

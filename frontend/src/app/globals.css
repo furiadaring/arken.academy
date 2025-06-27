@@ -3,7 +3,8 @@
 :root {
   --background: #ffffff;
   --accent: #e67935;
-  --text: #000000b2;
+  --secondary: #fb8138;
+  --text: #000000e5;
   --card: #eef1f4;
   --font-primary: var(--font-primary);
   --font-secondary: var(--font-secondary);
@@ -34,6 +35,7 @@
   --color-border: #ffffff1a;
   --color-text: var(--text);
   --color-accent: var(--accent);
+  --color-secondary: var(--secondary);
   --font-primary: var(--font-primary);
   --font-secondary: var(--font-secondary);
   --color-card: var(--card);
@@ -109,7 +111,7 @@ body {
   position: relative;
   background-color: #1e260f;
   z-index: 0;
-  background: #e67935;
+  background: linear-gradient(267.59deg, #ff863b 0%, #f85f44 99.62%);
 }
 
 .gradient-border::before {
@@ -159,7 +161,7 @@ body {
 }
 
 .text-title {
-  @apply bg-[linear-gradient(180deg,#404B5B_20%,#303748_80%)] bg-clip-text text-center text-2xl font-bold text-transparent lg:text-5xl;
+  @apply bg-[linear-gradient(180deg,#404B5B_20%,#303748_80%)] bg-clip-text pb-2 text-center text-2xl font-bold text-transparent lg:text-5xl;
 }
 
 .burger-card {
@@ -225,11 +227,12 @@ body {
 }
 
 .header-wrapper header {
-  background-color: #181a1b;
+  background-color: transparent;
   transition: background-color 0.3s ease;
 }
 
 .header-wrapper.scrolled header {
+  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(12px);
   box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -244,8 +247,6 @@ body {
   top: 60px;
   transition: transform 0.3s ease;
   z-index: 1000;
-  background-color: #000201;
-  backdrop-filter: blur(12px);
 }
 
 .header-hide + .header-menu,

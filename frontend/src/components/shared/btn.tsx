@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { ReactNode } from 'react'
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center rounded-[50px] text-xs font-medium transition-colors group relative mr-5 flex w-full items-center justify-center gap-2.5 px-6 py-3',
+  'max-h-10 inline-flex items-center justify-center rounded-[50px] text-xs font-medium transition-colors group relative mr-5 flex w-full items-center justify-center gap-2.5 px-6 py-3',
   {
     variants: {
       variant: {
@@ -64,7 +64,7 @@ export const Button = ({
     >
       <span className="-ml-5 truncate">{children}</span>
       <span
-        className={`h-5 w-5 transition-all duration-300 ease-in-out group-hover:rotate-12 lg:h-7 lg:w-7 ${size === 'sm' ? 'h-5 w-5' : 'h-7 w-7'}`}
+        className={`h-5 w-5 pt-0.5 transition-all duration-300 ease-in-out group-hover:rotate-12 lg:h-7 lg:w-7 ${size === 'sm' ? 'h-5 w-5' : 'h-7 w-7'}`}
       >
         <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_2428_1470)">
@@ -98,7 +98,7 @@ export const LinkButton = ({ children, link, variant = 'primary', className, siz
   return (
     <Link href={link} className={cn(buttonVariants({ variant, size }), '', className)}>
       <span className="-ml-5 truncate">{children}</span>
-      <span className="absolute top-1/2 right-2 h-5 w-5 -translate-y-1/2 transition-all duration-300 ease-in-out group-hover:rotate-12">
+      <span className="absolute top-1/2 right-2 mt-0.5 h-5 w-5 -translate-y-1/2 transition-all duration-300 ease-in-out group-hover:rotate-12">
         <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_2428_1470)">
             <path

@@ -22,7 +22,7 @@ export const Header = async () => {
   return (
     <HeaderWrapper>
       <header className="relative z-30 mx-auto flex w-full items-center justify-between px-3 py-4">
-        <Link href="/" className="cursor-pointer">
+        <Link href="/" className="z-[99] cursor-pointer">
           <Image
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-contain lg:hidden"

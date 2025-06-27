@@ -25,8 +25,8 @@ export const Team = () => {
   const items = Object.keys(messages.team.items)
 
   return (
-    <section className="bg-[] overflow-hidden lg:pt-12" id="about">
-      <div className="relative z-11 container mx-auto max-w-[1280px] py-3 pl-3 lg:mt-12 lg:px-0">
+    <section className="overflow-hidden lg:pt-12" id="about">
+      <div className="relative z-11 container mx-auto max-w-[1280px] py-3 pl-3 md:p-3 lg:mt-12 lg:px-0">
         <h3 className="text-title">
           {t('title')} <br className="lg:hidden" /> Arken.Academy
         </h3>
@@ -55,19 +55,7 @@ export const Team = () => {
           ))}
           <TeamCardMore className="py-7" />
         </div>
-        <TeamCardMore className="lg:hidden" />
-        <div className="hidden lg:block">
-          <div className="absolute top-1/4 left-0 z-0 h-[180px] w-[180px] rounded-full bg-[#BEE6D3] opacity-70 blur-[125px]"></div>
-          <div className="absolute top-1/2 left-1/3 z-0 h-[180px] w-[180px] -translate-x-40 -translate-y-30 rounded-full bg-[#E6CFBE] opacity-70 blur-[125px]"></div>
-          <div className="absolute top-1/6 left-1/2 z-0 h-[180px] w-[180px] translate-x-10 rounded-full bg-[#C9E6BE] opacity-70 blur-[125px]"></div>
-          <div className="absolute top-1/2 right-10 z-0 h-[180px] w-[180px] -translate-y-40 rounded-full bg-[#E6E5BE] opacity-70 blur-[125px]"></div>
-          <div className="absolute bottom-20 left-20 z-0 h-[180px] w-[180px] rounded-full bg-[#BEE6D2] opacity-70 blur-[125px]"></div>
-          <div className="absolute bottom-20 left-1/2 z-0 h-[180px] w-[180px] rounded-full bg-[#BEE6D2] opacity-70 blur-[125px]"></div>
-          <div className="absolute right-1/6 bottom-1/6 z-0 h-[180px] w-[180px] rounded-full bg-[#C7BEE6] opacity-70 blur-[125px]"></div>
-        </div>
-        <div className="lg:hidden">
-          <div className="absolute top-1/4 -right-1/12 z-0 h-[180px] w-[180px] rounded-full bg-[#C9E6BE] opacity-70 blur-[125px]"></div>
-        </div>
+        <TeamCardMore className="mt-7.5 lg:hidden" />
       </div>
     </section>
   )
