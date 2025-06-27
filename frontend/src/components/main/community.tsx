@@ -28,7 +28,7 @@ export const Community = () => {
                 <span className="text-gradient-red font-bold">#1</span> {t('badge')}
               </p>
             </div>
-            <h3 className="text-title lg:!text-left">{t('title')}</h3>
+            <h3 className="text-title">{t('title')}</h3>
             <Link href="/login">
               <Button className="lg:mt-5 lg:w-[65%] lg:text-lg">{t('btnText')}</Button>
             </Link>

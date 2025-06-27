@@ -10,10 +10,9 @@ type TTeamCardProps = {
   subtitle: string
   image: StaticImageData
   itemKey?: string
-  links: { facebook: string; twitter: string }
 }
 
-export const TeamCard = ({ name, subtitle, image, itemKey, links }: TTeamCardProps) => {
+export const TeamCard = ({ name, subtitle, image, itemKey }: TTeamCardProps) => {
   const t = useTranslations('team')
   const messages = useMessages()
   const [isFlipped, setIsFlipped] = useState<boolean>(false)
@@ -46,13 +45,6 @@ export const TeamCard = ({ name, subtitle, image, itemKey, links }: TTeamCardPro
           </div>
           <div>
             <div className="flex items-center gap-2">
-              {/* <SocialLink href={links.facebook}>
-                <Facebook />
-              </SocialLink>
-              <SocialLink href={links.twitter}>
-                <Twitter />
-              </SocialLink> */}
-
               <Button onClick={handleFlip}>
                 <span className="lg:text-lg">{t('more')}</span>
               </Button>
@@ -76,12 +68,6 @@ export const TeamCard = ({ name, subtitle, image, itemKey, links }: TTeamCardPro
             </ul>
           </div>
           <div className="flex items-center gap-2">
-            {/* <SocialLink href={links.facebook}>
-              <Facebook />
-            </SocialLink>
-            <SocialLink href={links.twitter}>
-              <Twitter />
-            </SocialLink> */}
             <Button onClick={handleFlip}>
               <span className="lg:text-lg">{t('back')}</span>
             </Button>

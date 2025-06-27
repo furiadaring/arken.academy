@@ -1,15 +1,15 @@
-import { auth } from '@/auth'
-import { getTranslations } from 'next-intl/server'
+'use client'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Burger } from './burger'
 import { HeaderWrapper } from './header-wrapper'
 import LocaleSwitcher from './lang-switcher'
 
-export const Header = async () => {
-  const session = await auth()
-  const t = await getTranslations('menu')
-
+export const Header = ({ session }: { session: boolean }) => {
+  const t = useTranslations('menu')
+  const pathname = usePathname()
   const links = [
     { href: '/', label: t('home') },
     { href: '/packages', label: t('packages') },
@@ -18,6 +18,8 @@ export const Header = async () => {
     { href: '/#contacts', label: t('contacts') },
     { href: session ? '/account/all-packages' : '/login', label: session ? t('account') : t('enter') },
   ]
+
+  const isHome = pathname === '/'
 
   return (
     <HeaderWrapper>
@@ -32,9 +34,13 @@ export const Header = async () => {
             height={48}
           />
         </Link>
-        <div className="container mx-auto hidden w-full max-w-[1240px] items-center justify-between space-x-2 font-light text-white lg:flex">
+        <div className="container mx-auto hidden w-full max-w-[1240px] items-center justify-between space-x-2 font-light lg:flex">
           {links.slice(0, 3).map((link) => (
-            <Link key={link.href} href={link.href} className="hover:text-accent tracking-wider">
+            <Link
+              key={link.href}
+              href={link.href}
+              className={isHome ? 'text-white' : 'text-text' + ' hover:text-accent tracking-wider'}
+            >
               {link.label}
             </Link>
           ))}
@@ -50,7 +56,11 @@ export const Header = async () => {
           </Link>
           <LocaleSwitcher />
           {links.slice(3).map((link) => (
-            <Link key={link.href} href={link.href} className="hover:text-accent tracking-wider">
+            <Link
+              key={link.href}
+              href={link.href}
+              className={isHome ? 'text-white' : 'text-text' + ' hover:text-accent tracking-wider'}
+            >
               {link.label}
             </Link>
           ))}

@@ -1,16 +1,12 @@
 import { useTranslations } from 'next-intl'
 
 import { signIn } from '@/auth'
-import { GoogleIcon, MailRuIcon, PasswordIcon, RegisterIcon, YandexIcon } from '@/components/shared/icons'
+import { GoogleIcon, PasswordIcon, RegisterIcon } from '@/components/shared/icons'
 import { LoginBtn } from '@/components/shared/login-btn'
 import { SectionTitle } from '@/components/shared/section-title'
 import Link from 'next/link'
 
-const btns = [
-  { title: 'Google', icon: <GoogleIcon /> },
-  { title: 'Yandex', icon: <YandexIcon /> },
-  { title: 'MailRu', icon: <MailRuIcon /> },
-]
+const btns = [{ title: 'Google', icon: <GoogleIcon /> }]
 
 export default function LoginPage() {
   const t = useTranslations('login')
@@ -38,14 +34,14 @@ export default function LoginPage() {
             <LoginBtn title={t('login')} icon={<PasswordIcon />} />
           </Link>
           <div className="flex items-center justify-center gap-4 py-6">
-            <span className="h-[1px] w-full bg-white/10"></span>
-            <p className="text-center font-light text-white/60">{t('or')}</p>
-            <span className="h-[1px] w-full bg-white/10"></span>
+            <span className="bg-text/15 h-[1px] w-full"></span>
+            <p className="text-text/60 shrink-0 text-center font-light">{t('or')}</p>
+            <span className="bg-text/15 h-[1px] w-full"></span>
           </div>
           <Link href="/auth?register=true">
             <LoginBtn title={t('register')} icon={<RegisterIcon />} />
           </Link>
-          <p className="pt-6 text-center font-light text-white/60">
+          <p className="text-text pt-6 text-center font-light">
             🔒{' '}
             {t.rich('policy', {
               policy: (chunks) => <Link href="/policy/privacy">{chunks}</Link>,

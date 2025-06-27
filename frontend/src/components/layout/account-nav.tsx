@@ -13,13 +13,13 @@ export const AccountNav = () => {
   const messages = useMessages()
   const links = messages.account.links as TLinks[]
   return (
-    <nav className="hidden border-r border-[#252525] lg:block">
-      <ul className="space-y-4">
+    <nav className="hidden border-r border-[#EEF1F4] lg:block">
+      <ul className="mr-3 space-y-4">
         {links.map((link, index) => (
           <li key={link.href}>
             <Link
               href={link.href}
-              className={`${pathname === link.href ? 'bg-[#202020]' : ''} flex w-full items-center gap-2 rounded-2xl p-6 hover:text-lime-400`}
+              className={`${pathname === link.href ? 'badge-border' : ''} hover:text-accent flex w-full items-center gap-2 rounded-2xl p-6`}
             >
               <Image src={icons[index]} alt={link.label} />
               <span>{link.label}</span>

@@ -13,7 +13,7 @@ export const VariantsCard = ({ className, icon, title, subtitle, features, price
   const t = useTranslations('packages')
   return (
     <div
-      className={`rounded-[35px] border-2 border-white/60 px-3 py-4 lg:px-7.5 lg:py-6 ${className} flex h-full flex-col lg:relative lg:z-20`}
+      className={`rounded-[35px] border-[0.88px] border-[#FFFFFF1A] px-3 py-4 lg:px-7.5 lg:py-6 ${className} flex h-full flex-col lg:relative lg:z-20`}
     >
       <div className="flex flex-col border-b border-[#00000033] pb-2.5 lg:min-h-[236px]">
         <div className={`mb-3 flex items-center ${icon ? 'justify-between' : 'justify-center lg:justify-start'} gap-2`}>
@@ -23,8 +23,8 @@ export const VariantsCard = ({ className, icon, title, subtitle, features, price
         <p className="grow text-sm font-light">{subtitle}</p>
         <p className="mt-2 text-sm tracking-tight text-[#00000099] lg:mt-4">{t('hero.priceLabel')}</p>
 
-        <p className="mt-2 w-min rounded-[40px] bg-[#0D0D0C] px-10 py-0.5 lg:mt-6">
-          <span className="text-[20px] leading-[38px] text-[#E67935]">${price}</span>
+        <p className="badge-border mt-2 w-min rounded-[40px] px-10 py-0.5 lg:mt-6">
+          <span className="text-accent text-[20px] leading-[38px]">${price}</span>
         </p>
       </div>
       <div className="flex flex-1 flex-grow flex-col">
@@ -50,7 +50,7 @@ export const VariantsCard = ({ className, icon, title, subtitle, features, price
           })}
         </ul>
         <Link href={{ pathname: '/payment-details', query: { price, package: title, name } }}>
-          <Button size="lg" variant="secondary" className="mt-auto !bg-[#0D0D0C]">
+          <Button size="lg" className="mt-auto">
             {t('hero.chooseBtn')}
           </Button>
         </Link>

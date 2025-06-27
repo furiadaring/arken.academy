@@ -141,7 +141,7 @@
   },
   "login": {
     "title": "Log in to your personal account",
-    "subtitle": "You can log in through trusted platforms or register",
+    "subtitle": "You can log in through trusted platform or register",
     "btn": "Log in via",
     "policy": "By logging in, you agree to the <policy> privacy policy </policy>",
     "or": "or",
@@ -152,7 +152,7 @@
     "titleRegister": "Registration",
     "subtitleRegister": "Fill out the registration form",
     "titleLogin": "Log in to your personal account",
-    "subtitleLogin": "You can log in through trusted platforms or register",
+    "subtitleLogin": "You can log in through trusted platform or register",
     "name": "Name",
     "email": "Email",
     "password": "Password",
@@ -164,7 +164,11 @@
     "passwordError": "Password must be at least 6 characters",
     "forgotPassword": "Forgot Password?",
     "resetPassword": "Reset Password",
-    "emailSent": "Please follow the link in the email we sent to {email}. Check your spam folder if you don't see it."
+    "emailSent": "Please follow the link in the email we sent to {email}. Check your spam folder if you don't see it.",
+    "isNotRegisteredYet": "You are not registered yet?",
+    "haveAccount": "Do you have an account?",
+    "successMessageRegister": "You have successfully registered",
+    "successMessageLogin": "You have successfully logged in"
   },
   "resetPassword": {
     "title": "Reset Password",
@@ -233,7 +237,7 @@
         "title": "Basic Plan",
         "subtitle": "Master the basics of investing and confidently use a trading platform to avoid common beginner mistakes and lay the foundation for your financial strategy.",
         "features": [
-          "<b>Duration:</b> 1 week",
+          "<b> Autotrading on the basis of artificial intelligence</b>",
           "<b>Format:</b> Lessons + practical sessions",
           "<b>Topics:</b> Basics of investing, trading platform overview, risk management principles",
           "<b>Support:</b> Curator"
@@ -245,7 +249,7 @@
         "title": "Advanced Plan",
         "subtitle": "Dive into the stock market, learn to analyze ETFs and bonds, and create your own investment portfolio for stable growth.",
         "features": [
-          "<b>Duration:</b> 1 week",
+          "<b> Autotrading on the basis of artificial intelligence</b>",
           "<b>Format:</b> Lessons + practical sessions",
           "<b>Topics:</b> Stock market, bonds, ETFs, fundamental analysis",
           "<b>Support:</b> Curator"
@@ -257,7 +261,7 @@
         "title": "Pro Plan",
         "subtitle": "Understand IPO intricacies, hedging, and trading psychology. Sharpen analytical skills and decision-making on volatile markets like professionals.",
         "features": [
-          "<b>Duration:</b> 1 month",
+          "<b> Autotrading on the basis of artificial intelligence</b>",
           "<b>Format:</b> Lessons, case studies, group Zoom sessions",
           "<b>Topics:</b> IPO, hedging, technical analysis, trading psychology",
           "<b>Support:</b> Personal mentor",
@@ -271,7 +275,7 @@
         "title": "Master Plan",
         "subtitle": "Learn crypto markets, agricultural assets, and offshore strategies to establish long-term capital growth and economic cycle resilience.",
         "features": [
-          "<b>Duration:</b> 12 months",
+          "<b> Autotrading on the basis of artificial intelligence</b>",
           "<b>Format:</b> Weekly reviews + access to calendar and analytics",
           "<b>Topics:</b> Cryptocurrencies, agricultural assets, taxes and offshore strategies, long-term capital growth strategies",
           "<b>Support:</b> Consultations with a personal mentor",
@@ -285,7 +289,7 @@
         "title": "VIP Investor Package",
         "subtitle": "Get an individual program with priority support, deep macro analysis, and access to exclusive analytics. For those building capital as a project — systematically and ambitiously.",
         "features": [
-          "<b>Duration:</b> 12 months",
+          "<b> Autotrading on the basis of artificial intelligence</b>",
           "<b>Format:</b> Full program, tailored to goals",
           "<b>Topics:</b> Personalized approach, venture investments, macroeconomic analysis",
           "<b>Support:</b> Priority consultations and personalized recommendations",

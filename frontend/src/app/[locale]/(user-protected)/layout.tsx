@@ -10,7 +10,7 @@ export default async function ProtectedLayout({ children }: { children: React.Re
   }
   return (
     <>
-      <Header />
+      <Header session={!!session} />
       <main className="mt-[80px] lg:mt-0">{children}</main>
     </>
   )

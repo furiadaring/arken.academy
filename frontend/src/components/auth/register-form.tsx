@@ -36,7 +36,7 @@ export const RegisterForm = () => {
         name="name"
         type="text"
         placeholder={t('name')}
-        className="w-full rounded-[64px] border border-white/15 bg-white/10 py-5 pl-14"
+        className="border-text/15 bg-background/10 w-full rounded-[64px] border py-5 pl-14"
         required
       />
       <input
@@ -44,14 +44,14 @@ export const RegisterForm = () => {
         name="email"
         type="email"
         placeholder={t('email')}
-        className="w-full rounded-[64px] border border-white/15 bg-white/10 py-5 pl-14"
+        className="border-text/15 bg-background/10 w-full rounded-[64px] border py-5 pl-14"
         required
       />
       <input
         name="password"
         type="password"
         placeholder={t('password')}
-        className="w-full rounded-[64px] border border-white/15 bg-white/10 py-5 pl-14"
+        className="border-text/15 bg-background/10 w-full rounded-[64px] border py-5 pl-14"
         required
       />
       <Button type="submit" className="mt-3 py-4" disabled={isLoading}>

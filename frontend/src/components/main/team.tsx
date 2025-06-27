@@ -10,14 +10,6 @@ import { TeamCard } from './team.card'
 
 const images = [one, two, three, four, five]
 
-const links = [
-  { facebook: 'https://www.facebook.com/profile.php?id=61573705956668', twitter: 'https://x.com/Amir_Najafov' },
-  { facebook: 'https://www.facebook.com/rus.aitbaev/', twitter: 'https://x.com/rustam_aitbaev' },
-  { facebook: 'https://www.facebook.com/Maksym.Terekhin', twitter: 'https://x.com/Maksym_Terekhin' },
-  { facebook: 'https://www.facebook.com/IrinaSokolovaaa/', twitter: 'https://x.com/SocolovaIra' },
-  { facebook: 'https://www.facebook.com/profile.php?id=100088886540995', twitter: 'https://x.com/daniel_falkenst' },
-]
-
 export const Team = () => {
   const t = useTranslations('team')
   const messages = useMessages()
@@ -38,7 +30,6 @@ export const Team = () => {
               name={t(`items.${key}.name`)}
               subtitle={t(`items.${key}.subtitle`)}
               image={images[index]}
-              links={links[index]}
             />
           ))}
         </Carousel>
@@ -50,7 +41,6 @@ export const Team = () => {
               name={t(`items.${key}.name`)}
               subtitle={t(`items.${key}.subtitle`)}
               image={images[index]}
-              links={links[index]}
             />
           ))}
           <TeamCardMore className="py-7" />

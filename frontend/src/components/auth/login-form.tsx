@@ -56,7 +56,7 @@ export const LoginForm = () => {
         name="email"
         type="email"
         placeholder="Email"
-        className="w-full rounded-[64px] border border-white/15 bg-white/10 py-5 pl-14"
+        className="border-text/15 bg-background/10 w-full rounded-[64px] border py-5 pl-14"
         required
         onChange={(e) => setEmail(e.target.value)}
       />
@@ -64,11 +64,11 @@ export const LoginForm = () => {
         name="password"
         type="password"
         placeholder="Password"
-        className="w-full rounded-[64px] border border-white/15 bg-white/10 py-5 pl-14"
+        className="border-text/15 bg-background/10 w-full rounded-[64px] border py-5 pl-14"
         required
       />
       <div className="flex items-center justify-between py-2 text-sm font-light">
-        <span className="text-white/60">{t('forgotPassword')}</span>
+        <span className="text-text/60">{t('forgotPassword')}</span>
         <button type="button" onClick={handleSendMail} className="cursor-pointer hover:scale-105">
           {t('resetPassword')}
         </button>

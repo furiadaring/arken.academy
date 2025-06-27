@@ -24,11 +24,11 @@ export default function RegisterPage() {
         <div className="mx-auto w-full max-w-[470px] space-y-3">
           {haveAccount ? <LoginForm /> : <RegisterForm />}
           <div className="flex items-center justify-center gap-4 py-6">
-            <span className="h-[1px] w-full bg-white/10"></span>
-            <p className="shrink-0 text-center font-light text-white/60">
+            <span className="bg-text/15 h-[1px] w-full"></span>
+            <p className="text-text/60 shrink-0 text-center font-light">
               {haveAccount ? t('isNotRegisteredYet') : t('haveAccount')}
             </p>
-            <span className="h-[1px] w-full bg-white/10"></span>
+            <span className="bg-text/15 h-[1px] w-full"></span>
           </div>
           <LoginBtn
             onClick={() => setHaveAccount(!haveAccount)}
