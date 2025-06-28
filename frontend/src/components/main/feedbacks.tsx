@@ -16,7 +16,7 @@ export const Feedbacks = () => {
     <section id="feedbacks">
       <div className="container mx-auto max-w-[1280px] pb-5 lg:pt-16">
         <h3 className="text-title px-3">{t('title')}</h3>
-        <div className="items-center gap-5 lg:flex lg:justify-between">
+        <div className="items-center gap-5 lg:flex lg:flex-row-reverse lg:justify-between">
           <div className="w-full lg:w-[48%]">
             <div className="px-3">
               <SectionTitle className="pt-5 pb-4 !text-lg lg:mt-8 lg:text-left lg:!text-[28px]">

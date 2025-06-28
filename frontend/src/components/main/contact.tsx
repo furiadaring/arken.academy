@@ -66,7 +66,7 @@ export const Contact = () => {
         <div className="lg:flex lg:gap-6 lg:[&>*]:flex-1">
           <div>
             <div className="mx-auto w-4/5 lg:mx-0 lg:w-1/2">
-              <Card className="badge-border py-4">
+              <Card className="badge-border !bg-background py-4">
                 <div className="mx-auto flex items-center gap-5">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path

@@ -99,27 +99,30 @@ export const LinkButton = ({ children, link, variant = 'primary', className, siz
   return (
     <Link href={link} className={cn(buttonVariants({ variant, size }), '', className)}>
       <span className="-ml-5 truncate">{children}</span>
-      <span className="absolute top-1/2 right-2 mt-0.5 h-5 w-5 -translate-y-1/2 transition-all duration-300 ease-in-out group-hover:rotate-12">
-        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clipPath="url(#clip0_2428_1470)">
+      <span
+        className={`h-5 w-5 pt-0.5 transition-all duration-300 ease-in-out group-hover:rotate-12 lg:h-7 lg:w-7 ${size === 'sm' ? 'h-5 w-5' : 'h-7 w-7'}`}
+      >
+        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" width="24" height="24" rx="12" fill="white" />
+          <g clipPath="url(#clip0_2669_3544)">
             <path
-              d="M1.62545 8.91357L17.7793 8.91357"
-              stroke="white"
-              strokeWidth="2"
+              d="M7.2503 11.9424L18.0195 11.9424"
+              stroke="#FB8138"
+              strokeWidth="1.2"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             <path
-              d="M9.70238 0.836879L17.7793 8.9138L9.70237 16.9907"
-              stroke="white"
-              strokeWidth="2"
+              d="M12.6349 6.55792L18.0195 11.9425L12.6349 17.3271"
+              stroke="#FB8138"
+              strokeWidth="1.2"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
           </g>
           <defs>
-            <clipPath id="clip0_2428_1470">
-              <rect width="18" height="18" fill="white" transform="translate(18.5 18) rotate(-180)" />
+            <clipPath id="clip0_2669_3544">
+              <rect width="12" height="12" fill="white" transform="translate(18.5 18) rotate(-180)" />
             </clipPath>
           </defs>
         </svg>

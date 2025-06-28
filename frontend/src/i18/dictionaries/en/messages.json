@@ -404,6 +404,53 @@
             "Sending informational and marketing messages (with your consent).",
             "Conducting user behavior analysis and improving platform quality."
           ]
+        },
+        {
+          "title": "3. Transfer of data to third parties",
+          "subtitle": "We may transfer your data to third parties in the following cases:",
+          "items": [
+            "Payment systems and technical subcontractors — for the performance of services under the contract.",
+            "Marketing partners — with your consent.",
+            "Government agencies — in case of a legal request.",
+            "In the framework of merger, sale of assets or transfer of business — upon compliance with data protection obligations."
+          ]
+        },
+        {
+          "title": "4. Cookies and analytics",
+          "subtitle": "We use cookies for:",
+          "items": [
+            "Saving user preferences.",
+            "Collecting statistics on website visits and user behavior (for example, using Google Analytics, Meta Pixel and other analytics tools).",
+            "Running advertising campaigns and retargeting."
+          ]
+        },
+        {
+          "title": "5. Your consent",
+          "subtitle": "You can disable cookies in your browser settings, but this may affect the functionality of the site."
+        },
+        {
+          "title": "6. Information protection",
+          "subtitle": "We take technical, administrative and organizational measures to protect your data from unauthorized access, modification, disclosure or destruction."
+        },
+        {
+          "title": "7. User rights",
+          "subtitle": "You have the right to:",
+          "items": [
+            "Request information about your data.",
+            "Demand the correction or deletion of your personal data.",
+            "Limit or object to the processing of your data.",
+            "Withdraw consent to processing (in cases where it is necessary).",
+            "File a complaint with the regulatory authority for data protection."
+          ]
+        },
+        {
+          "title": "8. Changes to the policy",
+          "subtitle": "We reserve the right to make changes to this Policy at any time. The updated version will be published on the website with the date of the last change."
+        },
+        {
+          "title": "9. Contact information",
+          "subtitle": "If you have questions about this Policy or the processing of your personal data, please contact us:",
+          "items": ["Arken Academy", "Email: info@arkenacademy.com", "Site: https://arkenacademy.com"]
         }
       ]
     },
@@ -421,9 +468,39 @@
           "items": [
             "The refund request was made within 24 hours of payment.",
             "The user did not gain access to paid materials.",
-            "Payment was made directly via the official website https://arken.academy.",
+            "Payment was made directly via the official website https://arkenacademy.com.",
             "The user provides accurate information for transaction identification."
           ]
+        },
+        {
+          "title": "3. Refund Rejection Conditions",
+          "subtitle": "Refunds are not processed if:",
+          "items": [
+            "More than 24 hours have passed since the payment.",
+            "The user has gained access to paid materials.",
+            "The access was granted via a voucher or within a limited-time offer.",
+            "The refund request is made for subjective reasons (e.g., \"decided to give up\", \"expected something else\", \"simply didn't like it\")"
+          ]
+        },
+        {
+          "title": "4. Refund Procedure",
+          "subtitle": "To submit a refund request, please contact us at:",
+          "items": [
+            "info@arkenacademy.com",
+            "or through the feedback form on the website.",
+            "In the letter, specify:",
+            "Name and email, specified at the time of payment",
+            "Date and time of payment",
+            "Reason for the refund request"
+          ]
+        },
+        {
+          "title": "5. Refund Form",
+          "subtitle": "Funds are returned in the same way as the payment was made, with a deduction of the payment system commission (if applicable)."
+        },
+        {
+          "title": "6. Changes to the policy",
+          "subtitle": "We reserve the right to change this refund policy at any time. The updated version will be published on the website with the date of the last change."
         }
       ]
     }

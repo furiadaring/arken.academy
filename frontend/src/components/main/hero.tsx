@@ -8,13 +8,13 @@ import Link from 'next/link'
 export const Hero = async ({ isLoggedIn }: { isLoggedIn: boolean }) => {
   const t = await getTranslations('hero')
   return (
-    <section className="text-gradient relative bg-[#181A1B] lg:h-[calc(100svh-80px+80px)]">
+    <section className="text-gradient relative min-h-[calc(100svh-80px+80px)] bg-[#181A1B]">
       <div className="pointer-events-none absolute inset-0 -top-[100px] bottom-0 -z-10 flex w-full items-end justify-between bg-[#181A1B]">
         <div className="relative">
-          <Image src={cellsImg} alt="cells left" priority />
+          <Image src={cellsImg} alt="cells left" priority quality={100} fill />
         </div>
-        <div className="scale-x-[-1]">
-          <Image src={cellsImg} alt="cells right" priority />
+        <div className="hidden scale-x-[-1] lg:block">
+          <Image src={cellsImg} alt="cells right" priority quality={100} />
         </div>
       </div>
       <div className="container mx-auto max-w-[1280px] px-3 pt-1">
@@ -51,20 +51,25 @@ export const Hero = async ({ isLoggedIn }: { isLoggedIn: boolean }) => {
               </p>
             </div>
           </div>
-          <div className="relative ml-[10%] overflow-hidden lg:h-[761px] lg:w-[450px]">
-            <Image src={phone} alt="phone" className="mt-0.5" priority />
+          <div className="relative ml-[10%] h-[515px] w-[303px] overflow-hidden lg:h-[661px] lg:w-[450px]">
+            <Image
+              src={phone}
+              alt="phone"
+              className="mt-0.5"
+              priority
+              quality={100}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
           </div>
           <div className="absolute top-1/2 left-1/2 -z-10 h-1/3 w-1/6 -translate-y-1/2 rounded-[586px] bg-[#FB8138]/40 blur-[300px]"></div>
         </div>
       </div>
-      <div className="pointer-events-none absolute inset-x-0 -bottom-[1%] -z-10 flex w-full scale-y-[-1] items-end justify-between">
+      <div className="pointer-events-none absolute inset-x-0 -bottom-[1%] -z-10 hidden w-full scale-y-[-1] items-end justify-between lg:flex">
         <div className="relative">
           <Image src={cellsImg} alt="cells left" priority />
         </div>
       </div>
-      {/* <div className="hidden scale-x-[-1] lg:block">
-        <Image src={cellsImg} alt="cells right" priority />
-      </div> */}
     </section>
   )
 }

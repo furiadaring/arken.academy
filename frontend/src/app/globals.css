@@ -129,7 +129,8 @@ body {
   position: absolute;
   inset: 0;
   border-radius: 64px;
-  padding: 2px;
+  padding: 3px;
+
   background: linear-gradient(108.75deg, #fa8038 7.23%, #ae2003 91.17%);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,

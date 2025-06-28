@@ -20,7 +20,7 @@
 
   "advantages": {
     "title": "Neden Bizi Seçmelisiniz?",
-    "subtitle": "Ticaret ve yatırım dünyasında profesyonellere güvenmek çok önemlidir. <important>Alphabit</important> sadece bir online akademi değil, borsada ve kripto para piyasalarında düzenli gelir elde etmek isteyenler için eksiksiz bir ekosistemdir. Sadece teorik bilgi değil, uzman rehberliğinde pratik de sunuyoruz, böylece her öğrenci güvenle kâr edebilir.",
+    "subtitle": "Ticaret ve yatırım dünyasında profesyonellere güvenmek çok önemlidir. <important>Arken</important> sadece bir online akademi değil, borsada ve kripto para piyasalarında düzenli gelir elde etmek isteyenler için eksiksiz bir ekosistemdir. Sadece teorik bilgi değil, uzman rehberliğinde pratik de sunuyoruz, böylece her öğrenci güvenle kâr edebilir.",
     "advItemsTitle": "Temel Avantajlarımız:",
     "advItems": [
       {
@@ -76,7 +76,7 @@
       "Her modülden sonra otomatik hata düzeltme ve analiz",
       "Her alan için kişisel mentor desteği",
       "Aktif yatırımcılar ve analistlerden video dersleri ve analizler",
-      "Alphabit.Academy yatırım kulübünde öğrenmeye devam etme fırsatı"
+      "Arken Academy yatırım kulübünde öğrenmeye devam etme fırsatı"
     ],
     "advantagesTitle": "Esnek Eğitim Programı",
     "advantagesSubTitle": "— Çalışmalarınızı iş veya diğer görevlerle dengeleyerek kendi temponuzda öğrenme imkânı."
@@ -364,7 +364,7 @@
   "policy": {
     "privacy": {
       "title": "Gizlilik Politikası",
-      "subtitle": "Bu Gizlilik Politikası, Alphabit Academy'nin (bundan sonra 'Biz', 'Platformumuz', 'Şirket' olarak anılacaktır) kullanıcıların kişisel verilerini (bundan sonra 'Kullanıcı', 'Siz' olarak anılacaktır) nasıl topladığını, kullandığını, sakladığını ve koruduğunu açıklamaktadır. https://alphabit.academy web sitesini ve ilgili hizmetlerini kullanırken.",
+      "subtitle": "Bu Gizlilik Politikası, Arken Academy'nin (bundan sonra 'Biz', 'Platformumuz', 'Şirket' olarak anılacaktır) kullanıcıların kişisel verilerini (bundan sonra 'Kullanıcı', 'Siz' olarak anılacaktır) nasıl topladığını, kullandığını, sakladığını ve koruduğunu açıklamaktadır. https://arkenacademy.com web sitesini ve ilgili hizmetlerini kullanırken.",
       "items": [
         {
           "title": "1. Bilgi Toplama",
@@ -387,12 +387,59 @@
             "Bilgilendirme ve pazarlama mesajları göndermek (onayınızla).",
             "Kullanıcı davranış analizi yapmak ve platformun kalitesini artırmak."
           ]
+        },
+        {
+          "title": "3. Kişisel Verilerin Üçüncü Taraflara Transferi",
+          "subtitle": "Toplanan veriler şu amaçlarla kullanılır:",
+          "items": [
+            "Ödeme sistemleri ve teknik subcontractors — for the performance of services under the contract.",
+            "Pazarlama ortakları — onayınızla.",
+            "Devlet kurumları — yasal taleplerde.",
+            "Birleşme, varlıkların satışı veya işletmenin transferi — veri koruma yükümlülüklerine uygun olarak."
+          ]
+        },
+        {
+          "title": "4. Çerezler ve Analitik",
+          "subtitle": "Çerezler ve analitik için kullanıyoruz:",
+          "items": [
+            "Kullanıcı terciplerini kaydetmek.",
+            "Web sitesi ziyaretlerini ve kullanıcı davranışını toplamak (örneğin, Google Analytics, Meta Pixel ve diğer analitik araçları kullanarak).",
+            "Reklam kampanyalarını ve retargeting."
+          ]
+        },
+        {
+          "title": "5. Onayınız",
+          "subtitle": "Çerezleri tarayıcınızda devre dışı bırakabilirsiniz, ancak bu sitenin işlevselliğini etkileyebilir."
+        },
+        {
+          "title": "6. Bilgi Koruma",
+          "subtitle": "Verilerinize istenmeyen erişim, değiştirme, açıklanma veya yok edilmesini önlemek için teknik, yasal ve organizasyonel önlemler alıyoruz."
+        },
+        {
+          "title": "7. Kullanıcı Hakları",
+          "subtitle": "Kullanıcı hakları:",
+          "items": [
+            "Verileriniz hakkında bilgi istemek.",
+            "Kişisel verilerinizi düzeltme veya silme talebi.",
+            "Verilerinizin işlenmesini kısıtma veya istisnai olarak istemek.",
+            "Veri işleme onayını kaldırma (gerekli durumlarda).",
+            "Veri koruma yetkilisine şikayet bildirmek."
+          ]
+        },
+        {
+          "title": "8. Politika Değişiklikleri",
+          "subtitle": "Bu politika herhangi bir zamanda değiştirilebilir. Güncellenmiş versiyon, son değişiklik tarihiyle birlikte web sitesinde yayınlanacaktır."
+        },
+        {
+          "title": "9. İletişim Bilgileri",
+          "subtitle": "Bu politika veya kişisel verilerin işleme konusunda sorularınız varsa, lütfen bize şu şekilde iletişime geçin:",
+          "items": ["Arken Academy", "Email: info@arkenacademy.com", "Site: https://arkenacademy.com"]
         }
       ]
     },
     "refund": {
       "title": "İade Politikası",
-      "subtitle": "Yüksek kaliteli bir eğitim deneyimi sunmaya çalışıyoruz. Bu iade politikası, Alphabit Academy platformunda (bundan sonra 'Platform', 'Biz', 'Şirket' olarak anılacaktır) satın alınan eğitim paketleri ve materyaller için iade koşullarını düzenler.",
+      "subtitle": "Yüksek kaliteli bir eğitim deneyimi sunmaya çalışıyoruz. Bu iade politikası, Arken Academy platformunda (bundan sonra 'Platform', 'Biz', 'Şirket' olarak anılacaktır) satın alınan eğitim paketleri ve materyaller için iade koşullarını düzenler.",
       "items": [
         {
           "title": "1. Genel İlke",
@@ -404,9 +451,39 @@
           "items": [
             "İade talebi ödemenin ardından 24 saat içinde yapılmıştır.",
             "Kullanıcı ücretli materyallere erişim sağlamamıştır.",
-            "Ödeme doğrudan resmi web sitesi https://alphabit.academy üzerinden yapılmıştır.",
+            "Ödeme doğrudan resmi web sitesi https://arkenacademy.com üzerinden yapılmıştır.",
             "Kullanıcı, işlem tanımlaması için doğru bilgiler sağlar."
           ]
+        },
+        {
+          "title": "3. İade Reddedilme Koşulları",
+          "subtitle": "İade aşağıdaki tüm koşullar yerine getirildiğinde yapılmaz:",
+          "items": [
+            "Ödeme sonrası 24 saat geçti.",
+            "Kullanıcı ücretli materyallere erişim sağlamıştır.",
+            "Erişim bir voucher veya sınırlı süreli teklif aracılığıyla verilmiş olmuştur.",
+            "İade talebi öznel nedenlerle yapılmıştır (örneğin, \"vermek istemedim\", \"başka bir şey bekliyordum\", \"sadece beğenmedim\")"
+          ]
+        },
+        {
+          "title": "4. İade Süreci",
+          "subtitle": "İade talebi için lütfen bize şu şekilde iletişime geçin:",
+          "items": [
+            "info@arkenacademy.com",
+            "veya web sitesindeki geri bildirim formu aracılığıyla.",
+            "Harfli, belirtin:",
+            "Ödeme yapma sırasında belirttiğiniz ad ve e-posta",
+            "Ödeme tarihi ve saati",
+            "İade talebinin nedeni"
+          ]
+        },
+        {
+          "title": "5. İade Formu",
+          "subtitle": "Para iadesi ödeme yapma şekliyle aynı şekilde geri verilir, ödeme sistemi komisyonu (uygunsa)."
+        },
+        {
+          "title": "6. Politika Değişiklikleri",
+          "subtitle": "Bu iade politikası herhangi bir zamanda değiştirilebilir. Güncellenmiş versiyon, son değişiklik tarihiyle birlikte web sitesinde yayınlanacaktır."
         }
       ]
     }

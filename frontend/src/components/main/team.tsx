@@ -20,7 +20,7 @@ export const Team = () => {
     <section className="overflow-hidden lg:pt-12" id="about">
       <div className="relative z-11 container mx-auto max-w-[1280px] py-3 pl-3 md:p-3 lg:mt-12 lg:px-0">
         <h3 className="text-title">
-          {t('title')} <br className="lg:hidden" /> Arken.Academy
+          {t('title')} <br className="lg:hidden" /> Arken Academy
         </h3>
         <Carousel className="mt-5 lg:hidden">
           {items.map((key, index) => (

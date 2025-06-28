@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const baseUrl = 'https://arken.academy'
+const baseUrl = 'https://arkenacademy.com'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [

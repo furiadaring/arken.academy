@@ -17,7 +17,7 @@ export const Stats = () => {
       <div className="absolute -top-10 left-0 h-10 w-full rounded-t-[25px] border-t border-[#FFFFFF]/10 bg-white bg-blend-darken lg:-top-24 lg:h-20 lg:rounded-t-[60px]"></div>
       <div className="relative container mx-auto max-w-[1280px] bg-white pl-3">
         <h3 className="text-title">
-          Arken.Academy <br className="lg:hidden" /> {t('title')}
+          Arken Academy <br className="lg:hidden" /> {t('title')}
         </h3>
         <Carousel className="mt-5 lg:mt-15">
           {items.map((key, index) => (
