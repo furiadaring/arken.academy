@@ -37,7 +37,7 @@ export const CurrencyDropdown = ({ defaultValue, onChange }: TCurrencyDropdownPr
     <div className="relative" ref={dropdownRef}>
       <button
         type="button"
-        className="flex min-h-[45px] w-[139px] items-center justify-between rounded-[12px] border border-[#FFFFFF1A] bg-[#1B1B1BB2] px-4 py-2 text-xl font-medium text-white"
+        className="bg-background/20 border-text/60 text-text flex min-h-[45px] w-[139px] items-center justify-between rounded-[12px] border px-4 py-2 text-xl font-medium"
         onClick={() => setIsOpen(!isOpen)}
         style={{ backdropFilter: 'blur(30px)' }}
       >
@@ -56,15 +56,14 @@ export const CurrencyDropdown = ({ defaultValue, onChange }: TCurrencyDropdownPr
 
       {isOpen && (
         <div
-          className="absolute top-full left-0 z-10 mt-1 w-[139px] rounded-[12px] border border-[#FFFFFF1A] bg-[#1B1B1BB2] py-3"
+          className="border-text/60 bg-text/30 absolute top-full left-0 z-10 mt-1 w-[139px] rounded-[12px] border py-3"
           style={{ backdropFilter: 'blur(30px)' }}
         >
           {currencies.map((currency, index) => (
             <button
-              // disabled={GETPAY_CURRENCIES.includes(currency)}
               key={currency}
-              className={`block w-full cursor-pointer px-4 py-3 text-xl font-medium text-white hover:bg-[#FFFFFF0D] disabled:cursor-not-allowed disabled:text-[#FFFFFF4D] ${
-                index < currencies.length - 1 ? 'border-b border-[#FFFFFF1A]' : ''
+              className={`hover:bg-text/20 block w-full cursor-pointer px-4 py-3 text-xl font-medium text-white disabled:cursor-not-allowed disabled:text-[#FFFFFF4D] ${
+                index < currencies.length - 1 ? 'border-text/60 border-b' : ''
               }`}
               onClick={() => handleCurrencySelect(currency)}
             >

@@ -10,19 +10,19 @@
   --font-secondary: var(--font-secondary);
 
   --react-international-phone-height: 55px;
-  --react-international-phone-background-color: #ffffff1a;
-  --react-international-phone-text-color: #ffffff;
+  --react-international-phone-background-color: #eef1f41a;
+  --react-international-phone-text-color: #000000e5;
   --react-international-phone-border-radius: 64px;
-  --react-international-phone-border-color: #ffffff1a;
-  --react-international-phone-country-selector-background-color: #ffffff1a;
-  --react-international-phone-country-selector-background-color-hover: #ffffff1a;
-  --react-international-phone-country-selector-border-color: #ffffff1a;
+  --react-international-phone-border-color: #dedede;
+  --react-international-phone-country-selector-background-color: #fff;
+  --react-international-phone-country-selector-background-color-hover: #dedede;
+  --react-international-phone-country-selector-border-color: #dedede;
   --react-international-phone-country-selector-arrow-color: #e67935;
-  --react-international-phone-dropdown-item-text-color: #ffffff;
-  --react-international-phone-dropdown-item-background-color: #000201;
-  --react-international-phone-dropdown-item-dial-code-color: #ffffff;
-  --react-international-phone-selected-dropdown-item-text-color: #ffffff;
-  --react-international-phone-selected-dropdown-item-background-color: #ffffff1a;
+  --react-international-phone-dropdown-item-text-color: #000000e5;
+  --react-international-phone-dropdown-item-background-color: #fff;
+  --react-international-phone-dropdown-item-dial-code-color: #000000e5;
+  --react-international-phone-selected-dropdown-item-text-color: #000000e5;
+  --react-international-phone-selected-dropdown-item-background-color: #dedede;
   --react-international-phone-dropdown-top: 55;
 }
 

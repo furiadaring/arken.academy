@@ -73,7 +73,7 @@ export const PayportPaymentForm = ({ amount, currency, locale }: TExternalPaymen
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="mb-4 rounded-lg border border-[#FFFFFF]/10 bg-[#1B1B1BB2] p-4">
+      <div className="border-text/60 bg-background/20 mb-4 rounded-lg border p-4">
         <div className="flex justify-between">
           <span>{t('total')}:</span>
           <span className="flex min-h-6 items-center gap-2">

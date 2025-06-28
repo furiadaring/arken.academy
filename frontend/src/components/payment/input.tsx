@@ -26,7 +26,7 @@ export const PaymentInput = ({
       <label className="flex flex-col gap-3">
         <span>{label}</span>
         <input
-          className="rounded-[64px] border border-[#FFFFFF26] bg-white/10 px-6 py-4"
+          className="rounded-[64px] border border-[#DEDEDE] bg-[#EEF1F41A] px-6 py-4"
           name={name}
           type={type}
           placeholder={placeholder}

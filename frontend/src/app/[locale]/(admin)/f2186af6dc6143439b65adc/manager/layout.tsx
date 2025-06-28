@@ -18,7 +18,7 @@ export default async function ManagerDashboardLayout({ children }: { children: R
   return (
     <>
       <AdminHeader links={managerLinks} isLogged={!!accessTokenValue} />
-      <div className="pb-20">{children}</div>
+      <div className="lg:pb-20">{children}</div>
       <AppTabs tabs={managerLinks} />
     </>
   )

@@ -33,7 +33,7 @@ export const UsersTable: FC<UsersTableProps> = ({ users, office }) => {
       data={users}
       className="overflow-x-auto rounded-lg shadow-lg"
       onEdit={office ? handleEditUser : undefined}
-      actionLabel={office ? 'Закрепить' : undefined}
+      actionLabel={office ? 'Bind' : undefined}
     />
   )
 }

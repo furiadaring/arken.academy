@@ -12,6 +12,6 @@ export const bindUser = async (userId: string, officeName: string) => {
     console.error({ error })
     result = error
   }
-  revalidatePath('/CAcQARoXChVhY2N0XzFSNnhpbUdyRUZJd2pibWIovqfFwgYyBoJN/manager/without-promocode')
+  revalidatePath('/f2186af6dc6143439b65adc/manager/without-promocode')
   return result
 }

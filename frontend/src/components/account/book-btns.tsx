@@ -7,12 +7,8 @@ export const BookBtns = () => {
 
   return (
     <div className="mt-5 mb-2 flex flex-col gap-2 backdrop-blur-lg lg:mt-0 lg:flex-row">
-      <Button variant="secondary" className="!bg-[#0D0D0C]" onClick={() => window.open('/api/book', '_blank')}>
-        {t('bookBtn')}
-      </Button>
+      <Button onClick={() => window.open('/api/book', '_blank')}>{t('bookBtn')}</Button>
       <Button
-        variant="secondary"
-        className="!bg-[#0D0D0C]"
         onClick={() => {
           const link = document.createElement('a')
           link.href = 'https://arken.academy/backend-api/v1/book'

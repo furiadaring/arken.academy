@@ -116,13 +116,13 @@ export type TPromo = { code: string; discount: string }
 const phoneRegex = new RegExp(/^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/)
 
 export const paymentDataFSchema = z.object({
-  name: z.string().min(2, { message: 'Имя должно содержать не менее 2 символов' }),
-  email: z.string().email({ message: 'Неверный email' }),
+  name: z.string().min(2, { message: 'Name should contain at least 2 characters' }),
+  email: z.string().email({ message: 'Invalid email' }),
   phoneNumber: z
     .string()
-    .min(10, { message: 'Неверный номер телефона' })
-    .refine((value) => phoneRegex.test(value), { message: 'Неверный номер телефона' }),
-  country: z.string().min(2, { message: 'Страна должна содержать не менее 2 символов' }),
+    .min(10, { message: 'Invalid phone number' })
+    .refine((value) => phoneRegex.test(value), { message: 'Invalid phone number' }),
+  country: z.string().min(2, { message: 'Country should contain at least 2 characters' }),
   payedAmount: z.string().transform((value) => Number(value)),
   promocodeName: z.string().optional(),
   packageName: z.string(),

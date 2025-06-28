@@ -2,31 +2,31 @@ import { TCurrency } from '@/types'
 
 export const superLinks = [
   {
-    href: '/CAcQARoXChVhY2N0XzFSNnhpbUdyRUZJd2pibWIovqfFwgYyBoJN/dashboard/users',
-    label: 'Все пользователи',
+    href: '/f2186af6dc6143439b65adc/dashboard/users',
+    label: 'Users',
   },
   {
-    href: '/CAcQARoXChVhY2N0XzFSNnhpbUdyRUZJd2pibWIovqfFwgYyBoJN/dashboard/payments',
-    label: 'Платежи',
+    href: '/f2186af6dc6143439b65adc/dashboard/payments',
+    label: 'Payments',
   },
   {
-    href: '/CAcQARoXChVhY2N0XzFSNnhpbUdyRUZJd2pibWIovqfFwgYyBoJN/dashboard/roles',
-    label: 'Роли и доступы',
+    href: '/f2186af6dc6143439b65adc/dashboard/roles',
+    label: 'Roles and access',
   },
 ]
 
 export const managerLinks = [
   {
-    href: '/CAcQARoXChVhY2N0XzFSNnhpbUdyRUZJd2pibWIovqfFwgYyBoJN/manager/all-clients',
-    label: 'Все пользователи',
+    href: '/f2186af6dc6143439b65adc/manager/all-clients',
+    label: 'All clients',
   },
   {
-    href: '/CAcQARoXChVhY2N0XzFSNnhpbUdyRUZJd2pibWIovqfFwgYyBoJN/manager/without-promocode',
-    label: 'Без промокода',
+    href: '/f2186af6dc6143439b65adc/manager/without-promocode',
+    label: 'Without promocode',
   },
   {
-    href: '/CAcQARoXChVhY2N0XzFSNnhpbUdyRUZJd2pibWIovqfFwgYyBoJN/manager/my-clients',
-    label: 'Мои клиенты',
+    href: '/f2186af6dc6143439b65adc/manager/my-clients',
+    label: 'My clients',
   },
 ]
 export const accessTokenExpiresIn = 15 * 60 * 1000
@@ -34,14 +34,14 @@ export const refreshTokenExpiresIn = 7 * 24 * 60 * 60 * 1000
 
 export const variablesStripe = {
   colorPrimary: '#E67935',
-  colorBackground: '#000201',
+  colorBackground: '#fff',
   fontFamily: 'var(--font-primary)',
   borderRadius: '25px',
   fontSizeSm: '12px',
   fontSizeMd: '16px',
-  colorText: '#ffffffff',
+  colorText: '#000',
   colorDanger: '#dc3545',
-  colorSuccess: '#E67935',
+  colorSuccess: 'green',
   spacingUnit: '4px',
   spacingGridRow: '20px',
 }

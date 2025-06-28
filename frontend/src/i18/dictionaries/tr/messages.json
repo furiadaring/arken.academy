@@ -1,0 +1,497 @@
+{
+  "account": {
+    "bookTitle": "Cesur Kararların Kitabı",
+    "bookSubtitle": "\"Cesur Kararların Kitabı\" <span>— ipuçları koleksiyonu veya finans dersi değildir. Sermayesini sıfırdan inşa eden veya mevcut varlıklarını büyütmek isteyenler için bir yol haritasıdır — stratejiler, yaklaşımlar ve 2025 yılında işe yarayan bir zihniyet. İçinde—ilk işlemlerden makro analize, girişim yatırımlarına, vergi optimizasyonuna ve kişisel sermaye modeline kadar adım adım bir çerçeve. Bilgi satışı değil. Piyasa efsaneleri değil. Sadece finansal özerkliğe sistematik bir yol.</span>",
+    "downloadBtn": "İndir",
+    "bookBtn": "Görüntüle",
+    "allPackagesTitle": "Formatınızı seçin. Gerisini biz hallederiz",
+    "emptyTitle": "Paketleriniz burada görünecek.",
+    "emptySubtitle": "İlk adımı atın — uygun bir destek formatı seçin.",
+    "emptyBtn": "Bir paket seçin",
+    "links": [
+      { "label": "Tüm Paketler", "href": "/account/all-packages" },
+      { "label": "Paketlerim", "href": "/account/my-packages" },
+      { "label": "Yardım", "href": "/account/faq" }
+    ],
+    "errorTitle": "Hata",
+    "errorSubtitle": "Veri yüklenirken bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+    "retryBtn": "Tekrar Dene"
+  },
+
+  "advantages": {
+    "title": "Neden Bizi Seçmelisiniz?",
+    "subtitle": "Ticaret ve yatırım dünyasında profesyonellere güvenmek çok önemlidir. <important>Alphabit</important> sadece bir online akademi değil, borsada ve kripto para piyasalarında düzenli gelir elde etmek isteyenler için eksiksiz bir ekosistemdir. Sadece teorik bilgi değil, uzman rehberliğinde pratik de sunuyoruz, böylece her öğrenci güvenle kâr edebilir.",
+    "advItemsTitle": "Temel Avantajlarımız:",
+    "advItems": [
+      {
+        "title": "Kanıtlanmış Yöntemler",
+        "subtitle": " — Binlerce öğrencimize zaten yardımcı olmuş etkili stratejileri öğretiyoruz."
+      },
+      {
+        "title": "Deneyimli Mentorlar",
+        "subtitle": " — Yılların tecrübesine sahip uygulamalı uzmanlar tarafından eğitim alırsınız."
+      },
+      {
+        "title": "Sürükleyici Deneyim",
+        "subtitle": " — Kurslar hem yeni başlayanlara hem de deneyimli yatırımcılara uygundur."
+      },
+      {
+        "title": "Özel Topluluk",
+        "subtitle": " — İşlemleri tartışabileceğiniz ve destek alabileceğiniz profesyonel yatırımcılar kulübüne erişim."
+      },
+      { "title": "Pratik ve Destek", "subtitle": " — Uzmanlarla birlikte gerçek ticaret senaryolarının analizi." },
+      {
+        "title": "Ömür Boyu Erişim",
+        "subtitle": " — Tüm materyaller sonsuza dek sizinle kalır; istediğiniz zaman tekrar göz atabilirsiniz."
+      }
+    ]
+  },
+  "community": {
+    "title": "Topluluğumuza Katılın",
+    "badge": "yatırımcılar topluluğu",
+    "btnText": "Bir Paket Seçin"
+  },
+  "contact": {
+    "badge": "Bize Ulaşın",
+    "title": "Daha fazlasını öğrenmek ister misiniz? Başvuru bırakın",
+    "subtitle": "Adınızı ve telefon numaranızı bırakın — sizi arayacağız, daha fazla bilgi vereceğiz ve size uygun bir kurs seçeceğiz.",
+    "formName": "Adınızı girin",
+    "formPhone": "+90 (_ _ _) _ _ _ - _ _ - _ _",
+    "formBtn": "Başvuru Gönder",
+    "success": "Mesaj başarıyla gönderildi",
+    "error": "Mesaj gönderilemedi",
+    "errorText": "Lütfen tüm alanları doldurun",
+    "nameError": "Lütfen adınızı girin",
+    "phoneError": "Lütfen geçerli bir telefon numarası girin"
+  },
+  "education": {
+    "title": "Eğitim Nasıl Çalışır?",
+    "subtitle": "Eğitim, kendi platformumuz üzerinden çevrimiçi olarak modern dijital araçlarla gerçekleşir. Materyaller, vaka çalışmaları, ödevler ve etkileşimler 7/24 her yerden erişilebilir.",
+    "itemsTitle": "Çevrimiçi eğitim programı şunları içerir:",
+    "items": [
+      "Tüm kurs ve modüllere sınırsız erişim",
+      "Gerçek vaka çalışmalarına dayalı uygulamalı pratik",
+      "Etkileşimli materyaller ve faydalı kısa notlar",
+      "Temalı sohbetlerde katılımcılarla iletişim",
+      "Her modülden sonra otomatik hata düzeltme ve analiz",
+      "Her alan için kişisel mentor desteği",
+      "Aktif yatırımcılar ve analistlerden video dersleri ve analizler",
+      "Alphabit.Academy yatırım kulübünde öğrenmeye devam etme fırsatı"
+    ],
+    "advantagesTitle": "Esnek Eğitim Programı",
+    "advantagesSubTitle": "— Çalışmalarınızı iş veya diğer görevlerle dengeleyerek kendi temponuzda öğrenme imkânı."
+  },
+  "feedbacks": {
+    "title": "Yorumlar",
+    "subtitle": "Sloganlar için değil, sonuçlar için tercih ediliyoruz",
+    "description": "2024 yılında platform mezunlarımızın anket sonuçları",
+    "items": [
+      { "title": "91%", "subtitle": "Eğitimden sonraki ilk 3 ayda ticaret gelirlerinde artış bildirdi" },
+      { "title": "78%", "subtitle": "Özel ticaret veya varlık yönetimi seviyesine geçti" }
+    ],
+    "thirdItemTitle": "89%",
+    "thirdItemSubtitle": "Kursları sektördeki arkadaşlarına ve meslektaşlarına tavsiye ediyor",
+    "btnText": "Bir Paket Seçin"
+  },
+  "footer": {
+    "title": "Bilginin başarı getirdiği bir online akademi. Hem yeni başlayanları hem de deneyimli yatırımcıları borsa ve kripto para piyasaları için gelir stratejilerinde eğitiyoruz.",
+    "navTitle": "Navigasyon",
+    "navItems": ["Ana Sayfa", "Paketler", "Yorumlar", "Hakkımızda", "İletişim"],
+    "docsTitle": "Belgeler",
+    "docsItems": ["Gizlilik Politikası", "İade Politikası"],
+    "contactTitle": "İletişim",
+    "contactAddres": "25 Martin Place, Sydney, NSW 2000",
+    "rulesTitle": "Erişim Kuralları",
+    "rulesDesc": "Bu web sitesinin ve sağlanan hizmetlerin kullanımı belirli ülkelerde kısıtlanmıştır. Bu platformun finansal faaliyetlerinin düzenlendiği ülkelerdeki kullanıcılar için erişim yasaktır, ABD, Kuzey Kore ve Hong Kong dahil, ayrıca 18 yaşından küçük bireyler için.",
+    "riskTitle": "Önemli Risk Bilgisi",
+    "riskDesc": "Bu platformda sunulan finansal araçlar karmaşık olabilir ve tüm kullanıcılar için uygun olmayabilir. CFD'ler (Fark Sözleşmeleri) gibi kaldıraçlı ürünler yüksek risk taşır ve hızlı sermaye kaybına yol açabilir. İşlem yapmadan önce bu araçları tam olarak anladığınızdan ve olası finansal kayıplara hazır olduğunuzdan emin olun.",
+    "copyright": "Tüm hakları saklıdır"
+  },
+  "hero": {
+    "badge": "100% Uzmanlık",
+    "title": "Yatırıma Anlayışla Başlayın",
+    "subtitle": "Piyasa uzmanları tarafından hazırlanmış yapılandırılmış eğitim programları sunuyoruz; analiz, pratik ve destekle erişim. Sermayenizi profesyoneller gibi yönetin.",
+    "button": {
+      "choose": "Bir Paket Seçin",
+      "enter": "Giriş Yap",
+      "account": "Panel"
+    }
+  },
+  "layout": {
+    "title": "Kişiselleştirilmiş Yaklaşımla Finansal Netlik ve Büyüme",
+    "description": "Kanıtlanmış stratejiler, analist desteği ve şeffaf sermaye büyüme yolu. Gereksiz gürültü yok—sadece öz.",
+    "keywords": "Arken Academy, Arken, Academy, education, training, finance"
+  },
+  "login": {
+    "title": "Kişisel hesabınıza giriş yapın",
+    "subtitle": "Güvenilir platformlar aracılığıyla giriş yapabilir veya kaydolabilirsiniz",
+    "btn": "Giriş yap",
+    "policy": "Giriş yaparak <policy> gizlilik politikasını </policy> kabul etmiş olursunuz",
+    "or": "veya",
+    "register": "Kayıt Ol",
+    "login": "Giriş yapmak için kullanıcı adı ve şifre kullanın"
+  },
+  "register": {
+    "titleRegister": "Kayıt Ol",
+    "subtitleRegister": "Kayıt formunu doldurun",
+    "titleLogin": "Kişisel hesabınıza giriş yapın",
+    "subtitleLogin": "Güvenilir platformlar aracılığıyla giriş yapabilir veya kaydolabilirsiniz",
+    "name": "Ad",
+    "email": "E-posta",
+    "password": "Şifre",
+    "btn": "Kayıt Ol",
+    "or": "veya",
+    "login": "Giriş",
+    "nameError": "Ad gerekli",
+    "emailError": "Geçersiz e-posta adresi",
+    "passwordError": "Şifre en az 6 karakter olmalıdır",
+    "forgotPassword": "Şifremi Unuttum?",
+    "resetPassword": "Şifreyi Sıfırla",
+    "emailSent": "Lütfen size gönderdiğimiz e-postadaki bağlantıyı takip edin. Görmüyorsanız spam klasörünü kontrol edin.",
+    "isNotRegisteredYet": "Henüz kayıt olmadınız mı?",
+    "haveAccount": "Bir hesabınız var mı?",
+    "successMessageRegister": "Başarıyla kayıt oldunuz",
+    "successMessageLogin": "Başarıyla giriş yaptınız"
+  },
+  "resetPassword": {
+    "title": "Şifreyi Sıfırla",
+    "subtitle": "Yeni şifrenizi girin",
+    "newPassword": "Yeni Şifre",
+    "confirmPassword": "Şifreyi Onayla",
+    "resetPassword": "Şifreyi Sıfırla",
+    "passwordsDoNotMatch": "Şifreler eşleşmiyor",
+    "invalidToken": "Geçersiz veya süresi dolmuş şifre sıfırlama bağlantısı",
+    "passwordResetSuccess": "Şifre başarıyla sıfırlandı",
+    "passwordResetError": "Şifre sıfırlanırken hata oluştu",
+    "backToLogin": "Girişe dön",
+    "passwordError": "Şifre en az 6 karakter olmalıdır"
+  },
+  "markets": {
+    "title": "En Umut Vadeden Piyasa Segmentlerinde Uzmanlaşın",
+    "items": [
+      {
+        "title": "Hisse Senedi Piyasası",
+        "subtitle": "Şirketleri nasıl değerlendireceğinizi ve kendi yatırım stratejinizi nasıl oluşturacağınızı öğrenin."
+      },
+      {
+        "title": "Emtia Piyasası",
+        "subtitle": "Bir profesyonel gibi analiz edin, fiyat hareketlerini anlayın ve kararlarınızı talep ve verilere göre verin."
+      },
+      {
+        "title": "Vadeli İşlemler",
+        "subtitle": "Türev ürünleri öğrenin, riskleri yönetin ve esnek stratejiler kurun."
+      },
+      {
+        "title": "Kripto Paralar",
+        "subtitle": "Dijital varlıkların mantığını anlayın ve piyasa döngülerinde işlem yapın."
+      },
+      {
+        "title": "Girişim / Özel Sermaye",
+        "subtitle": "Potansiyeli yüksek girişimleri halka arz edilmeden önce tespit etmeyi öğrenin."
+      }
+    ]
+  },
+  "menu": {
+    "home": "Ana Sayfa",
+    "packages": "Paketler",
+    "feedbacks": "Yorumlar",
+    "about": "Hakkımızda",
+    "contacts": "İletişim",
+    "enter": "Giriş Yap",
+    "account": "Panel",
+    "copyright": "Tüm hakları saklıdır"
+  },
+  "packages": {
+    "hero": {
+      "badge": "100% Uzmanlık",
+      "title": "Bir Paket Seçin ve Yolculuğunuza Başlayın",
+      "subtitle": "Akademimiz sadece bir eğitim platformu değil. Gerçek yatırım dünyasının ilkelerine dayalı bir sistemdir.",
+      "subtitle2": "Her kurs, temel bilgiden stratejik düşünmeye, yeni başlayanlardan piyasada kendinden emin katılımcılara kadar bir adımdır.",
+      "marketBtn": "Sermaye Piyasalarını Öğrenin",
+      "chooseBtn": "Seç",
+      "priceLabel": "Paket Fiyatı"
+    },
+    "more": {
+      "title": "Daha Fazlasına Hazır mısınız?",
+      "subtitle": "<b>Premium programlar</b>— piyasayı sadece incelemekle kalmayıp sermayeyi kişisel bir finansal danışman seviyesinde yönetmek isteyenler için."
+    },
+    "variants": [
+      {
+        "title": "Temel Plan",
+        "subtitle": "Yatırımın temellerini öğrenin ve ticaret platformunu güvenle kullanarak yeni başlayanların yaptığı hatalardan kaçının, finansal stratejinizi oluşturun.",
+        "features": [
+          "<b> Otomatik trading yapma yeteneği</b>",
+          "<b>Format:</b> Dersler + pratik seanslar",
+          "<b>Konu Başlıkları:</b> Yatırımın temelleri, ticaret platformu tanıtımı, risk yönetimi prensipleri",
+          "<b>Destek:</b> Mentor"
+        ],
+        "price": "250",
+        "name": "BASE"
+      },
+      {
+        "title": "İleri Plan",
+        "subtitle": "Hisse senedi piyasasına dalın, ETF ve tahvil analizini öğrenin, istikrarlı büyüme için kendi yatırım portföyünüzü oluşturun.",
+        "features": [
+          "<b> Otomatik trading yapma yeteneği</b>",
+          "<b>Format:</b> Dersler + pratik seanslar",
+          "<b>Konu Başlıkları:</b> Hisse senedi piyasası, tahviller, ETF'ler, temel analiz",
+          "<b>Destek:</b> Mentor"
+        ],
+        "price": "1000",
+        "name": "PRO"
+      },
+      {
+        "title": "Pro Plan",
+        "subtitle": "IPO karmaşıklıklarını, hedging ve ticaret psikolojisini anlayın. Volatile piyasalarda analitik becerilerini ve karar alma yeteneklerini profesyonel olarak geliştirin.",
+        "features": [
+          "<b> Otomatik trading yapma yeteneği</b>",
+          "<b>Format:</b> Dersler, durum çalışmaları, Zoom grup seansları",
+          "<b>Konu Başlıkları:</b> IPO, hedging, teknik analiz, ticaret psikolojisi",
+          "<b>Destek:</b> Kişisel mentor",
+          "<b>Erişim:</b> 6 ay",
+          "<b>Bonus:</b> Tek seferlik portföy denetimi"
+        ],
+        "price": "1500",
+        "name": "PROFI"
+      },
+      {
+        "title": "Master Plan",
+        "subtitle": "Kripto piyasalarını, tarım varlıklarını ve denizaltı stratejilerini öğrenin. Uzun vadeli sermaye büyümesini ve ekonomik döngü dayanıklılığını kurun.",
+        "features": [
+          "<b> Otomatik trading yapma yeteneği</b>",
+          "<b>Format:</b> Haftalık inceleme + takvim ve analiz erişimi",
+          "<b>Konu Başlıkları:</b> Kripto para birimleri, tarım varlıkları, vergi ve denizaltı stratejileri, uzun vadeli sermaye büyüme stratejileri",
+          "<b>Destek:</b> Kişisel mentor",
+          "<b>Erişim:</b> 12 ay",
+          "<b>Bonus:</b> Kişisel finansal plan"
+        ],
+        "price": "2500",
+        "name": "MASTER"
+      },
+      {
+        "title": "VIP Yatırımcı Paketi",
+        "subtitle": "Öncelikli destek, derin makro analiz ve özel analizlere erişim ile bireysel bir program alın. Sermayesini bir proje olarak sistemli ve iddialı şekilde büyütmek isteyenler için.",
+        "features": [
+          "<b> Otomatik trading yapma yeteneği</b>",
+          "<b>Format:</b> Tam program, hedeflere göre uyarlanmış",
+          "<b>Konu Başlıkları:</b> Kişisel yaklaşım, girişim yatırımları, makroekonomik analiz",
+          "<b>Destek:</b> Öncelikli danışmanlıklar ve kişiselleştirilmiş öneriler",
+          "<b>Erişim:</b> ömür boyu",
+          "<p>Bonus:</p>",
+          "Kapalı analiz kütüphanesine erişim",
+          "Portföy stratejisi ayda bir güncellenmesi (hedef ve planlarınıza göre)"
+        ],
+        "price": "5000",
+        "name": "VIP"
+      }
+    ],
+    "auth": {
+      "sectionTitle": "Akıllıca yatırım yapın, şansa bırakmayın",
+      "sectionSubtitle": "Sermayenizi yönetmeyi öğrenin",
+      "blockTitle": "Yetkilendirin ve tüm paketlere erişim kazanın",
+      "blockSubtitle": "Uygun programı seçin ve yatırım yolculuğunuza bugün başlayın — destek, yapı ve güvenle.",
+      "btn": "Yetkilendir",
+      "account": "Panel"
+    },
+    "faq": {
+      "title": "Sıkça Sorulan Sorular",
+      "items": [
+        {
+          "question": "Bu programlar kimler için?",
+          "answer": "Bu programlar piyasada yatırım yapmayı ve kazanç elde etmeyi öğrenmek isteyen herkes içindir."
+        },
+        {
+          "question": "Paket fiyatına neler dahil?",
+          "answer": "Paket fiyatına materyallere, derslere, pratik seanslara ve kişisel danışmanlıklara erişim dahildir."
+        },
+        {
+          "question": "Kendi hızımda çalışabilir miyim?",
+          "answer": "Evet, kendi hızınızda çalışabilirsiniz."
+        },
+        {
+          "question": "Eğitim ne kadar sürer?",
+          "answer": "Eğitimin süresi seçtiğiniz pakete bağlıdır."
+        },
+        {
+          "question": "Kripto paraları bilmiyorum. Anlayabilir miyim?",
+          "answer": "Evet, blok zincirini hiç duymamış olsanız bile anlayabilirsiniz. Basit ve adım adım açıklıyoruz."
+        },
+        {
+          "question": "Paketleriniz ile internetteki ücretsiz materyaller arasındaki fark nedir?",
+          "answer": "Rastgele tavsiye vermiyoruz. Sonuçlara götüren bir sistem sunuyoruz — gereksiz bilgi yok, fazlalık yok ve destek var."
+        }
+      ]
+    }
+  },
+  "payment": {
+    "title": "Ödeme Detayları",
+    "form": {
+      "name": "Ad*",
+      "placeholderName": "Adınızı girin",
+      "country": "Ülke/Bölge*",
+      "searchPlaceholder": "Ülkeleri arayın",
+      "phone": "Telefon*",
+      "email": "E-posta*",
+      "placeholderEmail": "E-postanızı girin"
+    },
+    "order": "Siparişiniz",
+    "total": "Toplam",
+    "promoCode": "Promosyon Kodu:",
+    "promoQuestion": "Promosyon kodunuz var mı?",
+    "paymentSystem": "Payme Ödeme Sistemi",
+    "personalData": "Kişisel verileriniz, siparişlerinizi işlemek, siteyle etkileşiminizi kolaylaştırmak ve <Link>gizlilik politikasında</Link> belirtilen diğer amaçlar için kullanılacaktır.",
+    "btn": "Kaydı Onayla",
+    "promoCodeSuccess": "Promosyon kodu uygulandı",
+    "promoCodeError": "Promosyon kodu bulunamadı",
+    "orderComplete": "Sipariş İşleniyor",
+    "orderNumber": "Sipariş Numarası",
+    "date": "Tarih",
+    "paymentMethod": "Ödeme Yöntemi",
+    "thankYou": "Satın alma işleminiz için teşekkürler! Lütfen siparişi tamamlamak için <span>Öde</span>ye tıklayın",
+    "goToDashboard": "🠐 Ödemeyi iptal et ve mağazaya dön",
+    "noData": "Sipariş verisi bulunamadı",
+    "backToPackages": "Paketlere Dön",
+    "payBtn": "Öde",
+    "selectCurrency": "Para Birimi Seç",
+    "processing": "İşleniyor...",
+    "loading": "PayPort'tan döviz kuru alınıyor",
+    "error": "Döviz kuru yüklenemedi",
+    "equivalent": "Eşdeğer",
+    "promoCodeQuestion": "Promosyon kodunuz var mı? <span> Kodu girmek için tıklayın</span>",
+    "applyCouponCodeBtn": "Uygula",
+    "promoCodePlaceholder": "Promosyon kodunuzu girin"
+  },
+  "policy": {
+    "privacy": {
+      "title": "Gizlilik Politikası",
+      "subtitle": "Bu Gizlilik Politikası, Alphabit Academy'nin (bundan sonra 'Biz', 'Platformumuz', 'Şirket' olarak anılacaktır) kullanıcıların kişisel verilerini (bundan sonra 'Kullanıcı', 'Siz' olarak anılacaktır) nasıl topladığını, kullandığını, sakladığını ve koruduğunu açıklamaktadır. https://alphabit.academy web sitesini ve ilgili hizmetlerini kullanırken.",
+      "items": [
+        {
+          "title": "1. Bilgi Toplama",
+          "subtitle": "Aşağıdaki veri kategorilerini topluyoruz:",
+          "items": [
+            "Kimlik verileri: ad, e-posta adresi, telefon numarası, ikamet edilen ülke, IP adresi.",
+            "Finansal bilgiler: Yalnızca işlem doğrulama amacıyla kullanılan ödeme detayları.",
+            "Teknik veriler: cihaz türü, işletim sistemi, tarayıcı, çerezler, site etkinliği verileri.",
+            "Eğitim tercihleri: ilgi duyulan kurslar, test yanıtları ve öğrenme ilerlemesi."
+          ]
+        },
+        {
+          "title": "2. Kişisel Verilerin İşlenme Amacı",
+          "subtitle": "Toplanan veriler şu amaçlarla kullanılır:",
+          "items": [
+            "Eğitim materyallerine ve platform hizmetlerine erişim sağlamak.",
+            "Kullanıcı deneyimini artırmak ve içerik kişiselleştirme.",
+            "Ödemeleri işlemek ve teknik destek sağlamak.",
+            "Yasal yükümlülükleri yerine getirmek.",
+            "Bilgilendirme ve pazarlama mesajları göndermek (onayınızla).",
+            "Kullanıcı davranış analizi yapmak ve platformun kalitesini artırmak."
+          ]
+        }
+      ]
+    },
+    "refund": {
+      "title": "İade Politikası",
+      "subtitle": "Yüksek kaliteli bir eğitim deneyimi sunmaya çalışıyoruz. Bu iade politikası, Alphabit Academy platformunda (bundan sonra 'Platform', 'Biz', 'Şirket' olarak anılacaktır) satın alınan eğitim paketleri ve materyaller için iade koşullarını düzenler.",
+      "items": [
+        {
+          "title": "1. Genel İlke",
+          "subtitle": "İade, yalnızca kullanıcı ücretli materyallere erişim sağlamamışsa ve iade talebi ödemenin ardından 24 saat içinde yapılmışsa mümkündür."
+        },
+        {
+          "title": "2. İade Koşulları",
+          "subtitle": "İade aşağıdaki tüm koşullar yerine getirildiğinde mümkündür:",
+          "items": [
+            "İade talebi ödemenin ardından 24 saat içinde yapılmıştır.",
+            "Kullanıcı ücretli materyallere erişim sağlamamıştır.",
+            "Ödeme doğrudan resmi web sitesi https://alphabit.academy üzerinden yapılmıştır.",
+            "Kullanıcı, işlem tanımlaması için doğru bilgiler sağlar."
+          ]
+        }
+      ]
+    }
+  },
+  "stats": {
+    "title": "Sayılarla",
+    "items": {
+      "item1": {
+        "title": "40.000'in üzerinde",
+        "subtitle": " kişi eğitimden sonra başarıyla gelir elde ediyor"
+      },
+      "item2": {
+        "title": "7.000'den fazla",
+        "subtitle": " özel yatırım kulübünde aktif yatırımcı"
+      },
+      "item3": {
+        "title": "637+ milyon $",
+        "subtitle": " akademi mezunlarının yönettiği varlık hacmi"
+      }
+    }
+  },
+  "team": {
+    "title": "Arkasındaki Kim",
+    "more": "Daha Fazla Bilgi",
+    "back": "Geri Dön",
+    "moreItem": {
+      "titleClr": "+75 mentor, 12 ülke, 18 sektör",
+      "title": "- burada kendi mentorunuzu bulacağınız bir ekip",
+      "moreText": "Ve 70+ uzman daha",
+      "subtitle": "Uygulamalı yatırımcılar, analistler, hedge fon yöneticileri",
+      "items": ["Kişisel danışmanlıklar", "7/24 destek", "Günlük analizler"],
+      "text": "+75 mentor, 12 ülke, 18 sektör",
+      "text2": "burada kendi mentorunuzu bulacağınız bir ekip"
+    },
+    "items": {
+      "item1": {
+        "name": "Amir Najafov",
+        "subtitle": "10 yılı aşkın tecrübeye sahip profesyonel yatırımcı. Büyük Avrupa brokerlarının analiz departmanlarıyla çalıştı. 100.000$'dan başlayan sermayenin yönetimi için stratejilerde uzman.",
+        "description": [
+          "Orta vadeli eğilimler için ticaret modelleri geliştiren bağımsız analiz gruplarıyla işbirliği yaptı.",
+          "Mentorluk programlarında yatırımcıların sistematik yaklaşım oluşturmalarına yardımcı oldu—giriş kurulumlarından oynaklık seviyelerinde pozisyon kontrolüne kadar.",
+          "Yüksek sorumluluk gerektiren ticaretlerde karar verme için kontrol listeleri ve şablonlar oluşturmada danışmanlık yaptı.",
+          "Bugün öğrencilerinin birçoğu profesyonel portföyler yönetiyor veya yatırım fonlarında prop ekiplerle çalışıyor."
+        ]
+      },
+      "item2": {
+        "name": "Rustam Aytbayev",
+        "subtitle": "\"Pure Signal\" karar verme sisteminin yazarı ve ticarette psikolojik dayanıklılık uzmanı. Singapur'daki kripto fon ekipleri için yatırımcı eğitimi projelerine katıldı.",
+        "description": [
+          "Kripto fonlarında mentorluk programlarında çalıştı, burada ana kriter karar anında yatırımcı istikrarıydı.",
+          "Uzun süreli kayıplar yaşayan yatırımcılarla seanslar gerçekleştirdi—zihinsel toparlanma ve sistemin yeniden yapılandırılmasına odaklandı.",
+          "Duygusal kararları azaltan adaptif ticaret günlükleri ve davranış haritaları oluşturdu.",
+          "Yaklaşımı, yumuşak koçluk sunumu ile sonuç odaklı sıkı yapıyı birleştiriyor."
+        ]
+      },
+      "item3": {
+        "name": "Maxim Terekhin",
+        "subtitle": "Hacim analizi ve CME ticareti uzmanı. Kapalı ticaret toplulukları üyeleri için giriş stratejilerinde düzenli olarak danışmanlık yaptı.",
+        "description": [
+          "Prop ekiplerine hacim dağılımı, limit emir girişleri ve likidite emir defterlerinin okunmasında danışmanlık yaptı.",
+          "Küme analizi ile seviye bazlı ticareti günlük ve dört saatlik zaman dilimlerinde birleştiren benzersiz bir yöntem geliştirdi.",
+          "Danışanlarına piyasanın \"içeriden\" nasıl işlediğine dair tam bir bakış sunar: büyük katılımcıların davranışından likidite dinamiklerine kadar.",
+          "Gerçek piyasa vakalarına dayalı materyalleri sürekli geliştiriyor."
+        ]
+      },
+      "item4": {
+        "name": "Irina Sokolova",
+        "subtitle": "Risk yönetimi ve kısa vadeli ticaret uzmanı. Doğu Avrupa'daki çeşitli fintech şirketlerinde çalışanlara kurum içi eğitimler verdi.",
+        "description": [
+          "Doğu Avrupa'daki birçok fintech şirketinde kurum içi eğitimlere liderlik etti.",
+          "Farklı seviyelerde kursiyerler tarafından günlük olarak kullanılan adaptif risk kontrol sistemlerinin geliştirilmesine katıldı.",
+          "Sermaye koruma, kayıp yönetimi ve psikolojik dayanıklılığa odaklanan grupları düzenli olarak yönetiyor.",
+          "Öğrencileri, programı tamamladıktan sonra kârlılığın arttığını ve ticarete yeni bir bakış açısı kazandıklarını bildiriyor."
+        ]
+      },
+      "item5": {
+        "name": "Daniel Falkenstein",
+        "subtitle": "Sermaye yönetimi ve orta vadeli stratejilerde profesyonel mentor. Emirliklerdeki özel bankacılık ekiplerinden yatırımcılarla çalıştı.",
+        "description": [
+          "Özel varlık ve tröst yönetimi sektöründe çalışan ekipler ve bireysel yatırımcılara danışmanlık yaptı.",
+          "Dengesiz makroekonomik döngülerde sermaye tahsisi için ticaret modülleri tasarlamaya yardımcı oldu.",
+          "50K $ ile 500K $ arasında portföyler yönetiyor, riski azaltmaya ve sürdürülebilir pozisyon büyümesine odaklanıyor.",
+          "Ticaretin bir hobi değil, uzun vadeli bir yatırım stratejisinin parçası olduğu yatırımcılarla çalışıyor."
+        ]
+      }
+    }
+  }
+}

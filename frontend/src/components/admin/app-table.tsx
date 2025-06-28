@@ -16,8 +16,8 @@ export const AppTable = <T extends TTableRow>({
   headerClassName = '',
   rowClassName = '',
   cellClassName = '',
-  actionLabel = 'Изменить',
-  emptyMessage = 'Нет данных для отображения',
+  actionLabel = 'Edit',
+  emptyMessage = 'No data to display',
   editingRows = [],
 }: TAppTableProps<T>) => {
   const isRowEditing = (id: string) => editingRows.includes(id)
@@ -89,14 +89,14 @@ export const AppTable = <T extends TTableRow>({
           </ActionButton>
         </div>
       )}
-      <div className="w-full overflow-x-auto rounded-xl bg-[#222222]">
-        <table className="w-full min-w-full">
+      <div className="w-full overflow-x-auto rounded-xl">
+        <table className="border-text/50 w-full min-w-full border">
           <thead>
-            <tr className={`bg-[#2F2F2F] ${headerClassName}`}>
+            <tr className={`bg-background/50 ${headerClassName}`}>
               {columns.map((column) => (
                 <th
                   key={column.key}
-                  className={`px-4 py-3 text-left text-xs font-light text-white ${column.className || ''}`}
+                  className={`px-4 py-3 text-left text-xs font-light ${column.className || ''}`}
                   style={column.width ? { maxWidth: `${column.width}px` } : {}}
                 >
                   {column.header}
@@ -110,20 +110,20 @@ export const AppTable = <T extends TTableRow>({
               <tr>
                 <td
                   colSpan={columns.length + (onEdit || onDelete ? 1 : 0)}
-                  className="py-8 text-center text-sm text-gray-400"
+                  className="text-text py-8 text-center text-sm"
                 >
                   {emptyMessage}
                 </td>
               </tr>
             ) : (
               data.map((row) => (
-                <tr key={row.id} className={`border-b border-[#2F2F2F] ${rowClassName}`}>
+                <tr key={row.id} className={`border-text/50 border-b ${rowClassName}`}>
                   {columns.map((column, colIndex) => {
                     const cellValue = row[column.key as keyof TTableRow]
                     return (
                       <td
                         key={column.key}
-                        className={`truncate overflow-hidden px-4 py-4 text-xs font-light text-white ${cellClassName} ${column.className || ''}`}
+                        className={`truncate overflow-hidden px-4 py-4 text-xs font-light ${cellClassName} ${column.className || ''}`}
                         style={column.width ? { maxWidth: `${column.width}px` } : {}}
                       >
                         {isRowEditing(row.id)
@@ -163,7 +163,7 @@ export const AppTable = <T extends TTableRow>({
                             onClick={() => handleEditClick(row.id, row)}
                             variant={isRowEditing(row.id) ? 'success' : 'primary'}
                           >
-                            {isRowEditing(row.id) ? 'Сохранить' : actionLabel}
+                            {isRowEditing(row.id) ? 'Save' : actionLabel}
                           </ActionButton>
                         )}
                         {onDelete && (
@@ -172,7 +172,7 @@ export const AppTable = <T extends TTableRow>({
                             disabled={isRowEditing(row.id)}
                             onClick={() => onDelete(row.id)}
                           >
-                            Удалить
+                            Delete
                           </ActionButton>
                         )}
                       </div>

@@ -31,14 +31,14 @@ export const Checkout = ({ amount, packageName }: { amount: number; packageName:
 
   return (
     <>
-      <div className="flex items-center justify-between border-b border-white/10 pb-4">
+      <div className="border-text/10 flex items-center justify-between border-b pb-4">
         <span className="font-light">{t('selectCurrency')}:</span>
         <CurrencyDropdown defaultValue={selectedCurrency} onChange={setSelectedCurrency} />
       </div>
       <div className="my-8">
         <Link
           href="/account/all-packages"
-          className="hover:text-accent mb-6 flex items-center gap-2 text-sm font-light text-white/70"
+          className="hover:text-accent mb-6 flex items-center gap-2 text-sm font-light"
         >
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-6">
             <g strokeWidth="0"></g>
@@ -46,8 +46,8 @@ export const Checkout = ({ amount, packageName }: { amount: number; packageName:
             <g>
               <path
                 d="M6 12H18M6 12L11 7M6 12L11 17"
-                stroke="#ffffff"
-                strokeWidth="2"
+                stroke="#000"
+                strokeWidth="1"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               ></path>
@@ -56,7 +56,7 @@ export const Checkout = ({ amount, packageName }: { amount: number; packageName:
           {t('goToDashboard')}
         </Link>
 
-        {isStripePayment && (
+        {isStripePayment ? (
           <div className="py-6">
             <Elements
               stripe={stripePromise}
@@ -71,19 +71,19 @@ export const Checkout = ({ amount, packageName }: { amount: number; packageName:
               <CheckoutForm amount={amount * 100} packageName={packageName} />
             </Elements>
           </div>
+        ) : (
+          selectedCurrency && (
+            <div className="mt-6">
+              {isPayportPayment ? (
+                <PayportPaymentForm amount={amount} currency={selectedCurrency} locale={locale} />
+              ) : (
+                <SkyphoenixPaymentForm amount={amount} currency={selectedCurrency} />
+              )}
+            </div>
+          )
         )}
-        {selectedCurrency && (
-          <div className="mt-6">
-            {isPayportPayment ? (
-              <PayportPaymentForm amount={amount} currency={selectedCurrency} locale={locale} />
-            ) : (
-              <SkyphoenixPaymentForm amount={amount} currency={selectedCurrency} />
-            )}
-          </div>
-        )}
-
         {!selectedCurrency && (
-          <div className="mt-6 rounded-lg border border-[#FFFFFF]/10 bg-[#1B1B1BB2] p-6 text-center">
+          <div className="bg-background/20 border-text/60 mt-6 rounded-lg border p-6 text-center">
             {t('selectCurrency')}
           </div>
         )}

@@ -9,7 +9,7 @@ export const adminRefresh = async () => {
   const cookiePrefix = process.env.COOKIE_PREFIX || ''
   const refreshTokenValue = cookieStore.get(cookiePrefix + 'refresh-token')?.value
   if (!refreshTokenValue) {
-    return redirect('/CAcQARoXChVhY2N0XzFSNnhpbUdyRUZJd2pibWIovqfFwgYyBoJN/login')
+    return redirect('/f2186af6dc6143439b65adc/login')
   }
   try {
     const response = await api.post(
@@ -32,6 +32,6 @@ export const adminRefresh = async () => {
     return { success: true }
   } catch (error) {
     console.error('Token refresh error:', error)
-    return redirect('/CAcQARoXChVhY2N0XzFSNnhpbUdyRUZJd2pibWIovqfFwgYyBoJN/login')
+    return redirect('/f2186af6dc6143439b65adc/login')
   }
 }

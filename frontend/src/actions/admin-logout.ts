@@ -56,5 +56,5 @@ export const adminLogout = async () => {
     console.error('Logout error:', error)
   }
 
-  redirect('/CAcQARoXChVhY2N0XzFSNnhpbUdyRUZJd2pibWIovqfFwgYyBoJN/login')
+  redirect('/f2186af6dc6143439b65adc/login')
 }

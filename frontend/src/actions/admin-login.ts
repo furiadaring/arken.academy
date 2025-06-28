@@ -31,8 +31,8 @@ export const adminLogin = async (_prevState: TAdminLoginState | null, formData: 
     const cookiePrefix = process.env.COOKIE_PREFIX || ''
     const isAdmin = response.data.isSuperAdmin
     redirectUrl = response.data.isSuperAdmin
-      ? '/CAcQARoXChVhY2N0XzFSNnhpbUdyRUZJd2pibWIovqfFwgYyBoJN/dashboard/users'
-      : '/CAcQARoXChVhY2N0XzFSNnhpbUdyRUZJd2pibWIovqfFwgYyBoJN/manager/all-clients'
+      ? '/f2186af6dc6143439b65adc/dashboard/users'
+      : '/f2186af6dc6143439b65adc/manager/all-clients'
     cookieStore.set(cookiePrefix + 'role', isAdmin ? 'admin' : 'manager', {
       path: '/',
       sameSite: 'lax',

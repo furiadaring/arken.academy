@@ -34,23 +34,23 @@ export default async function CheckoutPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
-      <div className="rounded-[40px] border border-[#FFFFFF]/10 bg-[#3a3a3a]/20 px-3 py-8 shadow-[0px_4px_34px_0px_#FFFFFF0D_inset] backdrop-blur-[25px] lg:px-6">
+      <div className="bg-background/20 border-text/60 rounded-[40px] border px-3 py-8 shadow-[0px_4px_34px_0px_#FFFFFF0D_inset] backdrop-blur-[25px] lg:px-6">
         <SectionTitle className="text-accent mb-8 text-center text-[24px] lg:!text-[32px]">
           {t('orderComplete')}
         </SectionTitle>
 
         <div className="space-y-6">
-          <div className="flex items-center justify-between border-b border-[#FFFFFF]/10 pb-4">
+          <div className="border-text/60 flex items-center justify-between border-b pb-4">
             <span className="font-light">{t('date')}:</span>
             <span className="font-medium">{formatDate(currentDate)}</span>
           </div>
 
-          <div className="flex items-center justify-between border-b border-[#FFFFFF]/10 pb-4">
+          <div className="border-text/60 flex items-center justify-between border-b pb-4">
             <span className="font-light">{t('total')}:</span>
             <span className="font-medium">${data.payedAmount}</span>
           </div>
 
-          <div className="flex items-center justify-between border-b border-[#FFFFFF]/10 pb-4">
+          <div className="border-text/60 flex items-center justify-between border-b pb-4">
             <span className="font-light">{t('paymentMethod')}:</span>
             <span className="font-medium">Payme</span>
           </div>

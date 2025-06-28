@@ -16,9 +16,9 @@ export const ActionButton = ({
   const baseClasses =
     'flex justify-center items-center px-6 py-2 rounded-full text-xs font-light cursor-pointer disabled:cursor-not-allowed disabled:opacity-50'
   const variantClasses = {
-    primary: 'bg-[#E67935] text-black',
+    primary: 'bg-accent text-white',
     danger: 'bg-red-600 text-white',
-    success: 'bg-lime-400 text-black',
+    success: 'bg-success text-white',
   }
 
   return (

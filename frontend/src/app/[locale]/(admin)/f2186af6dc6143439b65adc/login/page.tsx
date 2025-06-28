@@ -34,7 +34,7 @@ export default function AdminLoginPage() {
                 name="login"
                 defaultValue={actionState?.login?.toString()}
                 placeholder="Введите ваше имя"
-                className="w-full rounded-[64px] border border-white/15 bg-white/10 py-5 pl-14"
+                className="border-text/50 bg-background/20 w-full rounded-[64px] border py-5 pl-14"
               />
             </div>
             <div className="relative">
@@ -63,7 +63,7 @@ export default function AdminLoginPage() {
                 type="password"
                 name="password"
                 placeholder="Введите ваш пароль"
-                className="w-full rounded-[64px] border border-white/15 bg-white/10 py-5 pl-14"
+                className="border-text/50 bg-background/20 w-full rounded-[64px] border py-5 pl-14"
               />
             </div>
           </div>

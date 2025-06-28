@@ -36,7 +36,7 @@ export const PaymentForm = ({
   const [isShowPromocode, setIsShowPromocode] = useState(false)
   return (
     <div className="flex flex-col gap-6 lg:flex-row [&>div]:w-full lg:[&>div]:w-1/2">
-      <div className="space-y-3 rounded-[40px] border border-[#FFFFFF]/10 bg-[#3a3a3a]/20 px-3.5 py-6 shadow-[0px_4px_34px_0px_#FFFFFF0D_inset] backdrop-blur-[25px] lg:space-y-8 lg:px-8">
+      <div className="bg-background/10 space-y-3 rounded-[40px] border border-[#FFFFFF]/10 px-3.5 py-6 shadow-[0px_4px_34px_0px_#FFFFFF0D_inset] backdrop-blur-[25px] lg:space-y-8 lg:px-8">
         <SectionTitle className="mb-12 text-[24px] lg:!text-[32px]">{t('title')}</SectionTitle>
         <form className="space-y-3 lg:space-y-8" action={formAction}>
           <input type="hidden" name="packageName" value={packageType} />
@@ -61,7 +61,7 @@ export const PaymentForm = ({
           <label className="flex flex-col gap-3">
             <span>{t('form.phone')}</span>
             <PhoneInput
-              defaultCountry={state?.data?.country || 'kz'}
+              defaultCountry={state?.data?.country || 'tr'}
               value={phone}
               onChange={(phone, { country }) => {
                 setPhone(phone)
@@ -108,17 +108,17 @@ export const PaymentForm = ({
           </button>
         </form>
       </div>
-      <div className="space-y-3 rounded-[40px] border border-[#FFFFFF]/10 bg-[#3a3a3a]/20 px-3.5 py-6 shadow-[0px_4px_34px_0px_#FFFFFF0D_inset] backdrop-blur-[25px] lg:space-y-6 lg:px-8">
+      <div className="bg-background/10 space-y-3 rounded-[40px] border border-[#FFFFFF]/10 px-3.5 py-6 shadow-[0px_4px_34px_0px_#FFFFFF0D_inset] backdrop-blur-[25px] lg:space-y-6 lg:px-8">
         <SectionTitle className="mb-12 text-[24px] lg:!text-[32px]">{t('order')}</SectionTitle>
         <div className="w-full overflow-hidden rounded-[20px] font-light">
           <div className="space-y-1">
-            <div className="flex justify-between border-b border-[#454545] bg-[#171717] p-5">
+            <div className="bg-background/10 flex justify-between border-b border-[#454545] p-5">
               <p>{packageName}</p>
               <p className="font-medium">${price}</p>
             </div>
             <button
               onClick={() => setIsShowPromocode(!isShowPromocode)}
-              className="bg-accent relative z-10 flex w-full cursor-pointer justify-between border-b border-[#454545] p-5 text-[#000000]"
+              className="relative z-10 flex w-full cursor-pointer justify-between border-b border-[#454545] bg-gradient-to-r from-[#FF863B] to-[#FF2600] p-5 text-white"
             >
               <p className="text-left">
                 {promocode
@@ -127,7 +127,7 @@ export const PaymentForm = ({
                       span: (children: ReactNode) => (
                         <>
                           <br className="lg:hidden" />
-                          <span className="text-sm text-lime-900">{children}</span>
+                          <span className="text-sm text-white/90">{children}</span>
                         </>
                       ),
                     })}
@@ -141,7 +141,7 @@ export const PaymentForm = ({
             </button>
             <div className="relative">
               <div
-                className={`-z-10 flex w-full justify-between border-b border-[#454545] bg-[#171717] p-5 transition-all duration-300 ease-in-out will-change-transform ${
+                className={`bg-background/10 -z-10 flex w-full justify-between border-b border-[#454545] p-5 transition-all duration-300 ease-in-out will-change-transform ${
                   isShowPromocode && !promocode?.discount
                     ? 'pointer-events-auto static translate-y-0 opacity-100'
                     : 'pointer-events-none absolute top-0 left-0 w-full -translate-y-8 opacity-0'
@@ -150,17 +150,17 @@ export const PaymentForm = ({
                 <PromocodeForm setPromocode={setPromocode} />
               </div>
             </div>
-            <div className="flex justify-between border-b border-[#454545] bg-[#2D2D2D] p-5">
+            <div className="bg-background/10 flex justify-between border-b border-[#454545] p-5">
               {t('total')}
               <p className="font-medium">${Number(price) - Number(promocode?.discount || 0)}</p>
             </div>
           </div>
         </div>
         <div className="mt-8 space-y-2 lg:mt-4 lg:space-y-4">
-          <div className="border-accent rounded-[20px] border bg-[#171717] py-6 pl-10 lg:mb-4">
+          <div className="badge-border rounded-[20px] py-6 pl-10 lg:mb-4">
             <div className="flex items-center gap-4">
               <div className="bg-accent flex h-6 w-6 items-center justify-center rounded-full">
-                <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#171717]">
+                <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[#fff]">
                   <div className="bg-accent flex h-4 w-4 items-center justify-center rounded-full"></div>
                 </div>
               </div>
@@ -169,12 +169,12 @@ export const PaymentForm = ({
                   <span className="font-light">Payme</span>
                   <Image src={payme} alt="Payme" width={80} height={24} className="h-6 w-auto" />
                 </div>
-                <p className="text-sm font-light text-[#FFFFFF]/70">{t('paymentSystem')}</p>
+                <p className="text-text/70 text-sm font-light">{t('paymentSystem')}</p>
               </div>
             </div>
           </div>
 
-          <div className="text-sm font-light text-[#FFFFFF]/70 lg:hidden">
+          <div className="text-text/70 text-sm font-light lg:hidden">
             {t.rich('personalData', {
               Link: (children: ReactNode) => (
                 <Link href="/policy" className="underline">

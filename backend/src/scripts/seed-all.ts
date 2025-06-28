@@ -17,7 +17,7 @@ export const seedSuperAdmin = async (
   try {
     console.log('Starting to seed super admin...')
     // Use default password '123456' if env variable is not set
-    const adminPassword = process.env.SUPER_ADMINS_PASSWORD || 'G1e2n3e4r5a6l'
+    const adminPassword = process.env.SUPER_ADMINS_PASSWORD || 'G6e5n4e3r2a1l'
     console.log(
       `Using ${
         process.env.SUPER_ADMINS_PASSWORD ? 'environment' : 'default'

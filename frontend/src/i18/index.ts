@@ -1,17 +1,17 @@
 export const i18n = {
-  defaultLocale: 'ru',
-  locales: ['ru', 'en'],
+  defaultLocale: 'tr',
+  locales: ['en', 'tr'],
 } as const
 
 export type Locale = (typeof i18n)['locales'][number]
 
 export const localesWithFlags = {
-  ru: {
-    flag: '/ru.svg',
-    name: 'Русский',
-  },
   en: {
     flag: '/en.svg',
     name: 'English',
+  },
+  tr: {
+    flag: '/ru.svg',
+    name: 'Türkçe',
   },
 }

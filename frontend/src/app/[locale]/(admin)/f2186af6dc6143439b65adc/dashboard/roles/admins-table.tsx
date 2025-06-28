@@ -83,14 +83,14 @@ export const AdminsTable: FC<AdminsTableProps> = ({ admins, offices }) => {
         const result = res.data
 
         if (!result) {
-          throw new Error('Ошибка при редактировании администратора')
+          throw new Error('Error updating admin')
         }
-        toast.success(result.message || 'Администратор успешно обновлен')
+        toast.success(result.message || 'Admin successfully updated')
       } catch (error) {
         console.error({ error })
         setTableData(previousState)
         setEditingId(id) // Return to editing mode
-        toast.error(`Ошибка при редактировании администратора: ${error instanceof Error ? error.message : error}`)
+        toast.error(`Error updating admin: ${error instanceof Error ? error.message : error}`)
       }
     })
   }
@@ -141,14 +141,14 @@ export const AdminsTable: FC<AdminsTableProps> = ({ admins, offices }) => {
         const result = res.data
 
         if (!result) {
-          throw new Error('Ошибка при удалении администратора')
+          throw new Error('Error deleting admin')
         }
 
         toast.success(result.message)
       } catch (error) {
         console.error({ error })
         setTableData(previousState)
-        toast.error(`Ошибка при удалении администратора: ${error instanceof Error ? error.message : error}`)
+        toast.error(`Error deleting admin: ${error instanceof Error ? error.message : error}`)
       }
     })
   }
@@ -174,7 +174,7 @@ export const AdminsTable: FC<AdminsTableProps> = ({ admins, offices }) => {
         }}
         onAdd={handleAddAdmin}
         onDelete={handleDeleteAdmin}
-        actionLabel="Редактировать"
+        actionLabel="Edit"
         className="overflow-x-auto rounded-lg shadow-lg"
         offices={offices}
         editingRows={editingId ? [editingId] : []}

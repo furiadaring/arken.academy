@@ -12,7 +12,7 @@ export default async function SuperDashboardLayout({ children }: { children: Rea
   const accessTokenValue = cookieStore.get(cookiePrefix + 'access-token')?.value
   const isSuperAdmin = cookieStore.get(cookiePrefix + 'role')?.value === 'admin'
   if (!isSuperAdmin) {
-    redirect('/CAcQARoXChVhY2N0XzFSNnhpbUdyRUZJd2pibWIovqfFwgYyBoJN/manager/all-clients')
+    redirect('/f2186af6dc6143439b65adc/manager/all-clients')
   }
   if (!accessTokenValue) {
     await adminRefresh()

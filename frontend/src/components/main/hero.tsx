@@ -51,10 +51,10 @@ export const Hero = async ({ isLoggedIn }: { isLoggedIn: boolean }) => {
               </p>
             </div>
           </div>
-          <div className="relative ml-[10%] lg:h-[761px] lg:w-[450px]">
+          <div className="relative ml-[10%] overflow-hidden lg:h-[761px] lg:w-[450px]">
             <Image src={phone} alt="phone" className="mt-0.5" priority />
           </div>
-          <div className="absolute top-1/2 left-1/2 -z-10 h-5/6 w-1/6 -translate-y-1/2 rounded-[586px] bg-[#FB8138]/40 blur-[300px]"></div>
+          <div className="absolute top-1/2 left-1/2 -z-10 h-1/3 w-1/6 -translate-y-1/2 rounded-[586px] bg-[#FB8138]/40 blur-[300px]"></div>
         </div>
       </div>
       <div className="pointer-events-none absolute inset-x-0 -bottom-[1%] -z-10 flex w-full scale-y-[-1] items-end justify-between">
