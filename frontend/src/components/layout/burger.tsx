@@ -2,6 +2,7 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 const imgs = ['main.svg', 'packages.svg', 'feedbacks.svg', 'about-us.svg', 'contacts.svg', 'enter.svg']
@@ -18,6 +19,8 @@ export const Burger = ({ links }: TBurgerProps) => {
   const [isBackgroundVisible, setIsBackgroundVisible] = useState(false)
   const [isMenuVisible, setIsMenuVisible] = useState(false)
   const t = useTranslations('menu')
+  const pathname = usePathname()
+  const isHome = pathname === '/'
 
   useEffect(() => {
     if (isOpen) {
@@ -44,17 +47,24 @@ export const Burger = ({ links }: TBurgerProps) => {
   return (
     <div className="relative lg:hidden">
       <button
-        className="relative z-[101] flex items-center space-x-2"
+        className={`relative z-[101] flex items-center space-x-2`}
         onClick={() => (isOpen ? handleClose() : setIsOpen(true))}
       >
-        <div className="relative h-5 w-5">
-          <Image
+        <div className={`relative h-5 w-5`}>
+          <svg
+            width="18"
+            height="13"
+            viewBox="0 0 18 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
             className={`burger-icon absolute inset-0 h-5 w-5 object-contain transition-opacity duration-150 ${isOpen ? 'opacity-0' : 'opacity-100'}`}
-            src="/burger.svg"
-            alt="Menu"
-            width={18}
-            height={12}
-          />
+          >
+            <path
+              d="M0 11.5C0 12.0523 0.447715 12.5 1 12.5H17C17.5523 12.5 18 12.0523 18 11.5C18 10.9477 17.5523 10.5 17 10.5H1C0.447716 10.5 0 10.9477 0 11.5ZM0 6.5C0 7.05228 0.447715 7.5 1 7.5H9C9.55228 7.5 10 7.05228 10 6.5C10 5.94772 9.55229 5.5 9 5.5H1C0.447715 5.5 0 5.94772 0 6.5ZM1 0.5C0.447716 0.5 0 0.947715 0 1.5C0 2.05228 0.447715 2.5 1 2.5H17C17.5523 2.5 18 2.05228 18 1.5C18 0.947715 17.5523 0.5 17 0.5H1Z"
+              fill={isHome ? 'white' : 'black'}
+            />
+          </svg>
+
           <Image
             className={`burger-icon burger-icon-open absolute inset-0 h-5 w-5 object-contain transition-opacity duration-150 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
             src="/close.svg"
@@ -99,7 +109,7 @@ export const Burger = ({ links }: TBurgerProps) => {
                     width={86}
                     height={86}
                   />
-                  <span className="text-[#000000]">{link.label}</span>
+                  <span className="text-text">{link.label}</span>
                 </Link>
               ))}
             </div>

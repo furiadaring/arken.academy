@@ -348,7 +348,7 @@
     "date": "Tarih",
     "paymentMethod": "Ödeme Yöntemi",
     "thankYou": "Satın alma işleminiz için teşekkürler! Lütfen siparişi tamamlamak için <span>Öde</span>ye tıklayın",
-    "goToDashboard": "🠐 Ödemeyi iptal et ve mağazaya dön",
+    "goToDashboard": "Ödemeyi iptal et ve mağazaya dön",
     "noData": "Sipariş verisi bulunamadı",
     "backToPackages": "Paketlere Dön",
     "payBtn": "Öde",

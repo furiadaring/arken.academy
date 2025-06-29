@@ -28,6 +28,7 @@ export async function POST(request: NextRequest) {
       if (item.currency === currency) {
         return item.temp_amount
       }
+      console.log({ item })
       return 0
     })
 

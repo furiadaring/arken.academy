@@ -10,7 +10,7 @@ export default function AdminLoginPage() {
   return (
     <section className="mx-auto flex min-h-[calc(100svh-80px)] flex-col items-center justify-center gap-6 px-3 pt-5">
       <div className="max-w-2xl">
-        <h1 className="pb-15 text-center text-[32px] font-medium">Введите логин и пароль</h1>
+        <h1 className="pb-15 text-center text-3xl font-medium">Enter your login and password</h1>
         <form action={action}>
           {actionState?.error && <p className="pb-3 text-center text-red-500">{actionState.error}</p>}
           <div className="mb-4 space-y-4">

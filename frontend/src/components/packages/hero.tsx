@@ -5,7 +5,7 @@ import { Button } from '../shared/btn'
 export const Hero = () => {
   const t = useTranslations('packages.hero')
   return (
-    <section className="relative py-3">
+    <section className="relative mb-10 py-3">
       <div className="relative z-10 container mx-auto max-w-[1280px] px-3 text-center lg:mt-10 lg:pb-10 xl:flex">
         <div className="lg:w-1/2">
           <h3 className="text-title">{t('title')}</h3>

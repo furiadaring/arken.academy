@@ -64,9 +64,9 @@ export const Button = ({
     >
       <span className="-ml-5 truncate">{children}</span>
       <span
-        className={`h-5 w-5 pt-0.5 transition-all duration-300 ease-in-out group-hover:rotate-12 lg:h-7 lg:w-7 ${size === 'sm' ? 'h-5 w-5' : 'h-7 w-7'}`}
+        className={`mt-1 h-5 w-5 transition-all duration-300 ease-in-out group-hover:rotate-12 lg:h-7 lg:w-7 lg:pt-0.5 ${size === 'sm' ? 'h-5 w-5' : 'h-7 w-7'}`}
       >
-        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="20" height="20" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="0.5" width="24" height="24" rx="12" fill="white" />
           <g clipPath="url(#clip0_2669_3544)">
             <path
@@ -100,9 +100,9 @@ export const LinkButton = ({ children, link, variant = 'primary', className, siz
     <Link href={link} className={cn(buttonVariants({ variant, size }), '', className)}>
       <span className="-ml-5 truncate">{children}</span>
       <span
-        className={`h-5 w-5 pt-0.5 transition-all duration-300 ease-in-out group-hover:rotate-12 lg:h-7 lg:w-7 ${size === 'sm' ? 'h-5 w-5' : 'h-7 w-7'}`}
+        className={`mt-1 h-5 w-5 transition-all duration-300 ease-in-out group-hover:rotate-12 lg:h-7 lg:w-7 lg:pt-0.5 ${size === 'sm' ? 'h-5 w-5' : 'h-7 w-7'}`}
       >
-        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="20" height="20" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="0.5" width="24" height="24" rx="12" fill="white" />
           <g clipPath="url(#clip0_2669_3544)">
             <path

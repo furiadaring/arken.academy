@@ -40,7 +40,7 @@ export const PromocodeForm = ({ setPromocode }: { setPromocode: (promocode: TPro
           required
           value={codeValue}
           onChange={(e) => setCodeValue(e.target.value)}
-          className="flex-1 rounded-full border border-[#FFFFFF]/10 bg-transparent px-4 py-3"
+          className="border-text/50 flex-1 rounded-full border bg-transparent px-4 py-3"
           placeholder={t('promoCodePlaceholder')}
         />
         <input type="hidden" name="name" value={name} />

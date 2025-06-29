@@ -11,7 +11,7 @@ export const localesWithFlags = {
     name: 'English',
   },
   tr: {
-    flag: '/ru.svg',
+    flag: '/tr.svg',
     name: 'Türkçe',
   },
 }

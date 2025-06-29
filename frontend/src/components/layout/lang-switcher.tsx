@@ -65,7 +65,7 @@ export default function LocaleSwitcher({ className = '' }: { className?: string 
 
       {isOpen && (
         <div
-          className={`${isHome ? 'bg-[#181A1B] text-white' : 'bg-background text-text'} fixed z-[999] mt-1 w-36 rounded-xl border border-white/10 p-3 shadow-md backdrop-blur-md transition-all delay-300 duration-300 ease-in-out lg:w-44`}
+          className={`${isHome ? 'bg-background text-text' : 'bg-background text-text'} fixed z-[999] mt-1 w-36 rounded-xl border border-white/10 p-3 shadow-md backdrop-blur-md transition-all delay-300 duration-300 ease-in-out lg:w-44`}
           style={{
             top: switcherRef.current ? switcherRef.current.getBoundingClientRect().bottom + 5 : 'auto',
             left: switcherRef.current ? switcherRef.current.getBoundingClientRect().left - 50 : 'auto',

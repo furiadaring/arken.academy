@@ -14,7 +14,7 @@ export const TeamCardMore = ({ className }: { className?: string }) => {
               <rect x="0.5" y="0.12793" width="67" height="67" rx="33.5" fill="#E67935" />
               <path
                 d="M49.9633 37.5164L37.4909 37.4929V49.5607H30.4902V37.4805L18.0026 37.4584L18.0164 29.6056L30.4902 29.6277L30.4909 17.5606H37.4902L37.4909 29.6402L49.9771 29.6636L49.9633 37.5164Z"
-                fill="#2D2D2D"
+                fill="white"
               />
             </svg>
             <h3 className="text-gradient-red my-3 w-4/5 text-center text-2xl font-medium lg:text-[26px]">
