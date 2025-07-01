@@ -25,9 +25,9 @@ export const POST = async (req: NextRequest) => {
     })
     console.log({ updatedUser })
     const response = await resend.emails.send({
-      from: 'support@arken.academy',
+      from: 'support@arkenacademy.com',
       to: body.email,
-      subject: 'Arken Academy | Сброс пароля',
+      subject: 'Arken Academy | Reset Password',
       html: `<p>Hello!</p>
       <p>You requested a password reset on the educational platform Arken Academy.</p>
       <p>For password reset, click the link: ${process.env.AUTH_URL}/reset-password/${updatedUser.data.passwordResetToken}</p>

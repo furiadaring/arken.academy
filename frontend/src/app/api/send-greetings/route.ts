@@ -14,9 +14,9 @@ export const POST = async (req: NextRequest) => {
     const body = (await req.json()) as { name: string; email: string }
     console.log({ body })
     const response = await resend.emails.send({
-      from: 'info@arken.academy',
+      from: 'info@arkenacademy.com',
       to: body.email,
-      subject: 'Добро пожаловать в Arken Academy',
+      subject: 'Welcome to Arken Academy',
       html: `<p>Hello ${body.name}!</p>
     <p>You successfully registered on the educational platform arken Academy.</p>
     <p>Your account has been created. Now you can:</p>
