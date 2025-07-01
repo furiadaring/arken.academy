@@ -14,7 +14,7 @@ export const POST = async (req: NextRequest) => {
     const body = (await req.json()) as { name: string; phone: string }
     console.log({ body })
     const response = await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'info@arkenacademy.com',
       to: 'info@arkenacademy.com',
       subject: 'You have a new consultation request from arken Academy',
       html: `<p>Name: ${body.name}</p>
