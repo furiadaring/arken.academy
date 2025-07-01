@@ -8,6 +8,7 @@
   --card: #eef1f4;
   --font-primary: var(--font-primary);
   --font-secondary: var(--font-secondary);
+  --success: #9ae6b4;
 
   --react-international-phone-height: 55px;
   --react-international-phone-background-color: #eef1f41a;
@@ -39,6 +40,7 @@
   --font-primary: var(--font-primary);
   --font-secondary: var(--font-secondary);
   --color-card: var(--card);
+  --color-success: var(--success);
 }
 html,
 body {

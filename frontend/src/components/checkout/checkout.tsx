@@ -83,7 +83,7 @@ export const Checkout = ({ amount, packageName }: { amount: number; packageName:
           )
         )}
         {!selectedCurrency && (
-          <div className="bg-background/20 border-text/60 mt-6 rounded-lg border p-6 text-center">
+          <div className="bg-background/20 border-card mt-6 rounded-lg border p-6 text-center">
             {t('selectCurrency')}
           </div>
         )}

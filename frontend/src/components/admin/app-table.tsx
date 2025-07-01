@@ -84,7 +84,7 @@ export const AppTable = <T extends TTableRow>({
     <div className={`w-full ${className}`}>
       {onAdd && (
         <div className="p-4">
-          <ActionButton disabled={false} onClick={handleAddClick} variant="success">
+          <ActionButton disabled={false} onClick={handleAddClick}>
             Добавить +
           </ActionButton>
         </div>
