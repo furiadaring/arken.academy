@@ -46,7 +46,7 @@ export default async function MyPackagesPage() {
           </div>
           <form className="relative z-10 mx-auto grid items-center gap-2 pt-2 lg:max-w-[560px] lg:grid-cols-[20%_1fr_20%] lg:justify-items-center lg:pt-5">
             <span className="relative mr-4 hidden h-[2px] w-20 bg-gradient-to-r from-[#FFFFFF] to-[#1E260F]/60 lg:block">
-              <span className="absolute top-1/2 right-0 h-2 w-2 -translate-y-1/2 rounded-full bg-black/50"></span>
+              <span className="absolute top-1/2 right-0 h-2 w-2 -translate-y-1/2 rounded-full bg-black"></span>
             </span>
             <Link href="/packages">
               <Button variant="primary" className="lg:mx-auto lg:min-w-[250px]">
@@ -54,7 +54,7 @@ export default async function MyPackagesPage() {
               </Button>
             </Link>
             <span className="relative ml-4 hidden h-[2px] w-20 bg-gradient-to-l from-[#FFFFFF] to-[#1E260F]/60 lg:block">
-              <span className="absolute top-1/2 left-0 h-2 w-2 -translate-y-1/2 rounded-full bg-black/50"></span>
+              <span className="absolute top-1/2 left-0 h-2 w-2 -translate-y-1/2 rounded-full bg-black"></span>
             </span>
           </form>
         </div>
