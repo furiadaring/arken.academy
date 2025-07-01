@@ -21,14 +21,13 @@ export const Auth = async () => {
           src={authBackgroundImageLg}
           alt="Investment expert"
           className="hidden object-contain object-center lg:block"
-          priority
           quality={100}
           fill
-          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       <div className="-mt-8 border border-white/30 bg-gradient-to-r from-[#99999900] to-[#B2B2B2]/20 p-4 px-6 backdrop-blur-[44px] lg:absolute lg:bottom-10 lg:left-[30%] lg:flex lg:-translate-x-1/4 lg:flex-row-reverse lg:items-center lg:gap-10 lg:rounded-[30px] lg:from-[#4C4C4C00]/10 lg:to-[#B2B2B2]/10 xl:w-1/2 2xl:gap-[150px]">
-        <div className="text-text">
+        <div className="text-background">
           <h5 className="text-medium text-lg">{t('blockTitle')}</h5>
           <p className="pb-4 text-sm leading-6 font-light">{t('blockSubtitle')}</p>
         </div>

@@ -23,7 +23,7 @@ export const Hero = async ({ isLoggedIn }: { isLoggedIn: boolean }) => {
             <div className="badge-border mb-3 rounded-[64px] px-5 py-3 shadow-[0px_4px_14px_0px_#FFFFFF1A_inset] backdrop-blur-[25px] lg:px-8 lg:py-3">
               <span className="relative z-10 text-sm font-extralight text-white">{t('badge')}</span>
             </div>
-            <h1 className="text-gradient py-3 text-left text-[27px] leading-8 font-bold lg:max-w-4xl lg:py-9 lg:text-[41px] lg:leading-snug 2xl:text-[72px]">
+            <h1 className="text-gradient py-3 text-center text-[27px] leading-8 font-bold lg:max-w-4xl lg:py-9 lg:text-[41px] lg:leading-snug 2xl:text-[72px]">
               {t('title')}
             </h1>
             <div className="flex flex-col-reverse items-center lg:flex-col">
@@ -51,7 +51,7 @@ export const Hero = async ({ isLoggedIn }: { isLoggedIn: boolean }) => {
               </p>
             </div>
           </div>
-          <div className="relative ml-[10%] h-[515px] w-[303px] overflow-hidden lg:h-[661px] lg:w-[450px]">
+          <div className="relative ml-[15%] h-[515px] w-[303px] overflow-hidden lg:ml-[10%] lg:h-[661px] lg:w-[450px]">
             <Image
               src={phone}
               alt="phone"

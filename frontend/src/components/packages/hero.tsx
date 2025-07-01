@@ -10,7 +10,7 @@ export const Hero = () => {
         <div className="lg:w-1/2">
           <h3 className="text-title">{t('title')}</h3>
         </div>
-        <div className="lg:mt-16 lg:w-1/2 lg:grow xl:-ml-40">
+        <div className="lg:mt-16 lg:w-1/2 lg:grow xl:-ml-10">
           <p className="text-text mt-3 text-xs leading-[18px] font-light lg:max-w-4xl lg:text-left lg:text-base lg:leading-[22px] lg:tracking-wide">
             {t('subtitle')}
           </p>

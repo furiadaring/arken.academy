@@ -93,7 +93,7 @@ export const Burger = ({ links }: TBurgerProps) => {
                 height={48}
               />
             </Link>
-            <div className="bg-background z-[101] grid grid-cols-2 gap-4 rounded shadow-md">
+            <div className="bg-background z-[101] grid grid-cols-2 gap-4 rounded">
               {links.map((link, index) => (
                 <Link
                   key={link.href}

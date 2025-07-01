@@ -53,7 +53,7 @@
   },
   "contact": {
     "badge": "Bize Ulaşın",
-    "title": "Daha fazlasını öğrenmek ister misiniz? Başvuru bırakın",
+    "title": "Daha fazlasını öğrenmek ister misiniz? Başvurunuzu bırakın",
     "subtitle": "Adınızı ve telefon numaranızı bırakın — sizi arayacağız, daha fazla bilgi vereceğiz ve size uygun bir kurs seçeceğiz.",
     "formName": "Adınızı girin",
     "formPhone": "+90 (_ _ _) _ _ _ - _ _ - _ _",
@@ -109,7 +109,7 @@
   },
   "hero": {
     "badge": "100% Uzmanlık",
-    "title": "Yatırıma Anlayışla Başlayın",
+    "title": "Yatırımın Temeli Anlamakla Başlar",
     "subtitle": "Piyasa uzmanları tarafından hazırlanmış yapılandırılmış eğitim programları sunuyoruz; analiz, pratik ve destekle erişim. Sermayenizi profesyoneller gibi yönetin.",
     "button": {
       "choose": "Bir Paket Seçin",
@@ -118,8 +118,8 @@
     }
   },
   "layout": {
-    "title": "Kişiselleştirilmiş Yaklaşımla Finansal Netlik ve Büyüme",
-    "description": "Kanıtlanmış stratejiler, analist desteği ve şeffaf sermaye büyüme yolu. Gereksiz gürültü yok—sadece öz.",
+    "title": "Uzun Vadeli Portföy Yatırımıyla Sürdürülebilir Servet",
+    "description": "Finansal hedeflerinize ulaşmak için dengeli yatırım stratejileri öğrenin. Uzman rehberliğinde, uzun vadeye odaklı çevrim içi eğitim. Arken Academy geleceği planlayanlar için.",
     "keywords": "Arken Academy, Arken, Academy, education, training, finance"
   },
   "login": {
@@ -220,7 +220,7 @@
         "title": "Temel Plan",
         "subtitle": "Yatırımın temellerini öğrenin ve ticaret platformunu güvenle kullanarak yeni başlayanların yaptığı hatalardan kaçının, finansal stratejinizi oluşturun.",
         "features": [
-          "<b> Otomatik trading yapma yeteneği</b>",
+          "<b>Yapay Zeka Tabanlı Otomatik Alım Satım</b>",
           "<b>Format:</b> Dersler + pratik seanslar",
           "<b>Konu Başlıkları:</b> Yatırımın temelleri, ticaret platformu tanıtımı, risk yönetimi prensipleri",
           "<b>Destek:</b> Mentor"
@@ -232,7 +232,7 @@
         "title": "İleri Plan",
         "subtitle": "Hisse senedi piyasasına dalın, ETF ve tahvil analizini öğrenin, istikrarlı büyüme için kendi yatırım portföyünüzü oluşturun.",
         "features": [
-          "<b> Otomatik trading yapma yeteneği</b>",
+          "<b>Yapay Zeka Tabanlı Otomatik Alım Satım</b>",
           "<b>Format:</b> Dersler + pratik seanslar",
           "<b>Konu Başlıkları:</b> Hisse senedi piyasası, tahviller, ETF'ler, temel analiz",
           "<b>Destek:</b> Mentor"
@@ -244,7 +244,7 @@
         "title": "Pro Plan",
         "subtitle": "IPO karmaşıklıklarını, hedging ve ticaret psikolojisini anlayın. Volatile piyasalarda analitik becerilerini ve karar alma yeteneklerini profesyonel olarak geliştirin.",
         "features": [
-          "<b> Otomatik trading yapma yeteneği</b>",
+          "<b>Yapay Zeka Tabanlı Otomatik Alım Satım</b>",
           "<b>Format:</b> Dersler, durum çalışmaları, Zoom grup seansları",
           "<b>Konu Başlıkları:</b> IPO, hedging, teknik analiz, ticaret psikolojisi",
           "<b>Destek:</b> Kişisel mentor",
@@ -258,7 +258,7 @@
         "title": "Master Plan",
         "subtitle": "Kripto piyasalarını, tarım varlıklarını ve denizaltı stratejilerini öğrenin. Uzun vadeli sermaye büyümesini ve ekonomik döngü dayanıklılığını kurun.",
         "features": [
-          "<b> Otomatik trading yapma yeteneği</b>",
+          "<b>Yapay Zeka Tabanlı Otomatik Alım Satım</b>",
           "<b>Format:</b> Haftalık inceleme + takvim ve analiz erişimi",
           "<b>Konu Başlıkları:</b> Kripto para birimleri, tarım varlıkları, vergi ve denizaltı stratejileri, uzun vadeli sermaye büyüme stratejileri",
           "<b>Destek:</b> Kişisel mentor",
@@ -272,7 +272,7 @@
         "title": "VIP Yatırımcı Paketi",
         "subtitle": "Öncelikli destek, derin makro analiz ve özel analizlere erişim ile bireysel bir program alın. Sermayesini bir proje olarak sistemli ve iddialı şekilde büyütmek isteyenler için.",
         "features": [
-          "<b> Otomatik trading yapma yeteneği</b>",
+          "<b>Yapay Zeka Tabanlı Otomatik Alım Satım</b>",
           "<b>Format:</b> Tam program, hedeflere göre uyarlanmış",
           "<b>Konu Başlıkları:</b> Kişisel yaklaşım, girişim yatırımları, makroekonomik analiz",
           "<b>Destek:</b> Öncelikli danışmanlıklar ve kişiselleştirilmiş öneriler",
@@ -520,7 +520,7 @@
     },
     "items": {
       "item1": {
-        "name": "Amir Najafov",
+        "name": "Timur Alptekin",
         "subtitle": "10 yılı aşkın tecrübeye sahip profesyonel yatırımcı. Büyük Avrupa brokerlarının analiz departmanlarıyla çalıştı. 100.000$'dan başlayan sermayenin yönetimi için stratejilerde uzman.",
         "description": [
           "Orta vadeli eğilimler için ticaret modelleri geliştiren bağımsız analiz gruplarıyla işbirliği yaptı.",
@@ -530,7 +530,7 @@
         ]
       },
       "item2": {
-        "name": "Rustam Aytbayev",
+        "name": "Arslan Kayratov",
         "subtitle": "\"Pure Signal\" karar verme sisteminin yazarı ve ticarette psikolojik dayanıklılık uzmanı. Singapur'daki kripto fon ekipleri için yatırımcı eğitimi projelerine katıldı.",
         "description": [
           "Kripto fonlarında mentorluk programlarında çalıştı, burada ana kriter karar anında yatırımcı istikrarıydı.",
@@ -540,7 +540,7 @@
         ]
       },
       "item3": {
-        "name": "Maxim Terekhin",
+        "name": "Batyr Tuganov",
         "subtitle": "Hacim analizi ve CME ticareti uzmanı. Kapalı ticaret toplulukları üyeleri için giriş stratejilerinde düzenli olarak danışmanlık yaptı.",
         "description": [
           "Prop ekiplerine hacim dağılımı, limit emir girişleri ve likidite emir defterlerinin okunmasında danışmanlık yaptı.",
@@ -550,7 +550,7 @@
         ]
       },
       "item4": {
-        "name": "Irina Sokolova",
+        "name": "Yerjan Dosmukhamedov",
         "subtitle": "Risk yönetimi ve kısa vadeli ticaret uzmanı. Doğu Avrupa'daki çeşitli fintech şirketlerinde çalışanlara kurum içi eğitimler verdi.",
         "description": [
           "Doğu Avrupa'daki birçok fintech şirketinde kurum içi eğitimlere liderlik etti.",
@@ -560,7 +560,7 @@
         ]
       },
       "item5": {
-        "name": "Daniel Falkenstein",
+        "name": "Aysulu Safiullina",
         "subtitle": "Sermaye yönetimi ve orta vadeli stratejilerde profesyonel mentor. Emirliklerdeki özel bankacılık ekiplerinden yatırımcılarla çalıştı.",
         "description": [
           "Özel varlık ve tröst yönetimi sektöründe çalışan ekipler ve bireysel yatırımcılara danışmanlık yaptı.",

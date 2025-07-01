@@ -99,11 +99,7 @@ export const seedOffices = async (
   try {
     console.log('Starting to seed offices...')
 
-    const offices: { name: string }[] = [
-      { name: 'One' },
-      { name: 'Two' },
-      { name: 'Three' },
-    ]
+    const offices: { name: string }[] = [{ name: 'One' }, { name: 'Two' }]
 
     for (const office of offices) {
       await dbClient.offices.upsert({
@@ -145,38 +141,21 @@ export const seedPromocodes = async (
         code: 'a100',
         discount: 150,
         package: Package.BASE,
-        officeName: offices[2].name,
+        officeName: offices[1].name,
       },
       {
         code: 'a90',
         discount: 160,
         package: Package.BASE,
-        officeName: offices[2].name,
+        officeName: offices[1].name,
       },
       {
         code: 'a500',
         discount: 500,
         package: Package.PRO,
-        officeName: offices[2].name,
-      },
-      {
-        code: 'd100',
-        discount: 150,
-        package: Package.BASE,
         officeName: offices[1].name,
       },
-      {
-        code: 'd90',
-        discount: 160,
-        package: Package.PRO,
-        officeName: offices[1].name,
-      },
-      {
-        code: 'd500',
-        discount: 500,
-        package: Package.PRO,
-        officeName: offices[1].name,
-      },
+
       {
         code: 'c100',
         discount: 150,
