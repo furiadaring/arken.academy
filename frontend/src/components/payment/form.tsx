@@ -97,7 +97,7 @@ export const PaymentForm = ({
           <div className="hidden text-sm font-light text-[#FFFFFF]/70 lg:block">
             {t.rich('personalData', {
               Link: (children: ReactNode) => (
-                <Link href="/policy" className="underline">
+                <Link href="/policy/privacy" className="underline">
                   {children}
                 </Link>
               ),

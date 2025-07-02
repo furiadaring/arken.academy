@@ -124,6 +124,9 @@ export const getUsers = async (params?: {
         },
       }),
     },
+    orderBy: {
+      createdAt: 'desc',
+    },
   })
 
   // Get paginated users
@@ -151,6 +154,9 @@ export const getUsers = async (params?: {
     },
     skip,
     take: pageSize,
+    orderBy: {
+      createdAt: 'desc',
+    },
   })
 
   return {
@@ -161,8 +167,8 @@ export const getUsers = async (params?: {
       currentPage: page,
       totalPages: Math.ceil(totalCount / pageSize),
       hasNextPage: page < Math.ceil(totalCount / pageSize),
-      hasPreviousPage: page > 1
-    }
+      hasPreviousPage: page > 1,
+    },
   }
 }
 export const getUserByToken = async (token: string) => {
