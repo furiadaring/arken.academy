@@ -11,7 +11,7 @@ export const BookBtns = () => {
       <Button
         onClick={() => {
           const link = document.createElement('a')
-          link.href = 'https://arken.academy/backend-api/v1/book'
+          link.href = 'https://arkenacademy.com/backend-api/v1/book'
           link.download = 'arken_edu_book.pdf'
           document.body.appendChild(link)
           link.click()

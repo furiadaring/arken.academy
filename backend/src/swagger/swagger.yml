@@ -4,7 +4,7 @@ info:
   description: API documentation for the Academy application
   version: 1.0.0
 servers:
-  - url: https://arken.academy/backend-api/v1
+  - url: https://arkenacademy.com/backend-api/v1
     description: Local development server
 tags:
   - name: Auth

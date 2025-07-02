@@ -78,7 +78,7 @@ export const Footer = () => {
             <h3 className="mb-4 text-base font-medium lg:text-[20px]">{t('contactTitle')}</h3>
             <div className="space-y-4 text-sm font-light lg:text-base">
               <p className="flex items-center">+905517234160</p>
-              <p className="flex items-center">info@arken.academy</p>
+              <p className="flex items-center">info@arkenacademy.com</p>
               <p className="flex items-center">{t('contactAddres')}</p>
             </div>
           </div>

@@ -25,7 +25,7 @@ export const POST = async (req: NextRequest) => {
       <li>Learn about the training program</li>
       <li>Choose the appropriate training package</li>
     </ul>
-    <p>👉 Go to your personal account: <a href="http://arken.academy/account/all-packages">Login to the academy</a></p>
+    <p>👉 Go to your personal account: <a href="http://arkenacademy.com/account/all-packages">Login to the academy</a></p>
     <p>Training materials become available after activating one of the packages. We consciously excluded meaningless «free introductions» — the course only includes what really works.</p>
     <p>With respect,<br />
     Arken Academy Team</p>`,
