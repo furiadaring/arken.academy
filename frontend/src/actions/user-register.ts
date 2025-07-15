@@ -19,7 +19,7 @@ export const registerUser = async (_prevState: TRegisterState | null, formData: 
 
   try {
     const validatedData = registerSchema.safeParse({ name, email, password })
-
+    console.log('Register data:', validatedData)
     if (!validatedData.success) {
       const errors = validatedData.error.errors.map((error) => error.message)
       const errorMessage = errors.join(', ')
